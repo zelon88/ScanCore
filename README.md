@@ -6,6 +6,19 @@ This file is a heavily modified version of PHP-AV maintained by Justin Grimes.
 
 This file was designed to function as part of the HR-AV anti-virus application.
 
+This scanner was designed for high performance single threaded use. It was intended to be use via manual command-line interface, or run with a custom thread handler which runs this script multiple times on different targets. 
+
+This scanner can detect files based on the following criteria:
+
+1. MD5 Hash
+2. SHA1 Hash
+3. SHA256 Hash
+4. Raw Data Match
+
+The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing an separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
+
+If a file is larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
+
 -----------------------------------------------------------------------------------
 
 ## LICENSE INFORMATION ...
