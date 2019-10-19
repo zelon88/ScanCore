@@ -1,7 +1,9 @@
 ## APPLICATION INFORMATION ...
 
-HR-AV, Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88 
+HR-AV, Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88
+
 This file is a heavily modified version of PHP-AV maintained by Justin Grimes.
+
 This file was designed to function as part of the HR-AV anti-virus application.
 
 -----------------------------------------------------------------------------------
