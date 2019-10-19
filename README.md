@@ -1,14 +1,10 @@
 ## APPLICATION INFORMATION ...
 
-HR-AV, Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88
+Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88. It is a heavily modified version of PHP-AV designed to function as part of the HR-AV anti-virus application.
 
-This file is a heavily modified version of PHP-AV maintained by Justin Grimes.
+This scanner was designed for high performance single threaded use. It can be used with the Windows command-line, or with a custom thread handler which handles the creation and destruction of multiple script instances at different targets simultaniously. 
 
-This file was designed to function as part of the HR-AV anti-virus application.
-
-This scanner was designed for high performance single threaded use. It was intended to be use via manual command-line interface, or run with a custom thread handler which runs this script multiple times on different targets. 
-
-The whole idea of a single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan.
+The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan. 
 
 If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with  scans that can take days to complete. 
 
