@@ -23,7 +23,8 @@ This application requires Windows 7 (or later) with PHP 7.0 (or later).
 ## VALID SWITCHES / ARGUMENTS / USAGE ...
 
 Quick Start Example:
-   C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
+
+     C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
 
 Start by opening a command-prompt.
 1. Type the absolute path to a portable PHP 7.0+ binary. Don't press enter just yet.
@@ -33,6 +34,7 @@ Start by opening a command-prompt.
 5. Optional arguments can be specified after the scan path. Separate them with spaces.
   
 Optional Arguments Include:
+
     Specify memory limit (in bytes):        -memorylimit ####
                                             -m ####
 
