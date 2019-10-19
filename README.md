@@ -8,6 +8,10 @@ This file was designed to function as part of the HR-AV anti-virus application.
 
 This scanner was designed for high performance single threaded use. It was intended to be use via manual command-line interface, or run with a custom thread handler which runs this script multiple times on different targets. 
 
+The whole idea of a single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan.
+
+If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with  scans that can take days to complete. 
+
 This scanner can detect files based on the following criteria:
 
 1. MD5 Hash
@@ -17,7 +21,9 @@ This scanner can detect files based on the following criteria:
 
 The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing an separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
 
-If a file is larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
+If the target is a file larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
+
+If the target is a folder it will be recursively scanned until all files and subfolders have been scanned. 
 
 -----------------------------------------------------------------------------------
 
