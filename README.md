@@ -25,6 +25,7 @@ This application requires Windows 7 (or later) with PHP 7.0 (or later).
 Quick Start Example:
 
      C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
+     C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -memorylimit 4000000000 -chunksize 1000000000 -verbose -debug
      C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -m 4000000000 -c 1000000000 -v -d
 
 Start by opening a command-prompt.
