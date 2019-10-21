@@ -50,7 +50,7 @@ else require_once ('ScanCore_Config.php');
 // / -----------------------------------------------------------------------------------
 // / The following code sets the global variables for the session.
   // / Application related variables.
-  $scanCoreVersion = 'v0.2';
+  $scanCoreVersion = 'v0.3';
   $Versions = 'PHP-AV App v4.0 | Virus Definition v4.9, 4/10/2019';
   $encType = 'ripemd160';
   $dirCount = $fileCount = $infected = 0;
@@ -143,7 +143,7 @@ function file_scan($folder, $defs, $DefsFile, $defData, $debug, $verbose, $memor
 
 // / -----------------------------------------------------------------------------------
 // Reads tab-delimited defs file. Also hashes the file to avoid self-detection.
-function load_defs($file, $debug) {
+function load_defs($file, $debug, $verbose) {
   if (!file_exists($file)) {
     $defs = $defData = FALSE;
     $txt = 'Could not load the virus definition file located at "'.$file.'"! File either does not exist or cannot be read!';
@@ -285,7 +285,7 @@ $txt = 'Starting PHP-AV ScanCore!';
 if ($debug) addLogEntry($txt, FALSE, 0);
 if ($verbose) echo PHP_EOL.$txt.PHP_EOL;
 // / Load the virus definitions into memory and calculate it's hash (to avoid detecting our own definitions as an infection).
-list($defs, $defData) = load_defs($DefsFile, $debug);
+list($defs, $defData) = load_defs($DefsFile, $debug, $verbose);
 // / Start the scanner!
 list($dirCount, $fileCount, $infected) = file_scan($pathToScan, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize);
 // / Copy the report file to the Logs directory for safe permanent keeping.
