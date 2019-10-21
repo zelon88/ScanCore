@@ -45,11 +45,13 @@ $InstLoc = '';
   // / The default location to scan if run with no input scan path argument. 
 $ScanLoc = '';
   // / The absolute path where log files are stored.
-$LogDir = $InstLoc.DIRECTORY_SEPARATOR.'Logs';
+$LogDir = 'Logs';
   // / The absolute path where report files are stored.
-$ReportDir = $InstLoc.DIRECTORY_SEPARATOR.'Reports';
+$ReportDir = 'Reports';
   // / The filename for the ScanCore report file.
 $ReportFileName = 'ScanCore_Report.txt';
+  // / The filename for the ScanCore log file.
+$LogFileName = 'ScanCore_Latest-Log.txt';
   // / The filename for the ScanCore virus definition file.
 $DefsFileName = 'ScanCore_Virus.def';
   // / The filename for the ScanCore virus definition file.

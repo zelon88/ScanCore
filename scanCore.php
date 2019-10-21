@@ -50,7 +50,7 @@ else require_once ('ScanCore_Config.php');
 // / -----------------------------------------------------------------------------------
 // / The following code sets the global variables for the session.
   // / Application related variables.
-  $scanCoreVersion = 'v0.3';
+  $scanCoreVersion = 'v0.4';
   $Versions = 'PHP-AV App v4.0 | Virus Definition v4.9, 4/10/2019';
   $encType = 'ripemd160';
   $dirCount = $fileCount = $infected = 0;
@@ -66,6 +66,7 @@ else require_once ('ScanCore_Config.php');
   $ReportSubDir = $ReportDir.DIRECTORY_SEPARATOR.$SesHash;
   $ReportSubSubDir = $ReportSubDir.DIRECTORY_SEPARATOR.$SesHash2;
   $ReportFile = $ReportDir.DIRECTORY_SEPARATOR.$SesHash3.DIRECTORY_SEPARATOR.$ReportFileName;
+  $LogFile = $ReportDir.DIRECTORY_SEPARATOR.$SesHash3.DIRECTORY_SEPARATOR.$LogFileName;
   $RequiredDirs = array($ReportDir, $ReportSubDir, $ReportSubSubDir, $LogDir);
   // / Unset unneeded variables for security purposes.
   $encType = $RandomNumber = $SesHash = $SesHash2 = $SesHash3 = $Salts1 = $Salts2 = $Salts3 = $Salts4 = $Salts5 = $Salts6 = NULL;
