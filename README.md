@@ -15,7 +15,7 @@ This scanner can detect files based on the following criteria:
 3. SHA256 Hash
 4. Raw Data Match
 
-The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing an separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
+The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing a separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
 
 If the target is a file larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
 
