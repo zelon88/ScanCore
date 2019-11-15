@@ -19,7 +19,7 @@ The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line conta
 
 If the target is a file larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
 
-If the target is a folder it will be recursively scanned until all files and subfolders have been scanned. 
+If the target is a folder the default action is to recursively scan until all files and subdirectories have been scanned. Recursion can be forced or disabled via command line arguments.
 
 -----------------------------------------------------------------------------------
 
@@ -42,6 +42,7 @@ Quick Start Example:
      C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
      C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -memorylimit 4000000000 -chunksize 1000000000 -verbose -debug
      C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -m 4000000000 -c 1000000000 -v -d
+     C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -nr -m 1000000000 -c 200000000 -v -d 
 
 Start by opening a command-prompt.
 1. Type the absolute path to a portable PHP 7.0+ binary. Don't press enter just yet.
@@ -51,6 +52,12 @@ Start by opening a command-prompt.
 5. Optional arguments can be specified after the scan path. Separate them with spaces.
   
 Optional Arguments Include:
+
+    Force recursion:                        -recursion
+                                            -r
+
+    Force no recursion:                     -norecursion
+                                            -nr
 
     Specify memory limit (in bytes):        -memorylimit ####
                                             -m ####

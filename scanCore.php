@@ -13,7 +13,7 @@
 // / 
 // / DEPENDENCY REQUIREMENTS ... 
 // /   This application requires Windows 7 (or later) with PHP 7.0 (or later).
-// /
+// / 
 // / VALID SWITCHES / ARGUMENTS / USAGE ...
 // /   Quick Start Example:
 // /    C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
@@ -26,6 +26,12 @@
 // /   Optional arguments can be specified after the scan path. Separate them with spaces.
 // /   
 // /   Optional Arguments Include:
+// /     Force recursion:                        -recursion
+// /                                             -r
+// / 
+// /     Force no recursion:                     -norecursion
+// /                                             -nr
+// / 
 // /     Specify memory limit (in bytes):        -memorylimit ####
 // /                                             -m ####
 // / 
@@ -50,7 +56,7 @@ else require_once ('ScanCore_Config.php');
 // / -----------------------------------------------------------------------------------
 // / The following code sets the global variables for the session.
   // / Application related variables.
-  $scanCoreVersion = 'v0.4';
+  $scanCoreVersion = 'v0.5';
   $Versions = 'PHP-AV App v4.0 | Virus Definition v4.9, 4/10/2019';
   $encType = 'ripemd160';
   $dirCount = $fileCount = $infected = 0;
@@ -98,6 +104,7 @@ function addLogEntry($entry, $error, $errorNumber) {
 function parseArgs($argv) { 
   $memoryLimit = 4000000;
   $chunkSize = 1000000; 
+  $recursion = TRUE;
   $debug = $pathToScan = $verbose = FALSE;
   foreach ($argv as $key=>$arg) {
     trim($arg);
@@ -105,7 +112,9 @@ function parseArgs($argv) {
     if ($arg == '-memorylimit' or $arg == '-m') $memoryLimit = $argv[$key + 1];
     if ($arg == '-chunksize' or $arg == '-c') $chunkSize = $argv[$key + 1]; 
     if ($arg == '-debug' or $arg == '-d') $debug = TRUE; 
-    if ($arg == '-verbose' or $arg == '-v') $verbose = TRUE; }
+    if ($arg == '-verbose' or $arg == '-v') $verbose = TRUE;
+    if ($arg == '-recursion' or $arg == '-r') $recursion = TRUE; 
+    if ($arg == '-norecursion' or $arg == '-nr') $recursion = FALSE; }
   if (!file_exists($argv[1])) { 
     $txt = 'The specified file was not found! The first argument must be a valid file or directory path!'; 
     addLogEntry($txt, TRUE, 200);
@@ -117,19 +126,19 @@ function parseArgs($argv) {
     echo $txt.PHP_EOL;
     $memoryLimit = $defaultMemoryLimit; 
     $chunkSize = $defaultChunkSize; }
-  return(array($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose)); }
+  return(array($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion)); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // Hunts files/folders recursively for scannable items.
-function file_scan($folder, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize) {
+function file_scan($folder, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion) {
   global $fileCount, $dirCount, $infected;
   if ($d = @dir($folder)) {
     while (FALSE !== ($entry = $d->read())) {
       $isdir = @is_dir($folder.'/'.$entry);
       if (!$isdir and $entry != '.' and $entry != '..') {      
         list($fileCount, $infected) = virus_check($folder.'/'.$entry, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize); } 
-      elseif ($isdir and $entry != '.' and $entry != '..') {
+      elseif ($isdir and $recursion and $entry != '.' and $entry != '..') {
         if ($debug) { 
           $txt = 'Scanning folder "'.$folder.'" ... ';
           addLogEntry($txt, FALSE, 0); }
@@ -137,7 +146,7 @@ function file_scan($folder, $defs, $DefsFile, $defData, $debug, $verbose, $memor
           $txt = 'Scanning folder "'.$folder.'" ... ';
           echo $txt.PHP_EOL; }
         $dirCount++;
-        $dirCount = file_scan($folder.'/'.$entry, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize); } }
+        $dirCount = file_scan($folder.'/'.$entry, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion; } }
     $d->close(); } 
     return array($dirCount, $fileCount, $infected); }
 // / -----------------------------------------------------------------------------------
@@ -278,7 +287,7 @@ function virus_check($file, $defs, $DefsFile, $defData, $debug, $verbose, $memor
 createDirs($RequiredDirs);
 // / Process supplied command-line arguments.
   // / C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
-list($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose) = parseArgs($argv);
+list($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion) = parseArgs($argv);
 // / Set some welcome text. 
   // / Log the welcome text if $debug variable (-d switch) is set.
   // / Output the welcome text to the terminal if the $verbose (-v switch) variable is set.
@@ -288,7 +297,7 @@ if ($verbose) echo PHP_EOL.$txt.PHP_EOL;
 // / Load the virus definitions into memory and calculate it's hash (to avoid detecting our own definitions as an infection).
 list($defs, $defData) = load_defs($DefsFile, $debug, $verbose);
 // / Start the scanner!
-list($dirCount, $fileCount, $infected) = file_scan($pathToScan, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize);
+list($dirCount, $fileCount, $infected) = file_scan($pathToScan, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion);
 // / Copy the report file to the Logs directory for safe permanent keeping.
 @copy($ReportFile, $LogFile);
 // / Set some summary text. 
