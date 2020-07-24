@@ -17,7 +17,7 @@ This scanner can detect files based on the following criteria:
 
 The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing a separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
 
-If the target is a file larger than the [memorylimit] argument it will be chopped into [chunsize] and each chunk will be scanned separately. 
+If the target is a file larger than the [memorylimit] argument it will be chopped into [chunksize] and each chunk will be scanned separately. 
 
 If the target is a folder the default action is to recursively scan until all files and subdirectories have been scanned. Recursion can be forced or disabled via command line arguments.
 
