@@ -1,7 +1,7 @@
 <?php
 // / -----------------------------------------------------------------------------------
 // / APPLICATION INFORMATION ...
-// /   HR-AV, Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88 
+// /   HR-AV, Copyright on 4/19/2022 by Justin Grimes, www.github.com/zelon88 
 // /   This file is a heavily modified version of PHP-AV maintained by Justin Grimes.
 // /   This file was designed to function as part of the HR-AV anti-virus application.
 // /   This file may not work properly outside of it's intended environment or use-case.
@@ -42,38 +42,40 @@
 // /                                             -d
 // / 
 // /     Enable "verbose" mode (more console):   -verbose
-// /                                             -v             
+// /                                             -v
+// / 
+// /     Force a specific log file:              -logfile /path/to/file
+// /                                             -lf path/to/file
+// / 
+// /     Force a specific report file:           -reportfile /path/to/file
+// /                                             -rf path/to/file
+// / 
+// /     Force maximum log size (in bytes):      -maxlogsize ###
+// /                                             -ml ###
 // / 
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / The following code will load required HR-AV files.
 $rp = realpath(dirname(__FILE__));
-if (!file_exists('ScanCore_Config.php')) die ('ERROR!!! ScanCore-0, Cannot process the HR-AV ScanCore Configuration file (config.php)!'.PHP_EOL); 
-else require_once ('ScanCore_Config.php');
+if (!file_exists($rp.DIRECTORY_SEPARATOR.'ScanCore_Config.php')) die ('ERROR!!! ScanCore-0, Cannot process the HR-AV ScanCore Configuration file (config.php)!'.PHP_EOL); 
+else require_once ($rp.DIRECTORY_SEPARATOR.'ScanCore_Config.php');
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / The following code sets the global variables for the session.
   // / Application related variables.
-  $scanCoreVersion = 'v0.6';
+  $scanCoreVersion = 'v0.7';
   $Versions = 'PHP-AV App v4.0 | Virus Definition v4.9, 4/10/2019';
   $encType = 'ripemd160';
   $dirCount = $fileCount = $infected = 0;
   // / Time related variables.
   $Date = date("m_d_y");
   $Time = date("F j, Y, g:i a"); 
-  // / SesHash related variables for developing predictable paths.
-  $RandomNumber = rand(10000, 1000000).rand(10000,1000000);
-  $SesHash = substr(hash($encType, $Date.$Salts1.$Salts2.$Salts3.$Salts4.$Salts5.$Salts6), - 12);
-  $SesHash2 = substr(hash($encType, $RandomNumber.$SesHash.$Date.$Time.$Salts1.$Salts2.$Salts3.$Salts4.$Salts5.$Salts6), - 12);
-  $SesHash3 = $SesHash.DIRECTORY_SEPARATOR.$SesHash2;
   // / Directory related variables.
-  $ReportSubDir = $ReportDir.DIRECTORY_SEPARATOR.$SesHash;
-  $ReportSubSubDir = $ReportSubDir.DIRECTORY_SEPARATOR.$SesHash2;
-  $ReportFile = $ReportDir.DIRECTORY_SEPARATOR.$SesHash3.DIRECTORY_SEPARATOR.$ReportFileName;
-  $LogFile = $ReportDir.DIRECTORY_SEPARATOR.$SesHash3.DIRECTORY_SEPARATOR.$LogFileName;
-  $RequiredDirs = array($ReportDir, $ReportSubDir, $ReportSubSubDir, $LogDir);
+  $ReportFile = $ReportDir.$ReportFileName;
+  $LogFile = $ReportDir.$LogFileName;
+  $RequiredDirs = array($ReportDir, $LogDir);
   // / Unset unneeded variables for security purposes.
   $encType = $RandomNumber = $SesHash = $SesHash2 = $SesHash3 = $Salts1 = $Salts2 = $Salts3 = $Salts4 = $Salts5 = $Salts6 = NULL;
   unset($encType, $RandomNumber, $SesHash, $SesHash2, $SesHash3, $Salts1, $Salts2, $Salts3, $Salts4, $Salts5, $Salts6);
@@ -92,7 +94,7 @@ function createDirs($RequiredDirs) {
 // / -----------------------------------------------------------------------------------
 // / A function to add an entry to the logs.
 function addLogEntry($entry, $error, $errorNumber) {
-  global $ReportFile;
+  global $ReportFile, $Time;
   if (!is_numeric($errorNumber)) $errorNumber = 0;
   if ($error === TRUE) $preText = 'ERROR!!! ScanCore-'.$errorNumber.' on '.$Time.', ';
   else $preText = $Time.', ';
@@ -102,11 +104,15 @@ function addLogEntry($entry, $error, $errorNumber) {
 // / -----------------------------------------------------------------------------------
 // / A function to parse supplied command-line arguments.
 function parseArgs($argv) { 
+  global $ReportFile, $LogFile, $MaxLogSize, $debug, $verbose;
   $memoryLimit = 4000000;
   $chunkSize = 1000000; 
   $recursion = TRUE;
   $debug = $pathToScan = $verbose = FALSE;
-  foreach ($argv as $key=>$arg) {
+  $reportFile = $ReportFile;
+  $logFile = $LogFile;
+  $maxLogSize = $MaxLogSize;
+  foreach ($argv as $key => $arg) {
     trim($arg);
     $arg = htmlentities(str_replace(str_split('~#[](){};:$!#^&%@>*<"\''), '', $arg));
     if ($arg == '-memorylimit' or $arg == '-m') $memoryLimit = $argv[$key + 1];
@@ -114,41 +120,48 @@ function parseArgs($argv) {
     if ($arg == '-debug' or $arg == '-d') $debug = TRUE; 
     if ($arg == '-verbose' or $arg == '-v') $verbose = TRUE;
     if ($arg == '-recursion' or $arg == '-r') $recursion = TRUE; 
-    if ($arg == '-norecursion' or $arg == '-nr') $recursion = FALSE; }
+    if ($arg == '-norecursion' or $arg == '-nr') $recursion = FALSE;
+    if ($arg == '-reportfile' or $arg == '-rf') $reportFile = rtrim($argv[$key + 1], DIRECTORY_SEPARATOR);
+    if ($arg == '-logfile' or $arg == '-lf') $logFile = rtrim($argv[$key + 1], DIRECTORY_SEPARATOR); 
+    if ($arg == '-maxlogsize' or $arg == '-ml') $maxLogSize = $argv[$key + 1]; }
+  if (!isset($argv[1])) {
+    $txt = 'There were no arguments set!'; 
+    addLogEntry($txt, TRUE, 100);
+    die ($txt.PHP_EOL); }
   if (!file_exists($argv[1])) { 
     $txt = 'The specified file was not found! The first argument must be a valid file or directory path!'; 
     addLogEntry($txt, TRUE, 200);
     die ($txt.PHP_EOL); }
-  else $pathToScan = $argv[1];
+  $pathToScan = $argv[1];
   if (!is_numeric($memoryLimit) or !is_numeric($chunkSize)) { 
     $txt = 'Either the chunkSize argument or the memoryLimit argument is invalid. Substituting default values.';
     addLogEntry($txt, TRUE, 300); 
     echo $txt.PHP_EOL;
     $memoryLimit = $defaultMemoryLimit; 
     $chunkSize = $defaultChunkSize; }
-  return(array($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion)); }
+  return(array($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion, $reportFile, $logFile, $maxLogSize)); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // Hunts files/folders recursively for scannable items.
 function file_scan($folder, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion) {
   global $fileCount, $dirCount, $infected;
-  if ($d = @dir($folder)) {
-    while (FALSE !== ($entry = $d->read())) {
-      $isdir = @is_dir($folder.'/'.$entry);
-      if (!$isdir and $entry != '.' and $entry != '..') {      
-        list($fileCount, $infected) = virus_check($folder.'/'.$entry, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize); } 
-      elseif ($isdir and $recursion and $entry != '.' and $entry != '..') {
+  if (is_dir($folder)) {
+    $files = scandir($folder);
+    foreach ($files as $file) {
+      if ($file === '' or $file === '.' or $file === '..') continue;
+      $entry = str_replace(DIRECTORY_SEPARATOR.DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR, $folder.DIRECTORY_SEPARATOR.$file);
+      if (!is_dir($entry)) list($fileCount, $infected) = virus_check($entry, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize);
+      else if (is_dir($entry) && $recursion) {
         if ($debug) { 
-          $txt = 'Scanning folder "'.$folder.'" ... ';
+          $txt = 'Scanning folder "'.$entry.'" ... ';
           addLogEntry($txt, FALSE, 0); }
         if ($verbose) { 
-          $txt = 'Scanning folder "'.$folder.'" ... ';
-          echo $txt.PHP_EOL; }
-        $dirCount++;
-        $dirCount = file_scan($folder.'/'.$entry, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion); } }
-    $d->close(); } 
-    return array($dirCount, $fileCount, $infected); }
+          $txt = 'Scanning folder "'.$entry.'" ... ';
+          echo $txt.PHP_EOL; } }
+        $dirCount++; 
+        list ($dirCount1, $fileCount1, $infected1) = file_scan($entry, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion); } }
+  return array($dirCount, $fileCount, $infected); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
@@ -180,7 +193,7 @@ function load_defs($file, $debug, $verbose) {
 // / -----------------------------------------------------------------------------------
 // Hashes and checks files/folders for viruses against static virus defs.
 function virus_check($file, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize) {
-  global $fileCount, $dirCount, $infected;
+  global $fileCount, $dirCount, $infected, $DefsFileName;
   $fileCount++;
   if ($file !== $DefsFileName) {
     if (file_exists($file)) { 
@@ -190,6 +203,7 @@ function virus_check($file, $defs, $DefsFile, $defData, $debug, $verbose, $memor
       $filesize = filesize($file);
       $data1 = hash_file('md5', $file);
       $data2 = hash_file('sha256', $file);
+      $data3 = hash_file('sha1', $file);
       // / Scan files larger than the memory limit by breaking them into chunks.
       if ($filesize >= $memoryLimit && file_exists($file)) { 
         if ($debug) { 
@@ -287,23 +301,23 @@ function virus_check($file, $defs, $DefsFile, $defData, $debug, $verbose, $memor
 createDirs($RequiredDirs);
 // / Process supplied command-line arguments.
   // / C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
-list($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion) = parseArgs($argv);
+list($pathToScan, $memoryLimit, $chunkSize, $debug, $verbose, $recursion, $ReportFile, $LogFile, $MaxLogSize) = parseArgs($argv);
 // / Set some welcome text. 
   // / Log the welcome text if $debug variable (-d switch) is set.
   // / Output the welcome text to the terminal if the $verbose (-v switch) variable is set.
-$txt = 'Starting PHP-AV ScanCore!';
+$txt = 'Starting ScanCore!';
 if ($debug) addLogEntry($txt, FALSE, 0);
 if ($verbose) echo PHP_EOL.$txt.PHP_EOL;
 // / Load the virus definitions into memory and calculate it's hash (to avoid detecting our own definitions as an infection).
 list($defs, $defData) = load_defs($DefsFile, $debug, $verbose);
 // / Start the scanner!
-list($dirCount, $fileCount, $infected) = file_scan($pathToScan, $defs, $DefsFile, $defsData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion);
+list($dirCount, $fileCount, $infected) = file_scan($pathToScan, $defs, $DefsFile, $defData, $debug, $verbose, $memoryLimit, $chunkSize, $recursion);
 // / Copy the report file to the Logs directory for safe permanent keeping.
 @copy($ReportFile, $LogFile);
 // / Set some summary text. 
   // / Log the summart text if $debug variable (-d switch) is set.
   // / Output the summary text to the terminal if the $verbose (-v switch) variable is set.
 $txt = 'Scanned '.$fileCount.' files in '.$dirCount.' folders and found '.$infected.' potentially infected items.';
-if ($debur) addLogEntry($txt, FALSE, 0);
+if ($debug) addLogEntry($txt, FALSE, 0);
 if ($verbose) echo $txt.PHP_EOL; 
 // / -----------------------------------------------------------------------------------

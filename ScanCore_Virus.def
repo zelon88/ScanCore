@@ -745,10 +745,11 @@ Trojan PowerShell.19	sekurlsa
 Trojan PowerShell.20	lsadump::sam exit
 Trojan PowerShell.21	kerberos:ptt
 Trojan PowerShell.22	c:\programdata\log.dat
-Trojan Eicar	eicar_com	69630e4574ec6798239b091cda43dca0 	131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267 	cf8bd9dfddff007f75adf4c2be48005cea317c62
+Trojan Eicar	eicar_com	69630e4574ec6798239b091cda43dca0	131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267	cf8bd9dfddff007f75adf4c2be48005cea317c62
 Trojan Eicar.1	eicar.com
 Trojan Eicar.2	$EICAR
 Trojan Eicar.3	X5O!P%@AP[
+Trojan Eicar.4			275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f	
 Trojan CPP.1	SetWindowsHookEx(WH_CBT, msgBoxHook, 0, GetCurrentThreadId());
 Trojan CPP.2	enablePayloads
 Trojan CPP.3	waveOutOpen(&hwo, WAVE_MAPPER, &fmt, NULL, NULL, CALLBACK_NULL);
