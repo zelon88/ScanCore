@@ -53,22 +53,31 @@ Start by opening a command-prompt.
   
 Optional Arguments Include:
 
-    Force recursion:                        -recursion
-                                            -r
-
-    Force no recursion:                     -norecursion
-                                            -nr
-
-    Specify memory limit (in bytes):        -memorylimit ####
-                                            -m ####
-
-    Specify chunk size (in bytes);          -chunksize ####
-                                            -c ####
-
-    Enable "debug" mode (more logging):     -debug
-                                            -d
-
-    Enable "verbose" mode (more console):   -verbose
-                                            -v             
+     Force recursion:                        -recursion
+                                             -r
+ 
+     Force no recursion:                     -norecursion
+                                             -nr
+ 
+     Specify memory limit (in bytes):        -memorylimit ####
+                                             -m ####
+ 
+     Specify chunk size (in bytes);          -chunksize ####
+                                             -c ####
+ 
+     Enable "debug" mode (more logging):     -debug
+                                             -d
+ 
+     Enable "verbose" mode (more console):   -verbose
+                                             -v
+                                             
+     Force a specific log file:              -logfile /path/to/file
+                                             -lf path/to/file
+ 
+     Force a specific report file:           -reportfile /path/to/file
+                                             -rf path/to/file
+ 
+     Force maximum log size (in bytes):      -maxlogsize ###
+                                             -ml ###       
 
 -----------------------------------------------------------------------------------
