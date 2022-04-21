@@ -65,7 +65,7 @@ else require_once ($rp.DIRECTORY_SEPARATOR.'ScanCore_Config.php');
 // / -----------------------------------------------------------------------------------
 // / The following code sets the global variables for the session.
   // / Application related variables.
-  $scanCoreVersion = 'v0.7';
+  $scanCoreVersion = 'v0.8';
   $Versions = 'PHP-AV App v4.0 | Virus Definition v4.9, 4/10/2019';
   $encType = 'ripemd160';
   $dirCount = 1;
