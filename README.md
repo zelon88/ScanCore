@@ -1,6 +1,6 @@
 ## APPLICATION INFORMATION ...
 
-Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88. It is a heavily modified version of PHP-AV designed to function as part of the HR-AV anti-virus application.
+Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88. It is a heavily modified version of PHP-AV designed to function as part of other applications, but it works well on it's own from a command line too.
 
 This scanner was designed for high performance single threaded use. It can be used with the Windows command-line, or with a custom thread handler which handles the creation and destruction of multiple script instances at different targets simultaniously. 
 
