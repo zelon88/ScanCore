@@ -1,12 +1,8 @@
 ## APPLICATION INFORMATION ...
 
-Copyright on 10/2/2019 by Justin Grimes, www.github.com/zelon88. It is a heavily modified version of PHP-AV designed to function as part of other applications, but it works well on it's own from a command line too.
+Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a fast, single threaded, cross platform chunking command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash.
 
-This scanner was designed for high performance single threaded use. It can be used with the Windows command-line, or with a custom thread handler which handles the creation and destruction of multiple script instances at different targets simultaniously. 
-
-The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan. 
-
-If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with  scans that can take days to complete. 
+This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan. 
 
 This scanner can detect files based on the following criteria:
 
@@ -21,6 +17,8 @@ If the target is a file larger than the [memorylimit] argument it will be choppe
 
 If the target is a folder the default action is to recursively scan until all files and subdirectories have been scanned. Recursion can be forced or disabled via command line arguments.
 
+If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with scans that can take days to complete.
+
 -----------------------------------------------------------------------------------
 
 ## LICENSE INFORMATION ...
@@ -31,7 +29,7 @@ This project is protected by the GNU GPLv3 Open-Source license.
 
 ## DEPENDENCY REQUIREMENTS ... 
 
-This application requires Windows 7 (or later) with PHP 7.0 (or later).
+This application requires Windows or Linux with PHP 8.0 (or later).
   
 -----------------------------------------------------------------------------------
 
