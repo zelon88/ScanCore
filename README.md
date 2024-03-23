@@ -15,7 +15,7 @@ The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line conta
 
 If the target is a file larger than the [memorylimit] argument it will be chopped into [chunksize] and each chunk will be scanned separately. 
 
-If the target is a folder the default action is to recursively scan until all files and subdirectories have been scanned. Recursion can be forced or disabled via command line arguments.
+If the target is a folder you must also specify [recursion] or [no-recursion] via command line arguments.
 
 If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with scans that can take days to complete.
 
