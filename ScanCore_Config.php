@@ -1,7 +1,7 @@
 <?php
 // / -----------------------------------------------------------------------------------
 // / COPYRIGHT INFORMATION ...
-// / ScanCore, Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88 
+// / ScanCore, Copyright on 3/24/2024 by Justin Grimes, www.github.com/zelon88 
 // / 
 // / LICENSE INFORMATION ...
 // / This project is protected by the GNU GPLv3 Open-Source license.
@@ -11,9 +11,8 @@
 // / This application is designed to scan files & folders for viruses.
 // / 
 // / FILE INFORMATION ...
-// / v1.0.
-// / This file contains the configuration data for the ScanCore application.
-// / Make sure to fill out the information below 100% accurately.
+// / v1.1.
+// / This file contains the core logic of the ScanCore application.
 // /
 // / HARDWARE REQUIREMENTS ...
 // / This application requires at least a Raspberry Pi Model B+ or greater.
@@ -61,6 +60,12 @@
 // /   Force maximum log size (in bytes):      -maxlogsize ###
 // /                                           -ml ###
 // / 
+// /   Perform definition update:              -updatedefinitions
+// /                                           -ud
+// / 
+// /   Perform application update:             -updateapplication
+// /                                           -ua
+// / 
 // / <3 Open-Source
 // / -----------------------------------------------------------------------------------
 
@@ -68,36 +73,77 @@
 
 // / -----------------------------------------------------------------------------------
 // / General Information ...
-  // / Number of bytes to store in each logfile before splitting to a new one.
-$DefaultMaxLogSize = '100000000000000000000';
-  // / Enable "debug" mode (more logging).
-$Debug = FALSE;
-  // / Enable "verbose" mode (more console).
-$Verbose = FALSE;
-  // / The maximum number of bytes of memory to allocate to file scan operations.
-$DefaultMemoryLimit = 4000000;
-  // / When scanning large files the file will be scanned this many bytes at a time.
-$DefaultChunkSize = 1000000;
-  // / The version of this file, used for internal version integrity checks.
-$SCConfigVersion = 'v1.0';
+
+// /   Allow application updates. Requires git. Will replace ScanCore_Config.php & rename the original.
+// /   Valid options are TRUE or FALSE.
+// /   Default is TRUE.
+$ApplicationUpdates = TRUE;
+// /   The URL of a Git repository containing application updates.
+// /   Valid options are a URL to a ScanCore source code Git repository, formatted as a string.
+// /   Default is 'https://github.com/zelon88/ScanCore'.
+$ApplicationUpdateURL = 'https://github.com/zelon88/ScanCore';
+// /   The name of the repository containing the application updates to use.
+// /   Valid options are the name of the repository, formatted as a string.
+// /   Default is 'ScanCore'.
+$ApplicationRepositoryName = 'ScanCore';
+// /   Allow virus definition updates. Requires git.
+// /   Valid options are TRUE or FALSE.
+// /   Default is TRUE.
+$DefinitionUpdates = TRUE;
+// /   The URL of a Git repository containing the definition updates to use.
+// /   Valid options are a URL to a ScanCore source code Git repository, formatted as a string.
+// /   Default is 'https://github.com/zelon88/ScanCore_Definitions'.
+$DefinitionUpdateURL = 'https://github.com/zelon88/ScanCore_Definitions';
+// /   The name of the repository containing the definition updates to use.
+// /   Valid options are the name of the repository, formatted as a string.
+// /   Default is 'ScanCore_Definitions'.
+$DefinitionRepositoryName = 'ScanCore_Definitions';
+// /   The type of definition updates to subscribe to.
+// /   Must be formatted as an array.
+// /   Valid options are 'Virus', 'Malware', 'Pup'.
+// /   Default is 'Virus', 'Malware', 'PUP'.
+$DefinitionsUpdateSubscriptions = array('Virus', 'Malware', 'PUP');
+// /   Number of bytes to store in each logfile before splitting to a new one.
+// /   Must be formatted as an integer, or an equation that evaluates to an integer.
+// /   Default is 1024*32.
+$DefaultMaxLogSize = 1024*32;
+// /   Enable "debug" mode (more logging).
+// /   Valid options are TRUE or FALSE.
+// /   Default is FALSE.
+$Debug = TRUE;
+// /   Enable "verbose" mode (more console).
+// /   Valid options are TRUE or FALSE.
+// /   Default is FALSE.
+$Verbose = TRUE;
+// /   The maximum number of bytes of memory to allocate to file scan operations.
+// /   Must be formatted as an integer, or an equation that evaluates to an integer.
+// /   Default is 1024*512.
+$DefaultMemoryLimit = 1024*512;
+// /   When scanning large files the file will be scanned this many bytes at a time.
+// /   Must be formatted as an integer, or an equation that evaluates to an integer.
+// /   Default is 1024*128.
+$DefaultChunkSize = 1024*128;
+// /   The version of this file, used for internal version integrity checks.
+// /   Must be formatted as a string. Must match the version of ScanCore.php file.
+$ConfigVersion = 'v1.1';
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / Directory locations ...
-  // / The default location to scan if run with no input scan path argument.
+// /   The default location to scan if run with no input scan path argument.
 $ScanLoc = '';
-  // / The absolute path where log files are stored.
+// /   The absolute path where log files are stored.
 $LogsDir = 'Logs';
-  // / The absolute path where report files are stored.
+// /   The absolute path where report files are stored.
 $ReportDir = 'Logs';
-  // / The filename for the ScanCore report file.
-$SCReportFileName = 'ScanCore_Report.txt';
-  // / The filename for the ScanCore log file.
-$SCLogFileName = 'ScanCore_Latest-Log.txt';
-  // / The filename for the ScanCore virus definition file.
-$DefsFileName = 'ScanCore_Virus.def';
-  // / The filename for the ScanCore virus definition file.
-$DefsDir = realpath(dirname(__FILE__)).DIRECTORY_SEPARATOR;
-  // / The absolute path where virus definitions are found.
-$DefsFile = $DefsDir.$DefsFileName;
+// /   The filename for the ScanCore report file.
+$ReportFileName = 'ScanCore_Report.txt';
+// /   The filename for the ScanCore log file.
+$LogFileName = 'ScanCore_Log.txt';
+// /   The filename for the ScanCore virus definition file.
+$DefsFileName = 'ScanCore_Combined_Definitions.def';
+// /   The filename for the ScanCore virus definition file.
+$InstallDir = realpath(dirname(__FILE__));
+// /   The absolute path where virus definitions are found.
+$DefsFile = $InstallDir.DIRECTORY_SEPARATOR.$DefsFileName;
 // / -----------------------------------------------------------------------------------
