@@ -2,7 +2,7 @@
 
 Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a portable, single thread, cross platform, command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
 
-Features include;
+Features include:
 
 - High speed, single thread virus scanner that you use in your command line or terminal.
 - Updates virus definitions automatically.
@@ -46,7 +46,7 @@ Quick Start Example:
      C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -nr -m 1000000000 -c 200000000 -v -d 
 
 Start by opening a command-prompt.
-1. Type the absolute path to a portable PHP 7.0+ binary. Don't press enter just yet.
+1. Type the absolute path to a portable PHP 8.0+ binary. Skip this if PHP is in your PATH.
 2. Now type the absolute path to this PHP file as the only argument for the PHP binary.
 3. Everything after the path to this script will be passed to this file as an argument.
 4. The first Argument Must be a valid absolute path to the file or folder being scanned.
@@ -85,19 +85,19 @@ Optional Arguments Include:
                                              -ud
 -----------------------------------------------------------------------------------
 
-## MORE INFORMATION ...
-
-Currently virus definitions are maintained at [The ScanCore_Definitions Github Repository](https://github.com/zelon88/ScanCore_Definitions). Definition updates can be performed using command line switches. The repository of definitions is organized into different categories. Each portable scanner can subscribe or unsubscruibe to specific definition categories, allowing administrators to build custom definitions tailored to specific servers, roles, or applications.
-
-This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan.
-
------------------------------------------------------------------------------------
-
 ## USAGE TIPS ...
 
 - If the target is a file larger than the [memorylimit] argument it will be chopped into [chunksize] and each chunk will be scanned separately. 
 - If the target is a folder you must also specify [recursion] or [no-recursion] via command line arguments.
 - If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with scans that can take days to complete.
+
+-----------------------------------------------------------------------------------
+
+## MORE INFORMATION ...
+
+Currently virus definitions are maintained at [The ScanCore_Definitions Github Repository](https://github.com/zelon88/ScanCore_Definitions). Definition updates can be performed using command line switches. The repository of definitions is organized into different categories. Each portable scanner can subscribe or unsubscruibe to specific definition categories, allowing administrators to build custom definitions tailored to specific servers, roles, or applications.
+
+This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan.
 
 -----------------------------------------------------------------------------------
 
