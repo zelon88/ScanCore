@@ -1,6 +1,8 @@
 ## APPLICATION INFORMATION ...
 
-Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a fast, single threaded, cross platform chunking command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash.
+Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a fast, single threaded, cross platform chunking command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
+
+Currently virus definitions are maintained at [The ScanCore_Definitions Github Repository](https://github.com/zelon88/ScanCore_Definitions). Virus definitions updates can be performed with the --updatedefinitions or -ud argument.
 
 This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan. 
 
@@ -76,6 +78,10 @@ Optional Arguments Include:
                                              -rf path/to/file
  
      Force maximum log size (in bytes):      -maxlogsize ###
-                                             -ml ###       
+                                             -ml ###
 
+     Perform definition update:              -updatedefinitions
+                                             -ud
 -----------------------------------------------------------------------------------
+
+<3 Open-Source
