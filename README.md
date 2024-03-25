@@ -1,10 +1,19 @@
 ## APPLICATION INFORMATION ...
 
-Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a fast, single threaded, cross platform chunking command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
+Copyright on 3/22/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a portable, single thread, cross platform, command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
 
-Currently virus definitions are maintained at [The ScanCore_Definitions Github Repository](https://github.com/zelon88/ScanCore_Definitions). Virus definitions updates can be performed with the --updatedefinitions or -ud argument.
+Features include;
 
-This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan. 
+- High speed, single thread virus scanner that you use in your command line or terminal.
+- Updates virus definitions automatically.
+- Small memory footprint with the ability to set a custom memory limit.
+- Written in PHP, so it works from Apache or the command line.
+- Cross platform. Works in Windows or Linux.
+- Fully portable. If you have PHP installed & in your PATH you're good to go.
+- Works with portable PHP binaries.
+- Virus definitions in plain text that you can actually understand.
+- Fully open source, including definitions.
+- Highly configurable. Great for scripting, devops, or automation.
 
 This scanner can detect files based on the following criteria:
 
@@ -12,14 +21,6 @@ This scanner can detect files based on the following criteria:
 2. SHA1 Hash
 3. SHA256 Hash
 4. Raw Data Match
-
-The "ScanCore_Virus.def" file is a TSV (tab-separated file) with each line containing a separate infection UID, RAW-DATA, MD5, SHA256, SHA1. In that order. 
-
-If the target is a file larger than the [memorylimit] argument it will be chopped into [chunksize] and each chunk will be scanned separately. 
-
-If the target is a folder you must also specify [recursion] or [no-recursion] via command line arguments.
-
-If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with scans that can take days to complete.
 
 -----------------------------------------------------------------------------------
 
@@ -82,6 +83,22 @@ Optional Arguments Include:
 
      Perform definition update:              -updatedefinitions
                                              -ud
+-----------------------------------------------------------------------------------
+
+## MORE INFORMATION ...
+
+Currently virus definitions are maintained at [The ScanCore_Definitions Github Repository](https://github.com/zelon88/ScanCore_Definitions). Definition updates can be performed using command line switches. The repository of definitions is organized into different categories. Each portable scanner can subscribe or unsubscruibe to specific definition categories, allowing administrators to build custom definitions tailored to specific servers, roles, or applications.
+
+This scanner was designed for high performance single threaded use. It can be used with the Windows or Linux command-line, or with custom applications such as thread handlers which create & destroy multiple script instances at different targets simultaniously. The whole idea of a fast single-threaded scanner is that you can run several dozen (or hundred) scans at the same time on multiple small targets rather than running one large scan.
+
+-----------------------------------------------------------------------------------
+
+## USAGE TIPS ...
+
+- If the target is a file larger than the [memorylimit] argument it will be chopped into [chunksize] and each chunk will be scanned separately. 
+- If the target is a folder you must also specify [recursion] or [no-recursion] via command line arguments.
+- If you use the verbose and debug arguments to scan an entire hard drive be prepared for logfiles that are several GB in size with scans that can take days to complete.
+
 -----------------------------------------------------------------------------------
 
 <3 Open-Source
