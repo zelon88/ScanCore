@@ -46,7 +46,7 @@ Quick Start Example:
      C:\PHP\PHP.exe C:\scanCore\scanCore.php C:\Windows\Temp -nr -m 1000000000 -c 200000000 -v -d 
 
 Start by opening a command-prompt.
-1. Type the absolute path to a portable PHP 8.0+ binary. Skip this if PHP is in your PATH.
+1. Type the absolute path to a portable PHP 8.0+ binary, or use the php command if it's in your PATH.
 2. Now type the absolute path to this PHP file as the only argument for the PHP binary.
 3. Everything after the path to this script will be passed to this file as an argument.
 4. The first Argument Must be a valid absolute path to the file or folder being scanned.
