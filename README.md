@@ -48,7 +48,7 @@ Quick Start Example:
 Start by opening a command-prompt.
 1. Type the absolute path to a portable PHP 8.0+ binary, or use the php command if it's in your PATH.
 2. Now type the absolute path to the ScanCore PHP file as the only argument for the PHP binary.
-3. Everything after the path to this script will be passed to ScanCore as an argument.
+3. Everything after the path to ScanCore will be passed to ScanCore as an argument.
 4. The first Argument must be a valid absolute path to the file or folder being scanned.
 5. Optional arguments can be specified after the scan path. Separate them with spaces.
   
