@@ -106,4 +106,4 @@ v1.2 - Add several def update methods, so even with no deps they work.
     -ReportsDir is now the only location for logs. Logs & reports are officially the same thing.
     -The -logfile & -lf arguments are now undocumented aliases of the -reportfile and -rf arguments.
     -I plan on removing -logfile & -lf arguments in the future.
-    -What will probably happen is I'll forget I said that and wind up re-documenting these undocumented aliases in the future, 
+    -What will probably happen is I'll forget I said that and wind up re-documenting these undocumented aliases in the future.
