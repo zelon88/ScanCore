@@ -1,17 +1,18 @@
 <?php
 // / -----------------------------------------------------------------------------------
 // / COPYRIGHT INFORMATION ...
-// / ScanCore, Copyright on 3/24/2024 by Justin Grimes, www.github.com/zelon88 
+// / ScanCore, Copyright on 3/25/2024 by Justin Grimes, www.github.com/zelon88 
 // / 
 // / LICENSE INFORMATION ...
 // / This project is protected by the GNU GPLv3 Open-Source license.
+// / BSD or MIT licensing is available. Reach out to @zelon88 for more information.
 // / https://www.gnu.org/licenses/gpl-3.0.html
 // / 
 // / APPLICATION INFORMATION ...
 // / This application is designed to scan files & folders for viruses.
 // / 
 // / FILE INFORMATION ...
-// / v1.1.
+// / v1.2.
 // / This file contains the core logic of the ScanCore application.
 // /
 // / HARDWARE REQUIREMENTS ...
@@ -20,6 +21,7 @@
 // / 
 // / DEPENDENCY REQUIREMENTS ... 
 // / This application should run on Linux or Windows systems with PHP 8.0 (or later).
+// / Git is preferred for performing automatic update operations, but not required.
 // / 
 // / VALID SWITCHES / ARGUMENTS / USAGE ...
 // / Quick Start Example:
@@ -32,7 +34,18 @@
 // / The first Argument Must be a valid absolute path to the file or folder being scanned.
 // / Optional arguments can be specified after the scan path. Separate them with spaces.
 // / 
+// / Reqiured Arguments Include:
+// / 
+// /   File or folder to scan:                 /path/to/scan
+// / 
 // / Optional Arguments Include:
+// / 
+// /   Show version information:               -version
+// /                                           -ver
+// / 
+// /   Show help information:                  -help
+// /                                           -h
+// / 
 // /   Force recursion:                        -recursion
 // /                                           -r
 // / 
@@ -51,11 +64,11 @@
 // /   Enable "verbose" mode (more console):   -verbose
 // /                                           -v
 // / 
-// /   Force a specific log file:              -logfile /path/to/file
-// /                                           -lf path/to/file
-// / 
 // /   Force a specific report file:           -reportfile /path/to/file
 // /                                           -rf path/to/file
+// / 
+// /   Force a specific configuration file:    -configfile /path/to/file
+// /                                           -cf path/to/file
 // / 
 // /   Force maximum log size (in bytes):      -maxlogsize ###
 // /                                           -ml ###
@@ -72,61 +85,127 @@
 
 
 // / -----------------------------------------------------------------------------------
-// / The following code sets global variables for the session.
-function verifySCInstallation() {
+// / A function to load a specified configuration file.
+// / If either the -configfile or -cf argument is not set, the default configuration file names 'ScanCore_Config.php' will be used instead. 
+function loadConfig($Version) {
   // / Set variables.
-  global $Versions, $Date, $Time, $SEP, $ReportFile, $Logfile, $ConfigFile, $RequiredDirs, $Version, $Versions, $argv, $EOL, $MaxLogSize, $Debug, $Verbose, $DefaultMemoryLimit, $DefaultChunkSize, $DefaultMaxLogSize, $ReportFileName, $ConfigVersion, $DefsFile, $DefsFileName, $FileCount, $ApplicationUpdates, $ApplicationUpdateURL, $DefinitionUpdates, $DefinitionUpdateURL, $DefinitionsUpdateSubscriptions, $ApplicationRepositoryName, $DefinitionRepositoryName, $InstallDir, $AppInstallDir, $DefInstallDir, $DefGitDir, $AppGitDir;
-  // / Application related variables.
-  $InstallationVerified = $ConfigLoaded = $ReportFile = $Logfile = $RequiredDirs = FALSE;
-  $EOL = PHP_EOL;
-  $RequiredDirs = array();
-  $SEP = DIRECTORY_SEPARATOR;
+  global $argv, $ConfigFilePath, $RP, $SEP, $EOL, $ConfigFile, $ScanLoc, $DefsFile, $ConfigVersion, $ConfigLoaded, $Version, $ReportFile, $ReportDir, $ReportFileName, $RequiredDirs, $InstallDir, $MaxLogSize, $MemoryLimit, $ChunkSize, $DefaultMemoryLimit, $DefaultChunkSize, $DefaultMaxLogSize, $DefinitionRepositoryName, $DefinitionUpdates, $DefinitionUpdateDomain, $DefinitionUpdateURL, $DefInstallDir, $DefGitDir, $ApplicationRepositoryName, $ApplicationUpdates, $ApplicationUpdateDomain, $ApplicationUpdateURL, $AppInstallDir, $AppGitDir, $DefinitionsUpdateSubscriptions, $DefsFileName, $Verbose, $Debug, $UpdateMethod;
   $ConfigFile = 'ScanCore_Config.php';
-  $Version = 'v1.1';
-  $Versions = $ConfigVersion;
-  $rp = realpath(dirname(__FILE__));
-  $FileCount = 0;
-  // / Time related variables.
-  $Date = date("m_d_y");
-  $Time = date("F j, Y, g:i a");
+  $ConfigFilePath = $RP.$SEP.$ConfigFile;
   // / Initialize an empty array if no arguments are set.
   if (!isset($argv)) $argv = array();
+  // / Briefly iterate through supplied arguments just to see if we need to load a special config file.
+  foreach ($argv as $key => $arg) if ($arg == '-configfile' or $arg == '-cf') $ConfigFilePath = $argv[$key + 1];
   // / Load the configuration file located at $ConfigFile.
-  if (file_exists($rp.$SEP.$ConfigFile)) $ConfigLoaded = require_once ($rp.$SEP.$ConfigFile);
+  if (file_exists($ConfigFilePath)) $ConfigLoaded = require_once ($ConfigFilePath);
   // / Check to make sure the configuration file was loaded & the configuration version is compatible with the core.
   if (isset($ScanLoc) && isset($DefsFile) && isset($ConfigVersion) && $ConfigVersion === $Version && $ConfigLoaded) {
     // / Configuration related variables.
-    $InstallationVerified = TRUE;
     $ReportFile = $ReportDir.$SEP.$ReportFileName;
-    $Logfile = $ReportDir.$LogFileName;
     $RequiredDirs = array($ReportDir);
+    $UpdateMethod = strtolower($UpdateMethod);
     $MaxLogSize = $DefaultMaxLogSize; 
-    $Debug = $Debug;
-    $Verbose = $Verbose;
     $MemoryLimit = $DefaultMemoryLimit;
     $ChunkSize = $DefaultChunkSize; 
-    $DefInstallDir = $InstallDir.DIRECTORY_SEPARATOR.$DefinitionRepositoryName;
-    $AppInstallDir = $InstallDir.DIRECTORY_SEPARATOR.$ApplicationRepositoryName;
-    $DefGitDir = $DefInstallDir.DIRECTORY_SEPARATOR.'.git';
-    $AppGitDir = $AppInstallDir.DIRECTORY_SEPARATOR.'.git'; }
+    $DefInstallDir = $InstallDir.$SEP.$DefinitionRepositoryName;
+    $AppInstallDir = $InstallDir.$SEP.$ApplicationRepositoryName;
+    $DefGitDir = $DefInstallDir.$SEP.'.git';
+    $AppGitDir = $AppInstallDir.$SEP.'.git'; }
+    // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
+    $arg = $key = NULL;
+    unset($arg, $key);
+  return array($ConfigLoaded, $ConfigFilePath); }
+// / -----------------------------------------------------------------------------------
+
+// / -----------------------------------------------------------------------------------
+// / A function to reliably build help & version information.
+function buildHelpInformation() {
+  // / Set variables.
+  global $DefinitionsUpdateSubscriptions, $SubText, $VersionText, $HelpText, $ApplicationUpdateURL, $DefinitionUpdateURL, $DefsFile, $CoreFile, $Version, $EOL;
+  $InformationBuilt = FALSE;
+  $SubText = '';
+  foreach ($DefinitionsUpdateSubscriptions as $defSubs) $SubText = $SubText.' '.$defSubs.',';
+  $SubText = trim(trim($SubText, ','), ' ');
+  $originalRepo = 'https://github.com/zelon88/ScanCore';
+  $licenseText = 'GPLv3';
+  $verText1 = 'ScanCore '.$Version.' by Justin Grimes (@zelon88), licensed under '.$licenseText.'.'.$EOL;
+  $verText2 = 'The original source code for this application can be found at:  '.$originalRepo.$EOL;
+  $verText3 = 'This installation downloads Application updates from:  '.$ApplicationUpdateURL.$EOL;
+  $verText4 = 'This installation downloads Definition updates from:  '.$DefinitionUpdateURL.$EOL;
+  $verText5 = 'Definition update was last installed on:  '.date("F d Y H:i:s.", @filectime($DefsFile)).$EOL;
+  $verText6 = 'Application update was last installed on:  '.date("F d Y H:i:s.", @filectime($CoreFile)).$EOL;
+  $verText7 = 'This installation has the following Definition Subscriptions:  '.$SubText;
+  $helpText0 = $EOL.'Reqiured Arguments Include:'.$EOL;
+  $helpText1 = $EOL.'  File or folder to scan:                 /path/to/scan'.$EOL;
+  $helpText2 = $EOL.'Optional Arguments Include:'.$EOL;
+  $helpText3 = $EOL.'  Show version information:               -version'.$EOL;
+  $helpText4 = '                                          -ver'.$EOL;
+  $helpText5 = $EOL.'  Show help information:                  -help'.$EOL;
+  $helpText6 = '                                          -h'.$EOL;
+  $helpText7 = $EOL.'  Force recursion:                        -recursion'.$EOL;
+  $helpText8 = '                                          -r'.$EOL;
+  $helpText9 = $EOL.'  Force no recursion:                     -norecursion'.$EOL;
+  $helpText10 = '                                          -nr'.$EOL;
+  $helpText11 = $EOL.'  Specify memory limit (in bytes):        -memorylimit ####'.$EOL;
+  $helpText12 = '                                          -m ####'.$EOL;
+  $helpText13 = $EOL.'  Specify chunk size (in bytes);          -chunksize ####'.$EOL;
+  $helpText14 = '                                          -c ####'.$EOL;
+  $helpText15 = $EOL.'  Enable "debug" mode (more logging):     -debug'.$EOL;
+  $helpText16 = '                                          -d'.$EOL;
+  $helpText17 = $EOL.'  Enable "verbose" mode (more console):   -verbose'.$EOL;
+  $helpText18 = '                                          -v'.$EOL;
+  $helpText21 = $EOL.'  Force a specific report file:           -reportfile /path/to/file'.$EOL;
+  $helpText22 = '                                          -rf path/to/file'.$EOL;
+  $helpText23 = $EOL.'  Force a specific configuration file:    -configfile /path/to/file'.$EOL;
+  $helpText24 = '                                          -cf path/to/file'.$EOL;
+  $helpText25 = $EOL.'  Force maximum log size (in bytes):      -maxlogsize ###'.$EOL;
+  $helpText26 = '                                          -ml ###'.$EOL;
+  $helpText27 = $EOL.'  Perform definition update:              -updatedefinitions'.$EOL;
+  $helpText28 = '                                          -ud'.$EOL;
+  $helpText29 = $EOL.'  Perform application update:             -updateapplication'.$EOL;
+  $helpText30 = '                                          -ua'.$EOL;
+  $qsText1 = $EOL.'Quick Start Example:'.$EOL;
+  $qsText2 = $EOL.'  C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d'.$EOL;
+  $InformationBuilt = TRUE;
+  $HelpText = $verText1.$qsText1.$qsText2.$helpText0.$helpText1.$helpText2.$helpText3.$helpText4.$helpText5.$helpText6.$helpText7.$helpText8.$helpText9.$helpText10.$helpText11.$helpText12.$helpText13.$helpText14.$helpText15.$helpText16.$helpText17.$helpText18.$helpText21.$helpText22.$helpText23.$helpText24.$helpText25.$helpText26.$helpText27.$helpText28.$helpText29.$helpText30;
+  $VersionText = $verText1.$verText2.$verText3.$verText4.$verText5.$verText6.$verText7;
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
-  $rp = NULL;
-  unset($rp); 
-  return array($InstallationVerified, $ConfigLoaded); }
+  $defSubs = $verText1 = $verText2 = $verText3 = $verText4 = $verText5 = $verText6 = $verText7 = $originalRepo = $licenseText = $arg = $key = $helpText0 = $helpText1 = $helpText2 = $helpText3 = $helpText4 = $helpText5 = $helpText6 = $helpText7 = $helpText8 = $helpText9 = $helpText10 = $helpText11 = $helpText12 = $helpText13 = $helpText14 = $helpText15 = $helpText16 = $helpText17 = $helpText18 = $helpText21 = $helpText22 = $helpText23 = $helpText24 = $helpText25 = $helpText26 = $helpText27 = $helpText28 = $helpText29 = $helpText30 = $qsText1 = $qsText2 = NULL;
+  unset($defSubs, $verText1, $verText2, $verText3, $verText4, $verText5, $verText6, $verText7, $originalRepo, $licenseText, $arg, $key, $helpText0, $helpText1, $helpText2, $helpText3, $helpText4, $helpText5, $helpText6, $helpText7, $helpText8, $helpText9, $helpText10, $helpText11, $helpText12, $helpText13, $helpText14, $helpText15, $helpText16, $helpText17, $helpText18, $helpText19, $helpText20, $helpText21, $helpText22, $helpText23, $helpText24, $helpText25, $helpText26, $helpText27, $helpText28, $helpText29, $helpText30, $qsText1, $qsText2); 
+  return array($InformationBuilt, $SubText, $VersionText, $HelpText); }
+// / -----------------------------------------------------------------------------------
+
+// / -----------------------------------------------------------------------------------
+// / The following code sets global variables for the session.
+function verifyInstallation() {
+  // / Set variables.
+  global $Date, $Time, $Version, $InstallationVerified, $FileCount, $DirCount, $Infected, $EOL, $SEP, $RP, $CoreFile;
+  // / Time related variables.
+  $Date = date("m_d_y");
+  $Time = date("F j, Y, g:i a");
+  // / Application related variables.
+  $Version = 'v1.2';
+  $FileCount = $DirCount = $Infected = 0;;
+  $EOL = PHP_EOL;
+  $SEP = DIRECTORY_SEPARATOR;
+  $RP = realpath(dirname(__FILE__));
+  $CoreFile = 'ScanCore.php';
+  $InstallationVerified = TRUE;
+  return array($InstallationVerified, $Version); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / A function to create required directories when they do not already exist.
 function createDirs($RequiredDirs) { 
   // / Set variables.
-  global $Time;
+  global $Time, $RP, $SEP;
   $RequiredDirsExist = TRUE;
   // / Iterate through each required directory.
   foreach ($RequiredDirs as $reqdDir) {
     // / Detect if the directory already exists & create it if required.
     if (!file_exists($reqdDir)) mkdir($reqdDir);
     // / If an index.html file is present in the installation directory, copy it to the newly created dictory.
-    if (!file_exists('index.html')) copy('index.html', $reqdDir.DIRECTORY_SEPARATOR.'index.html');
+    if (!file_exists($reqdDir.$SEP.'index.html')) if (file_exists($RP.$SEP.'index.html')) copy($RP.$SEP.'index.html', $reqdDir.$SEP.'index.html');
     if (!file_exists($reqdDir)) $RequiredDirsExist = FALSE; }
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $reqdDir = NULL;
@@ -152,14 +231,11 @@ function addLogEntry($entry, $error, $errorNumber) {
 // / -----------------------------------------------------------------------------------
 // / A function to handle important messages to the console & log file.
 function processOutput($txt, $error, $errorNumber, $requiredLog, $requiredConsole, $fatal) {
-  global $EOL, $Debug, $Verbose;
+  global $Date, $Tiome, $EOL, $Debug, $Verbose;
   $OutputProcessed = FALSE;
   // / Verify that all inputs are of the correct type.
   if (!is_string($txt)) $txt = '';
-  if (!is_bool($error)) $error = FALSE;
   if (!is_int($errorNumber)) $errorNumber = 0;
-  if (!is_bool($requiredLog)) $requiredLog = FALSE;
-  if (!is_bool($requiredConsole)) $requiredConsole = FALSE;
   // / Log the provided text if $Debug variable (-d switch) is set.
   if ($Debug or $requiredLog) list ($OutputProcessed) = addLogEntry($txt, $error, $errorNumber);
   // / Output the summary text to the terminal if the $Verbose (-v switch) variable is set.
@@ -177,11 +253,13 @@ function processOutput($txt, $error, $errorNumber, $requiredLog, $requiredConsol
 function parseArgs($argv) {
   // / Set variables.
   // / Most of these should already be set to the values contained in the configuration file.
-  global $ArgsParsed, $ReportFile, $Logfile, $MaxLogSize, $Debug, $Verbose, $EOL, $ChunkSize, $MemoryLimit, $DefaultMemoryLimit, $DefaultChunkSize, $PerformDefUpdate, $PerformAppUpdate;
-  $Recursion = FALSE;
-  $ArgsParsed = $PathToScan = $PerformDefUpdate = $PerformAppUpdate = FALSE;
+  global $ArgsParsed, $ReportFile, $MaxLogSize, $Debug, $Verbose, $ChunkSize, $MemoryLimit, $DefaultMemoryLimit, $DefaultChunkSize, $PerformDefUpdate, $PerformAppUpdate, $VersionText, $HelpText, $ConfigFilePath, $PerformScan;
+  $PerformScan = $Recursion = FALSE;
+  $ArgsParsed = $PathToScan = $PerformDefUpdate = $PerformAppUpdate = $showVersion = $showHelp = FALSE;
   foreach ($argv as $key => $arg) {
     $arg = htmlentities(str_replace(str_split('~#[](){};:$!#^&%@>*<"\''), '', $arg));
+    if ($arg == '-version' or $arg == '-ver') $showVersion = TRUE;
+    if ($arg == '-h' or $arg == '-help') $showHelp = TRUE;
     if ($arg == '-memorylimit' or $arg == '-m') $MemoryLimit = $argv[$key + 1];
     if ($arg == '-chunksize' or $arg == '-c') $ChunkSize = $argv[$key + 1];
     if ($arg == '-debug' or $arg == '-d') $Debug = TRUE;
@@ -191,14 +269,22 @@ function parseArgs($argv) {
     if ($arg == '-updatedefinitions' or $arg == '-ud') $PerformDefUpdate = TRUE;
     // The update application feature is not ready yet, so don't uncomment this.
     //if ($arg == '-updateapplication' or $arg == '-ua') $PerformAppUpdate = TRUE;
-    if ($arg == '-reportfile' or $arg == '-rf') $ReportFile = $argv[$key + 1];
-    if ($arg == '-logfile' or $arg == '-lf') $Logfile = $argv[$key + 1];
+    if ($arg == '-reportfile' or $arg == '-rf' or $arg == '-logfile' or $arg == '-lf') $ReportFile = $argv[$key + 1];
     if ($arg == '-maxlogsize' or $arg == '-ml') $MaxLogSize = $argv[$key + 1]; }
+  // / Detect if version or help information is being requested.
+  if ($showVersion or $showHelp) {
+    // / Build the help & version information.
+    list ($InformationBuilt, $SubText, $VersionText, $HelpText) = buildHelpInformation();
+    if ($InformationBuilt) processOutput('Built version information.', FALSE, 0, FALSE, FALSE, FALSE);
+    else processOutput('Could not build version information!', TRUE, 0, TRUE, TRUE, FALSE);
+    if ($showVersion) processOutput($VersionText, FALSE, 0, TRUE, TRUE, FALSE);
+    if ($showHelp) processOutput($HelpText, FALSE, 0, TRUE, TRUE, FALSE);
+    $ArgsParsed = TRUE; }
   // / Detect if an update is being requested.
   if ($PerformDefUpdate or $PerformAppUpdate) {
-    $ArgsParsed = TRUE;
-    processOutput('Starting ScanCore updater!', FALSE, 0, TRUE, FALSE, FALSE); }
-  else {
+    processOutput('Starting ScanCore updater!', FALSE, 0, TRUE, TRUE, FALSE);
+    $ArgsParsed = TRUE; }
+  if (!$PerformDefUpdate && !$PerformAppUpdate && !$showVersion && !$showHelp) {
     // / Detect if no arguments were supplied.
     if (!isset($argv[1])) processOutput('There were no arguments set!', TRUE, 100, TRUE, TRUE, FALSE);
     else {
@@ -208,21 +294,26 @@ function parseArgs($argv) {
         $PathToScan = $argv[1];
         // / Detect if the MemoryLimit and ChunkSize variables are valid.
         if (!is_numeric($MemoryLimit) or !is_numeric($ChunkSize)) {
-          processOutput('Either the chunkSize argument or the memoryLimit argument is invalid. Attempting to use default values.', TRUE, 200, TRUE, TRUE, FALSE);
+          processOutput('Using default ChunkSize & MemoryLimit values.', TRUE, 0, TRUE, FALSE, FALSE);
           $MemoryLimit = $DefaultMemoryLimit;
-          $ChunkSize = $DefaultChunkSize; } 
-        $ArgsParsed = TRUE;
-        processOutput('Starting ScanCore!', FALSE, 0, TRUE, FALSE, FALSE); } } }
+          $ChunkSize = $DefaultChunkSize; }
+        // / Output status information.
+        processOutput('Starting ScanCore!', FALSE, 0, TRUE, TRUE, FALSE);
+        processOutput('Loaded configuration file:  '.$ConfigFilePath, FALSE, 0, TRUE, FALSE, FALSE);
+        if (is_numeric($ChunkSize)) processOutput('The ChunkSize is:  '.$ChunkSize, TRUE, 0, FALSE, FALSE, FALSE);
+        if (is_numeric($MemoryLimit)) processOutput('The MemoryLimit is:  '.$ChunkSize, TRUE, 0, FALSE, FALSE, FALSE);
+        $ArgsParsed = $PerformScan = TRUE; } } }
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
-  $key = $arg = NULL;
-  unset($key, $arg);
-  return array($ArgsParsed, $PathToScan, $MemoryLimit, $ChunkSize, $Debug, $Verbose, $Recursion, $ReportFile, $Logfile, $MaxLogSize, $PerformDefUpdate, $PerformAppUpdate); }
+  $key = $arg = $showVersion = $showHelp = NULL;
+  unset($key, $arg, $showVersion, $showHelp);
+  return array($ArgsParsed, $PerformScan, $PathToScan, $MemoryLimit, $ChunkSize, $Debug, $Verbose, $Recursion, $ReportFile, $MaxLogSize, $PerformDefUpdate, $PerformAppUpdate); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / A function to remove files & folders.
 function clean($Location) {
   // / Set variables.
+  global $SEP;
   $LocationCleaned = FALSE;
   $f = FALSE;
   $i = array();
@@ -233,9 +324,9 @@ function clean($Location) {
     // / Iterate through the contents of the folder.
     foreach ($i as $f) {
       // / If this object is a folder, run this function on it.
-      if (is_dir($Location.DIRECTORY_SEPARATOR.$f)) clean($Location.DIRECTORY_SEPARATOR.$f);
+      if (is_dir($Location.$SEP.$f)) clean($Location.$SEP.$f);
       // / If this object is a file, delete it.
-      else unlink($Location.DIRECTORY_SEPARATOR.$f); }
+      else unlink($Location.$SEP.$f); }
     // / Try to delete the folder now that we've deleted the contents.
     if (is_dir($Location)) rmdir($Location); }
   // / If the location is a file, delete it.
@@ -249,56 +340,105 @@ function clean($Location) {
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
+// / A function to verify internet connectivity before attempting to perform update operations.
+// / Type must be either 'application' or 'definition'.
+// / This function is limited to the two domains defined in config.php, to reduce potential for abuse.
+function connectionSuccess($type) {
+  global $ApplicationUpdateDomain, $DefinitionUpdateDomain;
+  $ConnectionResult = TRUE;
+  $connection = FALSE;
+  $urlToCheck = '';
+  if ($type === 'application') $urlToCheck = $ApplicationUpdateDomain;
+  if ($type === 'definition') $urlToCheck = $DefinitionUpdateDomain;
+  if ($urlToCheck !== '') $connection = @fsockopen($urlToCheck, 443);
+  if ($connection) fclose($connection);
+  else $ConnectionResult = FALSE;
+  // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
+  $connection = NULL;
+  unset($connection); 
+  return $ConnectionResult; }
+// / -----------------------------------------------------------------------------------
+
+// / -----------------------------------------------------------------------------------
 // / A function to install definition updates.
 function updateDefinitions() {
   // / Set variables.
-  global $DefinitionUpdates, $DefinitionUpdateURL, $DefinitionsUpdateSubscriptions, $InstallDir, $DefsFile, $DefinitionRepositoryName, $DefInstallDir, $DefGitDir;
-  $UpdateDefininitionsComplete = $UpdateDefinitionsErrors = $defSubs = $writeCheck = $defInstallDirCleaned = $defGitDirCleaned = $cleanCheck = FALSE;
-  $subData = $returnData = '';
+  global $DefinitionUpdates, $DefinitionUpdateURL, $DefinitionsUpdateSubscriptions, $InstallDir, $DefsFile, $DefinitionRepositoryName, $DefInstallDir, $DefGitDir, $UpdateMethod, $SEP, $EOL, $SubText, $RP;
+  $UpdateDefininitionsComplete = $UpdateDefinitionsErrors = $defSubs = $writeCheck = $defInstallDirCleaned = $defGitDirCleaned = $cleanCheck = $rawWriteCheck = $rawWriteCheckDir = FALSE;
+  $subData = $subData1 = $returnData = $rawDefData = $rawDefURL = '';
   $subCount = 0;
   $subCount1 = count($DefinitionsUpdateSubscriptions);
   // / Only perform definition updates if they are enabled in $ConfigFile.
   if ($DefinitionUpdates) {
+    processOutput('Starting definition update. Update method is:  '.$UpdateMethod, FALSE, 0, TRUE, FALSE, FALSE);
+    processOutput('Preparing to install the following Definition Subscriptions:  '.$SubText, FALSE, 0, FALSE, FALSE, FALSE);
+    processOutput('Cleaning update environment.', FALSE, 0, TRUE, FALSE, FALSE);
     // / If a definition install directory already exists, remove all the files inside & then remove the folder.
     list($defInstallDirCleaned) = clean($DefInstallDir);
     list($defGitDirCleaned) = clean($DefGitDir);
-    // / Continue only if the definition install directory was able to be cleaned.
-    if ($defGitDirCleaned && $defInstallDirCleaned) {
+    processOutput('Verifying network connectivity.', FALSE, 0, FALSE, FALSE, FALSE);
+    $ConnectionResult = connectionSuccess('definition');
+    if ($ConnectionResult) processOutput('Verified network connectivity.', FALSE, 0, FALSE, FALSE, FALSE);
+    else processOutput('Could not verify network connectivity!', TRUE, 400, TRUE, TRUE, FALSE);
+    // / Continue only if a connection could be made and the definition install directory was able to be cleaned.
+    if ($ConnectionResult && $defGitDirCleaned && $defInstallDirCleaned) {
       // / Download the latest definitions from the $DefinitionUpdateURL.
-      $returnData = shell_exec('git clone '.$DefinitionUpdateURL);
-      // / Only continue with the update if Git was able to create a folder.
+      // / Perform the definition update by downloading the raw definition data.
+      if ($UpdateMethod === 'raw') {
+        processOutput('Creating a folder at:  '.$DefInstallDir, FALSE, 0, FALSE, FALSE, FALSE);
+        $rawWriteCheckDir = mkdir($DefInstallDir);
+        foreach ($DefinitionsUpdateSubscriptions as $defSubs) {
+          $rawDefData = '';
+          $defSubFile = $DefInstallDir.$SEP.'ScanCore_'.$defSubs.'.def';
+          $rawDefURL = $DefinitionUpdateURL.'/raw/main/ScanCore_'.$defSubs.'.def';
+          processOutput('Attempting download with built in functions against URL:  '.$rawDefURL, FALSE, 0, FALSE, FALSE, FALSE);
+          if (file_exists($rawDefURL)) $rawDefData = file_get_contents($DefinitionUpdateURL);
+          if (!file_exists($rawDefURL) or $rawDefData === '') {
+            processOutput('Attempting download with cURL against URL:  '.$rawDefURL, FALSE, 0, FALSE, FALSE, FALSE);
+            $returnData = shell_exec('curl -Ls '.$rawDefURL.' --output '.$defSubFile); 
+            $rawWriteCheck = file_exists($defSubFile); }
+          else $rawWriteCheck = file_put_contents($defSubFile, $rawDefData); } }
+      // / Perform the definition update using 'git', if available.
+      if ($UpdateMethod === 'git') $returnData = shell_exec('git clone '.$DefinitionUpdateURL);
+      // / Only continue with the update if the previous operation was able to create a folder.
       if (is_dir($DefInstallDir)) {
         // / Copy an index.html file to the newly created folder as document root protection, incase this application is in a hosted location.
-        if (file_exists('index.html')) copy('index.html', $DefInstallDir.DIRECTORY_SEPARATOR.'index.html');
+        if (file_exists($RP.$SEP.'index.html')) copy($RP.$SEP.'index.html', $DefInstallDir.$SEP.'index.html');
         // / Remove the .git directory, just in case this is installed in a hosted location we don't want to maintin that many directories.
-        list($cleanCheck) = clean($DefGitDir);
-        if ($cleanCheck) {
-          // / Iterate through the list of susbscribed definitions.
-          foreach ($DefinitionsUpdateSubscriptions as $defSubs) {
-            $defSubFile = $InstallDir.DIRECTORY_SEPARATOR.'ScanCore_'.$defSubs.'.def';
-            // / Build the new definitions in memory from the subscriptions that apply to this installation.
-            if (file_exists($defSubFile)) {
-              $subCount++;
-              $subData = trim($subData.PHP_EOL.trim(file_get_contents($defSubFile))); } }
-          // / Write the new definition data to a new definition file.
-          $writeCheck = file_put_contents($DefsFile, $subData); } } } 
+        if (is_dir($DefGitDir)) list($cleanCheck) = clean($DefGitDir);
+        else $cleanCheck = TRUE;
+        // / Iterate through the list of susbscribed definitions.
+        foreach ($DefinitionsUpdateSubscriptions as $defSubs) {
+          $defSubFile = $DefInstallDir.$SEP.'ScanCore_'.$defSubs.'.def';
+          // / Build the new definitions in memory from the subscriptions that apply to this installation.
+          if (file_exists($defSubFile)) {
+            processOutput('Loading Definition Subscription file:  '.$defSubFile, FALSE, 0, FALSE, FALSE, FALSE);
+            $subCount++;
+            $subData1 = file_get_contents($defSubFile);
+            if ($subData1 !== FALSE) $subData = $subData.$EOL.$subData1; } }
+        // / Write the new definition data to a new definition file.
+        if (file_exists($DefsFile)) $writeCheck = unlink($DefsFile);
+        else $writeCheck = TRUE;
+        processOutput('Writing Combined Definitions file:  '.$DefsFile, FALSE, 0, FALSE, FALSE, FALSE);
+        $writeCheck = file_put_contents($DefsFile, $subData); }
     // / If a definition install directory already exists, remove all the files inside & then remove the folder.
     list($defInstallDirCleaned) = clean($DefInstallDir);
-    list($defGitDirCleaned) = clean($DefGitDir); }
+    list($defGitDirCleaned) = clean($DefGitDir); } }
   // / Check if the subscription file was written successfully.
-  if ($writeCheck) $UpdateDefininitionsComplete = TRUE;
-  if ($subCount !== $subCount1) $UpdateDefininitionsErrors = TRUE;
+  if ($UpdateMethod === 'raw' && $rawWriteCheck) $UpdateDefininitionsComplete = TRUE;
+  if ($UpdateMethod === 'git' && $writeCheck) $UpdateDefininitionsComplete = TRUE;
+  if ($subCount !== $subCount1) $UpdateDefinitionsErrors = TRUE;
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
-  $defSubs = $defSubFile = $subData = $writeCheck = $subCount = $subCount1 = $returnData = $f = $i = $cleanCheck = NULL;
-  unset($defSubs, $defSubs, $subData, $writeCheck, $subCount, $subCount1, $returnData, $f, $i, $cleanCheck);
-  return array($UpdateDefininitionsComplete, $UpdateDefininitionsErrors); }
+  $defSubs = $defSubFile = $subData = $writeCheck = $subCount = $subCount1 = $returnData = $f = $i = $cleanCheck = $rawWriteCheck = $rawWriteCheckDir = $rawDefData = $rawDefURL = $defGitDirCleaned = $defInstallDirCleaned = $subData1 = NULL;
+  unset($defSubs, $defSubFile, $subData, $writeCheck, $subCount, $subCount1, $returnData, $f, $i, $cleanCheck, $rawWriteCheck, $rawWriteCheckDir, $rawDefData, $rawDefURL, $defGitDirCleaned, $defInstallDirCleaned, $subData1);
+  return array($UpdateDefininitionsComplete, $UpdateDefinitionsErrors); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / A function to install application updates.
 function updateApplication() {
   global $ApplicationUpdates, $ApplicationUpdateURL, $InstallDir, $ApplicationRepositoryName, $AppInstallDir, $AppGitDir, $ConfigFile;
-  $UpdateApplicationComplete = FALSE;
+  $UpdateApplicationComplete = $UpdateApplicationErrors = $configCopied = FALSE;
   $returnData = '';
   $configInc = 0;
   $backupConfigFile = $ConfigFile.'_'.$configInc.'_'.'.bak';
@@ -310,39 +450,39 @@ function updateApplication() {
       $configInc++;
       $backupConfigFile = $ConfigFile.'_'.$configInc.'_'.'.bak'; }
     // / Copy the configuration file to a backup.
-    copy($ConfigFile, $backupConfigFile);
+    $configCopied = copy($ConfigFile, $backupConfigFile);
+    // / Only proceed if the configuration file was backed up.
+    if ($configCopied) {
     //$returnData = shell_exec('git clone '.$ApplicationUpdateURL.' '.$InstallDir);
-  }
+  } }
   // / Check if the git operation returned some output.
   if ($returnData !== '') $UpdateApplicationComplete = TRUE;
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
-  $returnData = $configInc = $backupConfigFile = NULL;
-  unset($sreturnData, $configInc, $backupConfigFile);
-  return array($UpdateApplicationComplete); }
+  $returnData = $configInc = $backupConfigFile = $configCopied = NULL;
+  unset($sreturnData, $configInc, $backupConfigFile, $configCopied);
+  return array($UpdateApplicationComplete, $UpdateApplicationErrors); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // Hunts files/folders recursively for scannable items.
 function file_scan($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize, $Recursion) {
   // / Set variables.
-  global $SEP, $EOL, $FileCount;
+  global $SEP, $FileCount, $DirCount, $Infected;
   $ScanComplete = FALSE;
-  $DirCount = 1;
-  $Infected = 0;
+  $DirCount++;
   if (is_dir($folder)) {
+    processOutput('Scanning folder:  '.$folder, FALSE, 0, TRUE, FALSE, FALSE);
     $files = scandir($folder);
     foreach ($files as $file) {
       if ($file === '' or $file === '.' or $file === '..') continue;
       $entry = str_replace($SEP.$SEP, $SEP, $folder.$SEP.$file);
-      if (!is_dir($entry)) list($checkComplete, $Infected) = virus_check($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize);
-      else if (is_dir($entry) && $Recursion) {
-        processOutput('Scanning folder "'.$entry.'" ... ', FALSE, 0, TRUE, TRUE, FALSE);
-        $DirCount++; 
+      if (!is_dir($entry)) list($checkComplete, $Infected, $FileCount) = virus_check($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize);
+      if (is_dir($entry) && $Recursion) {
         list ($scanComplete, $DirCount, $FileCount, $Infected) = file_scan($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize, $Recursion); 
         $entry = ''; } } }
   if (!is_dir($folder) && $folder !== '.' && $folder !== '..') {
     $FileCount++;
-    list($checkComplete, $Infected) = virus_check($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize); }
+    list($checkComplete, $Infected, $FileCount) = virus_check($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize); }
   $ScanComplete = TRUE;
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $files = $file = $entry = $folder = NULL;
@@ -354,9 +494,8 @@ function file_scan($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $Memor
 // Reads tab-delimited definitions file. Also hashes the file to avoid self-detection.
 function load_defs($DefsFile) {
   // / Set variables.
-  global $EOL, $Debug, $Verbose;
   $DefsLoaded = $Defs = $DefData = FALSE;
-  if (!file_exists($DefsFile)) processOutput('Could not load the virus definition file located at "'.$DefsFile.'"! File either does not exist or cannot be read!', TRUE, 400, TRUE, TRUE, FALSE);
+  if (!file_exists($DefsFile)) processOutput('Could not load the virus definition file located at "'.$DefsFile.'"! File either does not exist or cannot be read!', TRUE, 500, TRUE, TRUE, FALSE);
   else { 
     $Defs = file($DefsFile);
     $DefData = hash_file('sha256', $DefsFile);
@@ -365,7 +504,7 @@ function load_defs($DefsFile) {
     while ($counter < $counttop) {
       $Defs[$counter] = explode('  ', $Defs[$counter]);
       $counter++; }
-    processOutput('Loaded '.sizeof($Defs).' virus definitions.', FALSE, 0, FALSE, FALSE, FALSE);
+    processOutput('Found '.sizeof($Defs).' definitions.', FALSE, 0, FALSE, FALSE, FALSE);
     $DefsLoaded = TRUE; }
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $counter = $counttop = NULL;
@@ -377,23 +516,24 @@ function load_defs($DefsFile) {
 // Hashes and checks files/folders for viruses against static virus defs.
 function virus_check($file, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize) {
   // / Set variables.
-  global $Infected, $DefsFileName, $EOL;
+  global $Infected, $DefsFileName, $FileCount;
   $CheckComplete = FALSE;
   if ($file !== $DefsFileName) {
     if (file_exists($file)) {
-      processOutput('Scanning file ... ', FALSE, 0, TRUE, TRUE, FALSE);
+      $FileCount++;
+      processOutput('Scanning file:  '.$file, FALSE, 0, TRUE, FALSE, FALSE);
       $filesize = filesize($file);
       $data1 = hash_file('md5', $file);
       $data2 = hash_file('sha256', $file);
       $data3 = hash_file('sha1', $file);
       // / Scan files larger than the memory limit by breaking them into chunks.
       if ($filesize >= $MemoryLimit && file_exists($file)) { 
-        processOutput('Chunking file ... ', FALSE, 0, FALSE, FALSE, FALSE);
+        processOutput('Chunking file:  '.$file, FALSE, 0, TRUE, FALSE, FALSE);
         $handle = @fopen($file, "r");
         if ($handle) {
           while (($buffer = fgets($handle, $ChunkSize)) !== FALSE) {
             $data = $buffer;
-            processOutput('Scanning chunk ... ', FALSE, 0, FALSE, FALSE, FALSE);
+            processOutput('Scanning chunk.', FALSE, 0, TRUE, FALSE, FALSE);
             foreach ($Defs as $virus) {
               $virus = explode("\t", $virus[0]);
               if (isset($virus[1]) && !is_null($virus[1]) && $virus[1] !== '' && $virus[1] !== ' ') {
@@ -402,7 +542,7 @@ function virus_check($file, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $Memor
                   processOutput('Infected: '.$file.' ('.$virus[0].', Data Match: '.$virus[1].')', FALSE, 0, TRUE, TRUE, FALSE);
                   $Infected++; } } } }
           if (!feof($handle)) {
-            processOutput('Unable to open "'.$file.'"!', TRUE, 500, TRUE, TRUE, FALSE);
+            processOutput('Unable to open '.$file.'!', TRUE, 600, TRUE, TRUE, FALSE);
             fclose($handle); } 
           if (isset($virus[2]) && !is_null($virus[2]) && $virus[2] !== '' && $virus[2] !== ' ') {
             if (strpos(strtolower($data1), strtolower($virus[2])) !== FALSE) {
@@ -449,48 +589,51 @@ function virus_check($file, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $Memor
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $file = $filesize = $data = $buffer = $handle = $virus = $data1 = $data2 = $data3 = NULL;
   unset($file, $filesize, $data, $buffer, $handle, $virus, $data1, $data2, $data3);
-  return array($CheckComplete, $Infected); }
+  return array($CheckComplete, $Infected, $FileCount); }
 // / -----------------------------------------------------------------------------------
 
 // / -----------------------------------------------------------------------------------
 // / The main logic of the program.
 
 // / Verify the installation.
-list($InstallationVerified, $ConfigLoaded) = verifySCInstallation();
-if (!$InstallationVerified or !$ConfigLoaded) die('ERROR!!! ScanCore-1, Cannot verify the ScanCore installation!'.PHP_EOL);
+list($InstallationVerified, $Version) = verifyInstallation();
+if (!$InstallationVerified) die('ERROR!!! ScanCore-1, Cannot verify the ScanCore installation!'.PHP_EOL);
+
+// / Load the configuration file.
+list ($ConfigLoaded, $ConfigFilePath) = loadConfig($Version);
+if (!$ConfigLoaded) die('ERROR!!! ScanCore-2, Cannot load the configuration file located at:  '.$ConfigFilePath.PHP_EOL);
 
 // / Create required directories if they don't already exist.
 list($RequiredDirsExist) = createDirs($RequiredDirs);
-if (!$InstallationVerified or !$ConfigLoaded) die('ERROR!!! ScanCore-2, Cannot create required directories!'.PHP_EOL);
+if (!$InstallationVerified or !$ConfigLoaded) die('ERROR!!! ScanCore-3, Cannot create required directories!'.$EOL);
 
 // / Process supplied command-line arguments.
 // / Example:  C:\Path-To-PHP-Binary.exe C:\Path-To-ScanCore.php C:\Path-To-Scan\ -m [integer] -c [integer] -v -d
-list($ArgsParsed, $PathToScan, $MemoryLimit, $ChunkSize, $Debug, $Verbose, $Recursion, $ReportFile, $Logfile, $MaxLogSize, $PerformDefUpdate, $PerformAppUpdate) = parseArgs($argv);
-if (!$ArgsParsed) processOutput('Cannot verify supplied arguments!', TRUE, 3, TRUE, TRUE, TRUE);
-else processOutput('Verified supplied arguments.', FALSE, 0, FALSE, FALSE, FALSE);
+list($ArgsParsed, $PerformScan, $PathToScan, $MemoryLimit, $ChunkSize, $Debug, $Verbose, $Recursion, $ReportFile, $MaxLogSize, $PerformDefUpdate, $PerformAppUpdate) = parseArgs($argv);
+if (!$ArgsParsed) processOutput('Cannot verify supplied arguments!', TRUE, 4, TRUE, TRUE, TRUE);
+else processOutput('Verified supplied arguments.', FALSE, 0, TRUE, FALSE, FALSE);
 
-// / If scanning operations are required
-if (!$PerformDefUpdate && !$PerformAppUpdate) {
+// / Perform a definition update, when required.
+if ($PerformDefUpdate) {
+  list($UpdateDefininitionsComplete, $UpdateDefinitionsErrors) = updateDefinitions();
+  if (!$UpdateDefininitionsComplete) processOutput('Cannot install definition update!', TRUE, 7, TRUE, TRUE, TRUE); 
+  else processOutput('Installed definition update.', FALSE, 0, TRUE, TRUE, FALSE); }
+
+// / Perform an application update, when required.
+if ($PerformAppUpdate) {
+  list($UpdateApplicationComplete, $UpdateApplicationErrors) = updateApplication();
+  if (!$UpdateApplicationComplete) processOutput('Cannot install application update!', TRUE, 8, TRUE, TRUE, TRUE); 
+  else processOutput('Installed application update.', FALSE, 0, TRUE, TRUE, TRUE); }
+
+// / Perform scanning operations, when required
+if ($PerformScan) {
   // / Load the virus definitions into memory and calculate it's hash (to avoid detecting our own definitions as an infection).
   list($DefsLoaded, $Defs, $DefData) = load_defs($DefsFile);
-  if (!$DefsLoaded) processOutput('Cannot load definitions!', TRUE, 6, TRUE, TRUE, TRUE);
-  else processOutput('Loaded definitions.', FALSE, 0, FALSE, FALSE, FALSE);
+  if (!$DefsLoaded) processOutput('Cannot load definitions!', TRUE, 5, TRUE, TRUE, TRUE);
+  else processOutput('Loaded definitions.', FALSE, 0, TRUE, FALSE, FALSE);
 
   // / Start the scanner!
   list($ScanComplete, $DirCount, $FileCount, $Infected) = file_scan($PathToScan, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize, $Recursion);
-  if (!$ScanComplete) processOutput('Could not complete requested scan!', TRUE, 7, TRUE, TRUE, TRUE);
-  else processOutput('Scanned '.$FileCount.' files in '.$DirCount.' folders and found '.$Infected.' potentially infected items.', FALSE, 0, TRUE, FALSE, TRUE); }
-
-else {
-  // / Perform definition update, when required.
-  if ($PerformDefUpdate) {
-    list($UpdateDefininitionsComplete, $UpdateDefinitionsErrors) = updateDefinitions();
-    if (!$UpdateDefininitionsComplete) processOutput('Cannot install definition update!', TRUE, 4, TRUE, TRUE, TRUE); 
-    else processOutput('Installed definition update.', FALSE, 0, FALSE, FALSE, FALSE); }
-
-  // / Perform application update, when required.
-  if ($PerformAppUpdate) {
-    list($UpdateApplicationComplete) = updateApplication();
-    if (!$UpdateApplicationComplete) processOutput('Cannot install application update!', TRUE, 5, TRUE, TRUE, TRUE); 
-    else processOutput('Installed application update.', FALSE, 0, FALSE, FALSE, TRUE); } }
+  if (!$ScanComplete) processOutput('Could not complete requested scan!', TRUE, 6, TRUE, TRUE, TRUE);
+  else processOutput('Scanned '.$FileCount.' files in '.$DirCount.' folders and found '.$Infected.' potentially infected items.', FALSE, 0, TRUE, TRUE, TRUE); }
 // / -----------------------------------------------------------------------------------
