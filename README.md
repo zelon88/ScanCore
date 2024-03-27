@@ -51,9 +51,19 @@ Start by opening a command-prompt.
 3. Everything after the path to ScanCore will be passed to ScanCore as an argument.
 4. The first Argument must be a valid absolute path to the file or folder being scanned.
 5. Optional arguments can be specified after the scan path. Separate them with spaces.
-  
+
+Reqiured Arguments Include:
+
+     File or folder to scan:                 /path/to/scan
+
 Optional Arguments Include:
 
+     Show version information:               -version
+                                             -ver
+
+     Show help information:                  -help
+                                             -h
+                                          
      Force recursion:                        -recursion
                                              -r
  
@@ -71,12 +81,12 @@ Optional Arguments Include:
  
      Enable "verbose" mode (more console):   -verbose
                                              -v
-                                             
-     Force a specific log file:              -logfile /path/to/file
-                                             -lf path/to/file
  
      Force a specific report file:           -reportfile /path/to/file
                                              -rf path/to/file
+                                             
+     Force a specific configuration file:    -configfile /path/to/file
+                                             -cf path/to/file
  
      Force maximum log size (in bytes):      -maxlogsize ###
                                              -ml ###
