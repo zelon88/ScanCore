@@ -1,6 +1,6 @@
 -----------------------------------------------------------------------------------
 COPYRIGHT INFORMATION ...
-ScanCore, Copyright on 3/26/2024 by Justin Grimes, www.github.com/zelon88 
+ScanCore, Copyright on 3/28/2024 by Justin Grimes, www.github.com/zelon88 
 
 LICENSE INFORMATION ...
 This project is protected by the GNU GPLv3 Open-Source license.
@@ -11,7 +11,7 @@ APPLICATION INFORMATION ...
 This application is designed to scan files & folders for viruses.
 
 FILE INFORMATION ...
-v1.2.
+v1.3.
 This file contains a list of itemized changes made in each iteration of the application.
 
 HARDWARE REQUIREMENTS ...
@@ -69,6 +69,9 @@ Optional Arguments Include:
   Force a specific configuration file:    -configfile /path/to/file
                                           -cf path/to/file
 
+  Force a specific definitions file:      -defsfile /path/to/file
+                                          -df path/to/file
+
   Force maximum log size (in bytes):      -maxlogsize ###
                                           -ml ###
 
@@ -81,6 +84,18 @@ Optional Arguments Include:
 <3 Open-Source
 -----------------------------------------------------------------------------------
 
+
+
+--------------------
+COMMIT 3/28/2024
+v1.3 - Add -defsfile, -df argument. Reorder logic & functions. Clean up output. Improve help, version output.
+
+-v1.3 - Add -defsfile, -df argument. Reorder logic & functions. Clean up output. Improve help, version output.
+  -Add -defsfile & -df argument for specifying a definition file by command line. 
+  -Now ScanCore is completely modular. It can be run against any defs file and any config file, so automating tasks is easy & granular.
+  -Add config file last modified, which core file, and which defs file to version output.
+  -Add new commands to help output.
+  -Will update the docs with proper error descriptions and instructions once the error numbers stop chaning.
 
 
 --------------------
