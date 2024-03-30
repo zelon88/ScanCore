@@ -1,16 +1,16 @@
 ## APPLICATION INFORMATION ...
 
-Copyright on 3/29/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a portable, single thread, cross platform, command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
+Copyright on 3/29/2024 by Justin Grimes, www.github.com/zelon88. ScanCore is a portable, single thread, self-updating, cross platform, command line virus scanner written in PHP that detects infections based on data match, MD5 hash, SHA1 hash, or SHA256 hash. 
 
 Features include:
 
 - High speed, single thread virus scanner that you use in your command line or terminal.
+- Updates application code automatically.
 - Updates virus definitions automatically.
 - Small memory footprint with the ability to set a custom memory limit.
 - Written in PHP, so it works from Apache or the command line.
 - Cross platform. Works in Windows or Linux.
 - Fully portable. If you have PHP installed & in your PATH you're good to go.
-- Works with portable PHP binaries.
 - Virus definitions in plain text that you can actually understand.
 - Fully open source, including definitions.
 - Highly configurable. Great for scripting, devops, or automation.
