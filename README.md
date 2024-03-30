@@ -96,6 +96,9 @@ Optional Arguments Include:
 
      Perform definition update:              -updatedefinitions
                                              -ud
+                                             
+     Perform application update:             -updateapplication
+                                             -ua
 -----------------------------------------------------------------------------------
 
 ## USAGE TIPS ...
