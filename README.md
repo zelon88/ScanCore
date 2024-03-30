@@ -87,7 +87,10 @@ Optional Arguments Include:
                                              
      Force a specific configuration file:    -configfile /path/to/file
                                              -cf path/to/file
- 
+
+     Force a specific definitions file:      -defsfile /path/to/file
+                                             -df path/to/file**
+
      Force maximum log size (in bytes):      -maxlogsize ###
                                              -ml ###
 
