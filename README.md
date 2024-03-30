@@ -89,7 +89,7 @@ Optional Arguments Include:
                                              -cf path/to/file
 
      Force a specific definitions file:      -defsfile /path/to/file
-                                             -df path/to/file**
+                                             -df path/to/file
 
      Force maximum log size (in bytes):      -maxlogsize ###
                                              -ml ###
