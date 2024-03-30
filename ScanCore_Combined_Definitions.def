@@ -1,3 +1,722 @@
+
+Exploit CVE-2016-7200	188.165.163.226
+Exploit CVE-2016-7200.1	<Session SID="161" BitFlags="208">
+Exploit CVE-2016-7200.2	chakraBase.add(0x1DA2F5),
+Exploit CVE-2016-7200.2.1	<SessionFlag N="x-responsebodytransferlength" V="7,757"/>
+Exploit CVE-2016-4117	import com.adobe.tvsdk.mediacore.timeline.operations.DeleteRangeTimelineOperation;
+Trojan DarkComet			7d14025275fbcd279f74aaaa0533bfe02f22c070a954c813d75140a8c352b36d
+Trojan DarkComet.1			f5118f6534b0bb265f563421697bdcb29fed31267f75a71d7dd0da7a31be662a
+Trojan DarkComet.2			7a141eba6dc8b7e6a27bdcf067e1c45fc9e35aa2f699b3b526f44be6b47a54d5
+Trojan DarkComet.3			1520fb831f4c79f57f663e393b0ba0f2edc8bc0455b86e0641485432acd1bfe8
+Trojan DarkComet.4			c15d6ce3051ecb4a4aa1e128ea85c0b4159de3d36430578b5bacdb074cca0d2d
+Trojan DarkComet.5			a68083aaddbba3d8e23f607aee07cc1b4ace727c9f0539ad9edda594b0ae0b1d
+Trojan DarkComet.6			93f1b692dc95fc9d1fe0fbb68b82841bc5ad02561a90d5e081ae00e08e02c350
+Trojan DarkComet.7			25437f103f7ccbc444d8703bbf7a08d7691c5d00066bdeb80bd60883bfb16327
+Trojan DarkComet.8			fea9e7094bc95dc152f595f7b45c78ec15a76fc6ceec9812d38de6c601c4170e
+Trojan DarkComet.9			d142c0342a9540a8b78fe649c92a0e960da4cda5f45d3d54d0502abc41e29fef
+Trojan FormBook	winz6j8.bat
+Trojan FormBook.1	Receipt.exe		a341876e11f1a7e0bc370df8affccf52532ab95003bc83199522376eb51a5fa1
+Trojan FormBook.2	Receipt.r22		c9acea81a8eaece1bea16dba794393907a6141ca260cc072ea9e2d0c0ae6aee4
+Trojan FormBook.3	/ch/?id=
+Trojan FormBook.4	gifcos@tutanota.com
+Trojan FormBook.5	hxxps://superiorleather.co.uk/Receipt.r22
+Trojan Loki			2bebe4a5acb9940a295a167aff62e81e9c11b55051450e1f8e979ff63d964071
+Trojan Loki.2			326030d71dfb79f98d37eea3498d7dadd76c5ab59bd5fe279298c184ac3e08fa
+Trojan Loki.3			121118a0f5e0e8c933efd28c9901e54e42792619a8a3a6d11e1f0025a7324bc2
+Trojan Loki.4			34a19d2fb7e045bb1c985ed727beff59f169b3021ee67cfc462366a66ce14251
+Trojan Loki.5	7571BA.exe		54ef1c6df5b3b288366b560f7921f1cc5e556bd2fa3c8b0edee7fdb2fe871ffb
+Trojan RoughTed			9fc5fb99f72be24ec7d1e2004f1c1f2083885059e0e072314cb712934415bc24
+Trojan RoughTed.2			0434a5b69bea3a10443c0740bca4f36792cf67130c6b7da5b1b16494b3e12379
+Trojan W32.Adware.Gen!c		471f0993ccf1c5cb3c715740141b6d49	2d02ddb75f42e67f76da4df375834c7e79a62a5828875870d23b236a1d7ae19c
+Trojan	chaqiriq.doc	c9d2eac2c5c415f94ad599d1327f1e8f	e1e5bdecaa621a45c97fc732917c1c36bfd8d83158c88a3f444536c3e2bd389b
+Trojan Zeuss Panda			6dc0bd79e51eb9af143c749539bd638020d557083479bcd4c4b9639fe61eb0f8
+Trojan Zeuss Panda.1			1cccc844fcdb255f833a9ef36c2d3c690557b828ed5d0a45d068aeb2af1faac7
+Trojan Zeuss Panda.2			0fd5413365f474b99f4a49560e20c5e97418d09a2f53e5e7436b88e3f5c16668
+Trojan Zeuss Panda.3			a395357a9012b0a4087e0878e7d642879d3b856de53c71cb9805f806dc958264
+Trojan Zeuss Panda.4			fa867ddf9f3116da75b62a1bf8007410ac0d3adf7a92e7f3d2effeef982ad73d
+Trojan Zeuss Panda.5			bdc912caf9b9e078bc7bd331deacae9c460c8e8893442048b9474790c52e1ab9
+Trojan Zeuss Panda.6			6dc0bd79e51eb9af143c749539bd638020d557083479bcd4c4b9639fe61eb0f8
+Trojan Zeuss Panda.7			8d381ee21b6cbc7d3ae0e503ab7b05235eb31594d2810e67093c5e9a51437992
+Trojan Sednit		f1d3447a2bff56646478b0adb7d0451c
+Trojan Minzen		B469B78CA04E8FDAD957CCC68B5B1C3D
+Trojan	Dreambot
+Trojan Vawtrak		5238cd34caae600b3f592e2595aa6949
+Trojan Vawtrak.1		6fad86a0fcc912f32474f6c7a86fe37a
+Trojan ZeroT.1			3124fcb79da0bdf9d0d1995e37b06f7929d83c1c4b60e38c104743be71170efe
+Trojan ZeroT.2	0228.doc		b5c208e4fb8ba255883f791d384ca85566c7be8adcf5c87114a62efb53b73fda
+Trojan ZeroT.3	0228.exe		bc2246813d7267608e1a80a04dac32da9115a15b1550b0c4842b9d6e2e7de374
+Trojan ZeroT.4	news.php?id=7557		a64ea888d412fd406392985358a489955b0f7b27da70ff604e827df86d2ca2aa
+Trojan ZeroT.5			868ee879ca843349bfa3d200f858654656ec3c8128113813cd7e481a37dcc61a
+Trojan ZeroT.6			4601133e94c4bc74916a9d96a5bc27cc3125cdc0be7225b2c7d4047f8506b3aa
+Trojan ZeroT.7			5fd61793d498a395861fa263e4438183a3c4e6f1e4f098ac6e97c9d0911327bf
+Trojan ZeroT.8			ab4cbfb1468dd6b0f09f6e74ac7f0d31a001d396d8d03f01bceb2e7c917cf565
+Trojan ZeroT.9			79bd109dc7c35f45b781978436a6c2b98a5df659d09dee658c2daa4f1984a04e
+Trojan Emotet		7c401bde8cafc5b745b9f65effbd588f
+Trojan Emotet.1		34c10ae0b87e3202fea252e25746c32d
+Trojan Emotet.2		9ab7b38da6eee714680adda3fdb08eb6
+Trojan Emotet.3		ae5fa7fa02e7a29e1b54f407b33108e7
+Trojan Emotet.4		1d4d5a1a66572955ad9e01bee0203c99
+Trojan Emotet.5		cdb4be5d62e049b6314058a8a27e975d
+Trojan Emotet.6		642a9becd99538738d6e0a7ebfbf2ef6
+Trojan Emotet.7		aca8bdbd8e79201892f8b46a3005744b
+Trojan Emotet.8		9b011c8f47d228d12160ca7cd6ca9c1f
+Trojan Emotet.9		6358fae78681a21dd26f63e8ac6148cc
+Trojan Emotet.10		ac49e85de3fced88e3e4ef78af173b37
+Trojan Emotet.11		c0f8b2e3f1989b93f749d8486ce6f609
+Trojan Emotet.12		1561359c46a2df408f9860b162e7e13b
+Trojan Emotet.13		a8ca1089d442543933456931240e6d45
+Trojan Emotet.14	Trojan Nuclear Pack
+Trojan Emotet.15		179ae9a7fc02130009762858ad182678
+Trojan Emotet.16		1a6fe1312339e26eb5f7444b89275ebf
+Trojan Emotet.17		257e82d6c0991d8bd2d6c8eee4c672c7
+Trojan Emotet.18		3855724146ff9cf8b9bbda26b828ff05
+Trojan Emotet.19		3bac5797afd28ac715605fa9e7306333
+Trojan Emotet.20		3d28b10bcf3999a1b317102109644bf1
+Trojan Emotet.21		4e2eb67aa36bd3da832e802cd5bdf8bc
+Trojan Emotet.22		4f81a713114c4180aeac8a6b082cee4d
+Trojan Emotet.23		52f05ee28bcfec95579d154c62d40100
+Trojan Emotet.24		792559c590cff62587c08a4a766744a7
+Trojan Emotet.25		806489b327e0f016fb1d509ae984f760
+Trojan Emotet.26		876a6a5252e0fc5c81cc852d5b167f2b
+Trojan Emotet.27		94fa5551d26c60a3ce9a10310c765a89
+Trojan Emotet.28		A5a86d5275fa2ccf8a55233959bc0274
+Trojan Emotet.29		b43afd499eb90cee798c22969f656cd2
+Trojan Emotet.30		b93a6ee991a9097dd8992efcacb3b2f7
+Trojan Emotet.31		ddd7cdbc60bd0cdf4c6d41329b43b4ce
+Trojan Emotet.32		e01954ac6d0009790c66b943e911063e
+Trojan Emotet.33		e49c549b95dbd8ebc0930ad3f147a4b9
+Trojan Emotet.34		ea804a986c02d734ad38ed0cb4d157a7
+Trojan Emotet.35	188.166.118.34
+Trojan Emotet.36	Joyce Lynch: 901597
+Trojan Emotet.37	Purchase-Order-50717202/		5a8b91fac4cdd9220dae03dc4160d8d79fb509482d14370da38227b5de7ee639
+Trojan Emotet.38	OVERDUE-ACCOUNT/		ae388ef426ffac2888e3c0d616619091048e07f7dadb04051a895b71c9123626
+Trojan Emotet.39	gescanntes-Dokument/		32eb4a34d123927ca5fd2e5f36634c1e50017e156e4ec7e5cdce3feb23c6c543
+Trojan Emotet.40	Payment-and-address./
+Trojan Emotet.41	Rechnung-Bestellung-97866
+Trojan Emotet.42	2017-11190
+Trojan Emotet.43	Rechnung-2017-10-76709
+Trojan Emotet.44	Rechnung-im-Anhang
+Trojan Emotet.45	Inv. 3653869422
+Trojan Emotet.46	=?UTF-8?B?SWhy
+Trojan Emotet.47	MKN3-97971796420
+Trojan Emotet.48	UmVjaG51bmcgZsO8ciB
+Trojan Emotet.49	0999639 Survey questions
+Trojan Emotet.50	die Rechnung 528924152756594
+Trojan Emotet.51	73861846
+Trojan Emotet.52	PoolCar Sales invoice
+Trojan Emotet.53	251580728
+Trojan Emotet.54	Seperate Remittance Advice Layout - paper document A4
+Trojan Emotet.55	Zahlungserinnerung vom Juli
+Trojan Emotet.56	gescanntes-Dokument-SZC2467896999.doc		369382490deaf9246e39d07c57db6b56fa3fd9454671ec728bf81a4c4a1a549e
+Trojan Emotet.57	MG-921280152.doc
+Trojan Emotet.58	VeloBatFX.exe		2f93c8c97f99c79880027b149d257268f45bce1255aeaefdc4f21f5bd744573f
+Trojan Emotet.59			e90cbb0729e523bc8647e2437cd7f91ed4dafe131b945599aca1e64058fe76e7
+Trojan Emotet.60			f0138f78c1fd8b47be240bb799b32dda0be2e681145b50765f5bb5715be9d5eb
+Trojan Emotet.61		abf6b315.gxe
+Trojan Terdot.A			151798e132753186eb8bb0dd5b6563a3d919af7e6bbdc4395e17442556021741
+Trojan Terdot.A.1			61a3ece84544ab539e69156a882f49d1082555a48e79b3ffab0dd854b7bac8d3
+Trojan Sundown	542.swf
+Trojan Sundown.2	225.swf
+Trojan Sundown.3	fvdvsdfv.png
+Trojan Sundown.4	542.swf
+Trojan Sundown.5	fvdvsdfv.png
+Trojan Sundown.6	542.swf
+Trojan Sundown.7	208.swf
+Trojan Sundown.8	5421.swf
+Trojan Sundown.9			4fe30eb4fd3c1e54b58f901e94e36fc1a8c7a514bf827e7611740d260dd73f4b
+Trojan Sundown.10			cf730db69db781c515919b26ac46698c5249a62a5413edd11e1dd92fd3a44acb
+Trojan Sundown.11			67d598c6acbd6545ab24bbd44cedcb825657946923f47473dc40d0d1f122abb6
+Trojan Sundown.12			0744ba67c5f8210fcdcf4acb328df68780e96d10f2c68b8eddbb9a355bca213e
+Trojan Sundown.13			fc4bb31eb4e3d533e369b3687d72abb263937c698019b4f50229a5ca2d083bbb
+Trojan Sundown.14			112db20b0f6cbb39bd24dd2dbe121e62506c6862b1db1276b0219bda76a903dd
+Trojan Sundown.15			c4b894094c08ea234a2a2652f79383f4a22c5402918c330a7ad6f39520dcc53c
+Trojan Sundown.16	etgerf.exe
+Trojan Sundown.17	rgfrf.exe
+Trojan Sundown.18	radEF99C.tmp.exe
+Trojan Sundown.19			9ee649300ee66768afdb2b8866d504e802bd40fd8e4125667bb0f0e2bb6d339f
+Trojan Sundown.20	z.tmp
+Trojan Sundown.21			67d598c6acbd6545ab24bbd44cedcb825657946923f47473dc40d0d1f122abb6
+Trojan Sundown.22			04fb00bdd3d2c0667b18402323fe7cf495ace5e35a4562e1a30e14b26384f41c
+Trojan Rammit			1a22211d01d2e8746efe0d14ab7e1e547c3e30863a83e0884a9d90325bd7b64b
+Trojan DiamondFox			6764f98ba6509b3351ad2f960dcc47c27d0dc00d53d7e0ae132a7c1d15067f4a
+Trojan Sagecrypt		4bbc2b40ca476c9d2dae44c86258ae80	50624b1338349dcab4ad8345e0100ea75d3b643ef1e3a487b32fd711418b281b
+Trojan Kovter		6295e092bc3ce94e18aedc69bcfbbbda	51d57d7f8d68391c295f97f5ec01fa57cdba2454fc0864dd336fd5008fd6fb40
+Trojan Kovter.1	fmvododa85268130			15154f826f688526cf28744004d287e60f99ed615c155d2727928cd8004edc66
+Trojan Kovter.2	hi8506440		2bb01dd8b37676d3f269c1dcbf993f6132e5d529ace8402b47620f959839e80b
+Trojan Kovter.3	ryyqodaw38031427		37926fbda637329bd2ca291c5f4084f969107e4ea436a11cdd5e745e4c598eb9
+Trojan Kovter.4	8506440		381050fbf4be05137460718033f85164a00a8182af0b2d4aa736cf5f73d96c82
+Trojan Kovter.5	oyerivy4738		386ccbd70bc728928c28bc6ac49f63d2c15f32f229bf9165402e4ca245a07c6a
+Trojan Kovter.6	fny82478508		3ab5b917e84039664aeec866abb65d7abcb815ae65f4cd7c3e0286092b5d93bb
+Trojan Kovter.7	dyoaizx8178230		44da582baf43d512b01ff080398f1f0d9a6978145c84be66acf061fd9664bff5
+Trojan Kovter.8	tvobha211622		562cd9884810c90422cbcd4e3ee633d24a748ae5976a37b2629f38d704b89878
+Trojan Kovter.9	oixyzih7073880		599b647e2ead9807e6dde2f171d7ef93bc74353a864fb85c59ffc39aad3b3001
+Trojan Kovter.10	uwszas1125562		673b523bc0c24024236bca085e6c9300b735f8c769cd0504b42d6d0b05d3a173
+Trojan Kovter.11	beeye70480280		7a80ab581a21abfa030f8b3a4b9adefc2dda239ba95483a30fd66822ba3dc3c9
+Trojan Kovter.12	fozuibig05181462		8ddee69d72fa96c7dfdf79c3635a74f5a62cfef9ea68b43c7f18e6f0ea30a1e9
+Trojan Kovter.13	omey38502300		975926cced9430753f66231f7c4270c1b727d37c10698c6ad41498de896df120
+Trojan Kovter.14	bekxomu08		9943dccc12163b47242da45e6b9e5488cc2c4d1d3ebe0af21f9b44141c36e45b
+Trojan Kovter.15	etabeiya16554848		9b9ac10197debfd084c41002da508a6b60bb99f2959e75e61abaf491d3c5a7c9
+Trojan Kovter.16	nudmzu345271		a06270053b4ee25a8f34918ebc3a9173e3e40c16a1679e07979a7ad3dc54d341
+Trojan Kovter.17	DeliveryDetails		aa505089e1eb14c3bac3e2e87cde8c5717ac8a9104851d4a3e70ae879ee362cb
+Trojan Kovter.18	ejoycsoq211468		c1da68a720141a8fb1ada696fb1e5a0460aaa72c4bcafc110cf36f4b35d5100e
+Trojan Kovter.19	comywu8		c6eeb0a0e6284f29401f4efd9988ce32820ac33e749ecd5ec71b4a1e0f93d6a9
+Trojan Kovter.20	DeliveryDetails.7z		cb42a941e1d61a3a533ae04aeb21b98c5d8cded683a2422b52478f8f63a97a61
+Trojan Kovter.20	mefewciq840886		daa8cc8142103a5050afd3eb821632b9b5361375566db1a9347e262117ca18ca
+Trojan Kovter.22	ckavo15382482		ed2cf15fcac6afa24792f812a8aebaf79c632ebafcb567570e40b2d2b697ca3c
+Trojan Kovter.23	kiztwupe511502		08bc79ea66a15ab7e4023782a050569fa44b208b4890e14c8762ce00a904adc3
+Trojan Kovter.24	eeimeiy47		2ea8b273faec8aff7401d8c16fab33c028dfda28c7a06cef23707c51d97ba7af
+Trojan Kovter.25	esyuvmg0375		34e97903ff1264c42e53789df89e317376f80c594401c9ef37603ffbb7affd19
+Trojan Kovter.26	tuvec53		3679fd53384fef5251713bee8c63d2a86b25d3c8fe9624ead70ccd144cd7d907
+Trojan Kovter.27	demirbasetiketi		4864e17e02abaaa10ba59de14954ccc46910b1e7e09f57d4711da2bc04f0db66
+Trojan Kovter.28	gokcentunc		633f86e941b36b0dbe5ee8f4466fa14423958d82204e30bad95874699fdef5d1
+Trojan Kovter.29	ikincielesyaevi		6c4ab2c20634714b04e813dcaba107b54c133b2b1ae6ea89cfb92835a96e5364
+Trojan Kovter.30	ronakco		73e2bf29c9ac6d110685e42f3daaf2470479cd0b8675f99ced1e945c8aac3102
+Trojan Kovter.31	samenloopvanomstandigheden		79925ad9de7529dced296a767b464d879a791c5759aed4415a0ae904f4482959
+Trojan Kovter.32	steuer-wirtschaft		82fb5b16929b1b760f336336602a02d920bbdd7d526ed2c7cbca1aa028a2db75
+Trojan Kovter.33	DeliveryDetails.js		91e726c0c1c757f833806a0f7352e2db34d30359d78c4dbc2aa51fc3f67b69bd
+Trojan Kovter.35			9e51ed0a16ff02b5ddf902040458d6a0459b41a33137186dd5e7565a5e5d62d7
+Trojan Kovter.36			ac5fe4902481c5a042c8a9eff57ec3d4add7970dd28cf6e503a9e8f8356bbbff
+Trojan Kovter.37			ade07634297bf58b3cb2f035d8e137eecb5f92cbec199d3e0d4265086d9692e2
+Trojan Kovter.38			b6d3cbc80dfc926c3dbe94f15f7c2b9b41d68c7fdd9b91c41039ad43706a017b
+Trojan Kovter.39			c340306c2535341fa158379670f67e25393916cb43de8f7570c86f736e313f27
+Trojan Kovter.40			c88ce680a263fdbc1dcb73a8584355324e9351d4cb86afb59b71e9933bfe7408
+Trojan Kovter.41			cfc1dd2a7b92dca90831b41667392573f482b0da4e191a8b6eb7046baef668c9
+Trojan Kovter.42			da191f4abf0cde5361f2cec7a3f22782cc259867605c65ac5357bd7c5304f097
+Trojan Kovter.43			de8add13460b65f9ca640f0e627e090995e964f6bdc1533913aaf2126b4d03c1
+Trojan Kovter.44			ecf8fa11887daa9df59e2812cddd22371fb49a0178df5d349512cc9012a5a6ff
+Trojan Kovter.45			ee4d7b8265372117aa81fb304f97833a9e7eddf65c81b602b4f930aca637f538
+Trojan Kovter.46			594cf9e10d53e960fac2dc9dc95b43c30d6f13c1620e061e17a3859cb4760942
+Trojan Kovter.47	zl82@officedutourisme.info
+Trojan AgentNed		4b64dc7993800e0fb60410471356a976	4e7cc2c1b3e8bb6ed8d9016420daed0585d0cbd75d5616830a4c184024371a51
+Trojan AgentNed.1		e9cae89d83c6b8679ed0e3ca04a07a88	65724f46794f01dd6907f56f0ac036f2e2ada0217e7c649f3461c4420f157e9a
+Trojan Injector		d4af8503f15557f1bf69d0a6afc7d2b1	21d31765daa07c200ed8f13078501f333d2673af1bde373cac976de594d02aab
+Trojan Huer		92935ec0ee4a7bb127cd2fe83296e93f	5144431e4346fe03a13986e28da71d8ea03fc054b6293c4cb0ffac037cc1f1b2
+Trojan Huer.1		1a92eedafc10d92671895bcc1c8e25a3	04d194e8489c34fc8c1d0b96c22f21b4edb6ac9ac6fc9db7953f4366060e3f44
+Trojan Huer.2		c4d005201679dd00cba0e1cba245ae40	409d329ba9af1b13b97e8ff36cadd68703c985107245a07991c5cf84d11e6db4
+Trojan Huer.3		c0537f589bcc24263a93cf190a7efdfb	4f7e01215c9e59ee14e6110d6f9de131a6b27a8ceb9182edbefd8790e173c2b7
+Trojan Supermulti.zd1	zd1.1	3c1178ec464296af96fb3458253f6bc6	83966011b63437110c9b28dbd46533974005b24bdd5a6c94bdae04aeb9ba03f0
+Trojan Supermulti.zd2	zd1.2	ebc51f6facae5d8bb3d41bc3eca56f67	c20fff01ea21b78ae29f417934a9da2eaf963de0e47b408ab50eb5905fd343e6
+Trojan Zbot	 ba5cd871e53b6808b3b404b49c9b5ead	f54ca0492592d6e910fc4f17cbb5096f3e0ecda437a717e50de90f0b60e64195
+Trojan Zbot.1		4b96cdeac867a0ac5d853f678feb0c4b	8eb282d2a6720a73e09282875cbdfce5fd78122797484023883db2257fb35a9c
+Trojan Zbot.2		c619412f0d38b3ea41ea865c3c94b331	27c85756c2cbdd89674c50868d2f8127025cd740f24c888e6d9b047ff6cc2a4e
+Trojan Bedep		2af7a33ffd6755d6046112b33b9018b1c3bb012b332cda4b8b0a30759ec67a18
+Trojan Bedep.1			13e62c23322cf915171d874f14ebfd21abf16e58270aff58316f624ad144a3a3
+Trojan Bedep.2			ae295ee7804a316153434783d83c2fbc63954a9384e2343a349be88a84e4ffed
+Trojan Bedep.3			c44b368f73ffc548e5253643a0c4d33fb8f0a91b5d7fd948bfb1f3ba9b204e1c
+Trojan Bedep.4			60f049fd94527991fe7d6ab2a5c8b000cf88bc2b21ead056a53233b348b65458
+Trojan Bedep.5			079545cf2c63cab61b5b49875027847a12e6f254f89a9cd8accc51b107688fcf
+Trojan Bedep.6			0452cf22c867621c99a43564bef4d4cfe453c594b25667fc4d1fe412d0b335dc
+Trojan Bedep.7			c9eaf3480afe4cbddcd9df13d8579bfa0cae52b647eeb81253d45d826a41bc92
+Trojan Bedep.8			ce3a9bcdbfa2f76fea7f5a13bfe46e790ad5ab1b0ab224b7018ddd22aa9da026
+Trojan Bedep.9			9ed422799f846be0e630c75a8eaf8a46909e9a72ec2e3479795d0ce9ae476540
+Trojan Bedep.10			71b69881e549f6faaa82de459f3db239cebccea0e59f3447658ed4fd4c633ce4
+Trojan Bedep.11			ba8ca1c7ba3b0d615c0b3957004cc5f16f8c0d79c5f65aed88e3157cdeec6db0
+Trojan Dridex	uk_confirmation_ph954869378.exe		34884ec18d6bbc8262812ee5ecc8803b791fcd4c554d76bee9254278effe0b48
+Trojan Dridex.1	1530219.vbs		84c9028a1d25e5f171c170179f2f1ea3e1eab9514812ab9e4b617de822b46e69
+Trojan Dridex	/76gbce?		d21c83b527627d0a64beb28a5a72ca21228c438861de893618ffdf46d7ef8d1c
+Trojan Dridex			1814d47adfe7a34cd2e5b2a9d6841a32679764c8498012f3ff13a5792ba9107e
+Trojan Dridex			6adda664e3ab2936a8dbe8e95e10d33e34d13fbe375123c69abf3ac5fbf52fcd
+Trojan Dridex			898e44e0ebb73dcf8fc3b667baa6db930119d1979d8269437ab89e49633ff983
+Trojan Dridex			ac4d02637e1e01b16062f368658275cb8400b21f6592819d3a09dbee31cb5cc1
+Trojan Cerber.BS	/__files__/1		66fc3e7027cabc29c6ef9bcd40eb92e36530175a89c33dfb4a210ef868af13e0
+Trojan Cerber.BS.1	user.php?f=2.gif		59118ff55d6c20a08c6d4422972f9741de8b79755695cef9bc95126d46fb0026
+Trojan Cerber.BS.2	site/chrome_update.html		d4dbc24e07aca11e53f1bb733852e4416a8fc7db1c0c947994ec271895fdb0a4
+Trojan Cerber.BS.3			8ea494bd84bea2617922a9ed488db44937199b3764ab6cb9f64e49d7e6945a3b
+Trojan Cerber.BS.4			07be83b0e9ed748c11d16afbd42b5582f192539706f3996a6debebdb575ad259
+Trojan Cerber.BS.5			b0e6d0e366494f94fd05756ec4b6245c74eee8f1c0ea65b21ba5e5f1c79d69c8
+Trojan Cerber.BS.6			2e3652afd5d79020dd5aa1d95a61fa6c8e67271f16ccb15aacf11accdd9cc790
+Trojan Cerber.BS.7			434d95079879a99fc7cf9c01faabe37c185656bd5ffebe627a756641e41e1f5b
+Trojan Cerber.BS.8			5bcb16e6dd8a023f7daef3cf2193ec4d8b911e3af679be3ebfbe58dbaf6e6d41
+Trojan Cerber.BS.9			0a7986e86d3df2548e12176b5d8aa6db0de9e556450a90f7c36fdbab1392b48f
+Trojan TerrorEK.1			88cdbf79aba30f553a949fc281baaa5d2e5f887d6c3f05b617c4712a709d47a9
+Trojan TerrorEK.2			71ea85fd9a93949b4a22ed0ac43caebf991f9c046318bf6a490fe1ecb95537fe
+Trojan TerrorSmokeLoader.1	3458.tmp.exe		07e96eb325ef315ede680eca649426d6a4516e03a859926d651fda669a98873a
+Trojan TerrorSmokeLoader.2	4A97.tmp.exe		dda0f5b8759220bdbd8e5dba8bff49868b12e1d5e3bd273b366050dab0c8dd4f
+Trojan TerrorSmokeLoader.3	65A7.tmp.exe		a5bb96d731ef58cf17cc579578ab89c7c46f275982be8eb137ff64268dff1efc
+Trojan TerrorSmokeLoader.4	8C4A.tmp.dll		bdf3c4e804ebffad9f7ba9a3e3e467d0251c16f57e41095b593d226d2e7f399d
+Trojan TerrorSmokeLoader.5	C14F.tmp.exe		e70e429aa051017432921f4cdf2b8492c5cff9465ffdc3aabad2a865ecd2b326
+Trojan TerrorSmokeLoader.6	rvfwteia.exe		e6516d2911fc3378903b396b1b3ec97ddd497a1e8b974b531b1f140a485d39ca
+Trojan TerrorSmokeLoader.7			2090456737a6b44f2c16943662c9cb42acf05b1db6d63f89253a39f33e0ec02c
+Trojan TerrorSmokeLoader.8			c9f3397340e3671a47c6f15f9e6b1697265cecbb37b3c9c29d1eeae3b4312497
+Trojan Disttrak	pdwmtphw.exe
+Trojan Disttrak.1	caiaw00a.exe		010d4517c81bcdc438cb36fdf612274498d08db19bba174462ecbede7d9ce6bb
+Trojan Disttrak.2	sdwprint.exe		efd2f4c3fe4e9f2c9ac680a9c670cca378cef6b8796f2362ed278317bfb1fca8
+Trojan Disttrak.3	caiaw00d.exe		113525c6bea55fa2a2c6cf406184092d743f9d099535923a12cdd9b9192009c4
+Trojan Disttrak.4	kyiaw002.exe		5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a
+Trojan Disttrak.5	sdwscdrv.exe
+Trojan Disttrak.6	briaw00a.exe
+Trojan Disttrak.7	saiaw002.exe
+Trojan Disttrak.8	_mvscdsc.exe
+Trojan Disttrak.9	hdvmp32.exe
+Trojan Disttrak.10	_s3wcap32.exe
+Trojan Disttrak.11	hpiaw001.exe
+Trojan Disttrak.12	lxiaw004.exe
+Trojan Disttrak.13	cniaw001.exe
+Trojan Disttrak.14	lxiaw006.exe
+Trojan Disttrak.15	caiaw00f.exe
+Trojan Disttrak.16	newtvsc.exe
+Trojan Disttrak.17	sbuvideo.exe
+Trojan Disttrak.18	caiaw00e.exe
+Trojan Disttrak.19	caiaw00i.exe
+Trojan Disttrak.20	olvume.exe
+Trojan Disttrak.21	usinwb2.exe
+Trojan Disttrak.22	briaw005.exe
+Trojan Disttrak.23	fpwwlwf.exe
+Trojan Disttrak.24	epiaw003.exe
+Trojan Disttrak.25	briaw002.exe
+Trojan Disttrak.26	olvsnap.exe
+Trojan Disttrak.27	dmwaudio.exe
+Trojan Disttrak.28	briaw006.exe
+Trojan Disttrak.29	miWApRpl.exe
+Trojan Disttrak.30	caiaw00b.exe
+Trojan Disttrak.31	lxiaw003.exe
+Trojan Disttrak.31	vdsk911.sys
+Trojan Disttrak.32	ntertmgr32.exe
+Trojan Disttrak.33	ntertmgr64.exe
+Trojan Disttrak.34	usbvideo324.pnf
+Trojan Ruby.1	if first_line != virus_top	b727b40999396587cf41dcb0e0a65ec0	131fa083cb8cd7ed02f48f4fba0f5190ea60d700031c00542c366097b4657463
+Trojan Ruby.2	= '#0x3a'
+Trojan Ruby.3	w.call(FUScaZXvqH,
+Trojan Ruby.4	FzJnoy
+Trojan Ruby.5	WMIC.exe shadowcopy delete
+Trojan Ruby.6	vssadmin.exe delete shadows
+Trojan Ruby.7	Bcdedit.exe /set {default} recoveryenabled no
+Trojan Ruby.8	Bcdedit.exe /set {default} bootstatuspolicy ignoreallfailures
+Trojan Ruby.9	cmd.exe /C wevtutil.exe cl
+Trojan PowerShell.1	110.10.179.65:80			638b7b0536217c8923e856f4138d9caff7eb309d
+Trojan PowerShell.2	download/microsoftp.jpg			d30e8c7543adbc801d675068530b57d75cabb13f
+Trojan PowerShell.3	<Command>mshta.exe</Command>			973b1ca8661be6651114edf29b10b31db4e218f7
+Trojan PowerShell.4	syscheck.vbs			691686839681adb345728806889925dc4eddb74e
+Trojan PowerShell.5	SndVolSSO.txt			3cf4b44c9470fb5bd0c16996c4b2a338502a7517
+Trojan PowerShell.6	activator.ps1:log.txt
+Trojan PowerShell.7	sunjavascheduler.txt
+Trojan PowerShell.8	Const HIDDEN_WINDOW = 12
+Trojan PowerShell.9	("/OGaaaaa6ytd
+Trojan PowerShell.10	kb-10233.exe
+Trojan PowerShell.11	product_info.dll
+Trojan PowerShell.12	208.67.222.222:53
+Trojan PowerShell.13	teriava.com
+Trojan PowerShell.14	$$cpte
+Trojan PowerShell.15	$$ecpte
+Trojan PowerShell.16	testObj.Remove 1
+Trojan PowerShell.17	kerberos::tgt exit
+Trojan PowerShell.18	logonpasswords exit
+Trojan PowerShell.19	sekurlsa
+Trojan PowerShell.20	lsadump::sam exit
+Trojan PowerShell.21	kerberos:ptt
+Trojan PowerShell.22	c:\programdata\log.dat
+Trojan Eicar	eicar_com	69630e4574ec6798239b091cda43dca0	131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267	cf8bd9dfddff007f75adf4c2be48005cea317c62
+Trojan Eicar.1	eicar.com
+Trojan Eicar.2	$EICAR
+Trojan Eicar.3	X5O!P%@AP[
+Trojan Eicar.4			275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f	
+Trojan CPP.1	SetWindowsHookEx(WH_CBT, msgBoxHook, 0, GetCurrentThreadId());
+Trojan CPP.2	enablePayloads
+Trojan CPP.3	waveOutOpen(&hwo, WAVE_MAPPER, &fmt, NULL, NULL, CALLBACK_NULL);
+Trojan CPP.4	BY THE MEMZ TROJAN.
+Trojan CPP.5	KILLMSGS,
+Trojan CPP.6	"KillMessages"
+Trojan CPP.7	\nYour PC is
+Trojan CPP.8	Sleep(payloads[p].startDelay);
+Trojan CPP.9	HANDLE note = CreateFileA("\\note.txt", GENERIC_READ | GENERIC_WRITE,1
+Trojan CPP.10	considered malware.\r\n\
+Trojan CPP.11	CreateThread(NULL, NULL, &watchdogThread, NULL, NULL, NULL);
+Trojan CPP.12	LRESULT CALLBACK watchdogWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+Trojan CPP.13	DWORD WINAPI ripMessageThread(LPVOID parameter) {
+Trojan CPP.14	void killWindows() {	5421781c2c05e64ef20be54e2ee32e37
+Trojan CPP.15	void killWindowsInstant() {	5394b09cf2a0b3d1caaecc46c0e502e3
+Trojan CPP.16	PUNICODE_STRING AccountName,	1a4d58e281103fea2a4ccbfab93f74d2
+Trojan CPP.17	OutputDebugString(L"PasswordFilter");	018433e8e815d9d2065e57b759202edc
+Trojan CPP.18	FILE* pFile = fopen("c:\\windows\\temp\\logFile.txt", "a+");	facec411b6d6aa23ff80d1366633ea7a
+Trojan Go.1	MAIL TO WHOEVER IS IMPORTANT
+Trojan Go.2	All your servers will be DDoS
+Trojan Go.3	We are Armada Collective.
+Trojan Go.4	struct scanner.PHP{
+Trojan Go.5	struct scanner.Service{
+Trojan Go.6	iface scanner.Dialer{
+Trojan Go.7	iface scanner.Scanner{
+Trojan Go.8	iface scanner.PHPExecutor{
+Trojan Go.9	struct scanner.ConnScanner {
+Trojan Go.10	struct scanner.HTTP {		0bf24e0bc69f310c0119fc199c8938793cdede9d1ca6ba7ac7fea5c863e0f099
+Trojan Go.11	struct scanner.HttpScanner{		3fcd17aa60f1a70ba53fa89860da3371a1f8de862855b4d1e5d0eb8411e19adf
+Trojan Go.12	struct scanner.Drupal{		513224149cd6f619ddeec7e0c00f81b55210140707d78d0e8482b38b9297fc8f
+Trojan Go.13	struct scanner.Wordpress {		941330c6be0af1eb94741804ffa3522a68265f9ff6c8fd6bcf1efb063cb61196
+Trojan Go.14	int main_main()		992ed9c632eb43399a32e13b9f19b769c73d07002d16821dde07daa231109432
+Trojan Go.15	tmweb.ru
+Trojan Go.16	"Ethereum-WalletFailed to find Failed
+Trojan Go.17	FindNextVolumeWFindVolume
+Trojan Go.18	"monero-keystorems: gomaxprocs=multipart
+Trojan Go.19	HyperCheats.rar
+Trojan Go.20	HyperCheats.zip
+Trojan Node.1	rawReq.write(JSON.stringify(body, null, 2))
+Trojan Node.2	var reproduce = function(target) {
+Trojan Node.3	var getEntryPoint = function(packageJSON) {		8b90859b19e3e3dea8d923996709210ed48ff3249563f56ff12eb1936ffcc295
+Trojan Node.4	var getTargets = function(targets, dir) {		afc100fb28f7bac05e41d9ae33f184502b8068642b7fd05970eb72bf1786892c
+Trojan Python.1	injecteex64	5ffefc13a49c138ac1d454176d5a19fd
+Trojan Python.2	injecteex86	b508908cc44a54a841ede7214d34aff3
+Trojan Python.3	MinerBlocker	e5ba5f821da68331b875671b4b946b56
+Trojan Python.4	proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)	596dc36cd6eabd8861a6362b6b55011a
+Trojan Python.5	SetValueEx(key ,'Adobe_ReaderX',0,REG_SZ,r"%TEMP%mw.exe")	645176c6d02bdb8a18d2a6a445dd1ac3
+Trojan Python.6	bablo39.php
+Trojan Python.7	188.225.18.203
+Trojan Python.8	@.*@ -> inject js/i.js
+Trojan Python.9	80 -> 24861
+Trojan Python.10	443 -> 24136
+Trojan Python.11	95.56.246.182
+Trojan Python.12	194.105.148.87
+Trojan Python.13	213.135.106.194
+Trojan Python.14	aWJhbmswbmVja2xhY2UucnU
+Trojan Python.15	b24saW51LmFsZWZiYW5rLnJ1
+Trojan Python.16	aWJhbmsuc3Bpcm10YmFuay5ydQ
+Trojan Python.17	dmJyci5ydQ
+Trojan Python.18	ZGJvMS51cmFsZm
+Trojan Python.19	b2ZjLnJ1
+Trojan Python.20	cm9kbmF5YXN2eWF6LnJ1
+Trojan Python.21	*{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}
+Trojan Python.22	l.IsValidCodePage(587903595)
+Trojan Python.23	l.GetFileSize(4028719249,0)
+Trojan Python.24	A.SwitchDesktop(2761630931)
+Trojan Python.25	l.VerSetConditionMask(4023949374,975516802,3027135998,9930938)
+Trojan Python.26	l.GetFileType(4282997275)
+Trojan Python.27	C.glColor3ub(255, 255, 255)
+Trojan Python.28	a = [[(- 1), (- 1)], [(- 1), 1], [1, 1], [1, (- 1)]]
+Trojan Python.29	_fields_ = [('pt', c_ushort),
+Trojan Python.30	A.RegisterHotKey(3322104681,3081727047,2221883463,745264245)
+Trojan Python.31	_fields_ = [('Lt', c_ulong),
+Trojan Python.32	drunkdared=spokenbier+meantreads
+Trojan Python.33	R('Not an MZ image!')
+Trojan Python.34	villainweapon('echorough='+solehers)
+Trojan Python.35	R(("Failed to resolve the the '%s!%s' import" % (string_at(LO), string_at(mG))))
+Trojan Python.36	pupilabhorred="r"
+Trojan Python.37	villainweapon=exec
+Trojan Python.37	dmJyci5ydQ==
+Trojan Python.38	cnNoYi5ydQ==
+Trojan Python.39	Y2hhc2UuY29t
+Trojan Python.40	fellreels="r"
+Trojan Python.41	aS12dGIuYnk=
+Trojan Python.42	Z29zdXNsdWdpLnJ1
+Trojan Python.43	aWIuc2xzcC5zaw==
+Trojan Python.44	ZGVsdGEtb25saW5lLmt6
+Trojan Python.45	dWJyci5ydQ==
+Trojan Python.46	eWFyYmFuay5ydQ==
+Trojan Python.47	c21wb25iYW5rLnJ1
+Trojan Python.48	d3d3LnlhbmRleC5jb20=
+Trojan Python.49	aWJhbmsyLnJ1
+Trojan Python.50	YmFuay50YWF0dGEucnU=
+Trojan Python.51	b25saW5lLmJtLnJ1
+Trojan Python.52	YWxiYW5rLnJ1
+Trojan Python.53	YnNiLmJ5
+Trojan Python.54	aWJhbTI0LnJ1
+Trojan Python.55	bW1iYW5rLnJ1
+Trojan Python.56	YXZiYW5rLnJ1
+Trojan Python.57	if (c.cd) eval(c01(c10(bd(c.cd))));
+Trojan Python.58	googletagmanage.com
+Trojan Python.59	h = JSON.parse(h);
+Trojan Python.60	eval(c01(c10(bd(html.cd))));
+Trojan Python.61	var exec = "di9+aC83PHA=";
+Trojan Python.62	1e22b;CertFreeCertificateChain->51380;5
+Trojan Python.63	1c8b6;WSAConnectByNameA->50c60;5
+Trojan Python.64	value = text.value # Dump the content in value
+Trojan Python.65	get_keystrokes(log_dir, log_name):
+Trojan Python.66	keylogger.get_keystrokes(log_dir, log_name)
+Trojan Python.67	elif i == 0x0d: # If <ENTER>, log the line typed then clear the line variable
+Trojan VBS.1	SmallPlasticKeyboard7 = Round(447)
+Trojan VBS.2	Avon82 = Round(608)
+Trojan VBS.3	backingup43 = "Web"
+Trojan VBS.4	copy23 = Round(MoneyMarketAccount37)
+Trojan VBS.5	Function reboot5()
+Trojan VBS.6	withdrawal60 = Round(412)
+Trojan VBS.7	"_4@http:"
+Trojan VBS.8	AwesomeSteelComputer16 = "nde.com.br"
+Trojan VBS.9	Metal33 = "2@http:/"
+Trojan VBS.10	reboot5 = withdrawal2 + ComputersGardenBooks30 + BooksGroceryBeauty50
+Trojan VBS.11	compelling69 = "" + program71 + GroceryBeauty72
+Trojan Java.1	<title>AhMyth</title>
+Trojan Java.2	assertEquals("ahmyth.mine.king.ahmyth", appContext.getPackageName());
+Trojan JS.1	victimsList.addVictim(
+Trojan JS.2	victimsList.getVictim(index).socket;
+Trojan JS.3	send("SocketIO:VictimDisconnected");
+Ransomware GandCrab	KRAB-DECRYPT.txt		ef7b107c93e6d605a618fee82d5aeb2b32e3265999f332f624920911aabe1f23
+Ransomware GandCrab.1			37e660ada1ea7c65de2499f5093416b3db59dfb360fc99c74820c355bf19ec52
+Ransomware GandCrab.2			222ac1b64979c9e24bdaf521a36788b068353c65869469a90b0af8d6c4060f8a
+Ransomware GandCrab.3			cf104f2ad205baee6d9d80e256201ef6758b850576686611c355808a681bec60
+Ransomware GandCrab.4			8ecbfe6f52ae98b5c9e406459804c4ba7f110e71716ebf05015a3a99c995baa1
+Ransomware GandCrab.5			6c1ed5eb1267d95d8a0dc8e1975923ebefd809c2027427b4ead867fb72703f82
+Ransomware GandCrab.6			b4b6f6c2588001e5b95eed79faf99a92b9d9224f65af6a92e055ddfb145a1ecc
+Ransomware GandCrab.7			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
+Ransomware GandCrab.8			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
+Ransomware GandCrab.9			6a8d922e34de35ac074b7de54d71227fb1a1ed92b9cfbc4daf8d64a9c5bc46b8
+Ransomware GandCrab.10			e7851a1b3e93968e7f6b92a1a3f59d250402be15a5bcb3262acff1e0a27b912c
+Ransomware GandCrab.11			67c50459db7f0042d7e1a96ce113e60f0179978dfe810bdb0f5320a092ce3b71
+Ransomware GandCrab.12			99eb1d90eb5f0d012f35fcc2a7dedd2229312794354843637ebb7f40b74d0809
+Ransomware GandCrab.13			846ad2d7e1e133ae4bc2decbc22ae686a44cccaffbee15b4d9b23143f6aa8d3f
+Ransomware GandCrab.14			f93379f495ce3c025b8f2ad59799d2de28f00a25b6206572522a71028f925f01
+Ransomware GandCrab.15			b4d0b03ca50f013b4f0f9efc2ecd822bfc13325356100f2f4d36eaf217d9079b
+Ransomware GandCrab.16			be54bb05adbda29316ba03d61b3365d8a03e1121a39ae492078787aff4f1248f
+Ransomware GandCrab.17			229275aa89ea8d39b3cc721d45d51d50707339b64afddde99119ebdf50ef6790
+Ransomware GandCrab.18			589e188602c4a24c68bc095c1105894a5e97e1df6218eaead89b7ab9a4e88eac
+Ransomware GandCrab.19			ad5dbe133679c987f95fc890ab37a48d9d2f9324a53356affd078e26d3cbb8fc
+Ransomware GandCrab.20			7fab866ce5474e690a06ca556c76e63a3c3c184ae493fce03bb2a839ef7ef725
+Ransomware GandCrab.21			c0db3c329592294a81f23c37e701a189110913c17d1371bc625a3eae97f37a94
+Ransomware GandCrab.22			243cafdc3582a750537fb7a4ba4e9640f4142f385478c106514bae0d736f462e
+Ransomware GandCrab.23			a67a98047097f2249eba7a31138efde45f3c02a3f7f46d3a9de85d630da7cd94
+Ransomware GandCrab.24			6fafe7bb56fd2696f2243fc305fe0c38f550dffcfc5fca04f70398880570ffff
+Ransomware GandCrab.25			469961813372d2a3645cf9927c983f5d661e2a60589425d9259e7658de63a181
+Ransomware GandCrab.26			5ab28933afa89bd0924ed45538b753cd260d0a6cec76eeca30d040476cf6d363
+Ransomware GandCrab.27			03b73dfe73dc7f9191e0c3a34801dd0e906b3ba8c79de76681a23a7c34cb5133
+Ransomware GandCrab.28			69f55139df165bea1fcada0b0174d01240bc40bc21aac4b42992f2e0a0c2ea1d
+Ransomware GandCrab.29			0c0def0788b5f946bb2d1a83d883d474550353c98eaffb4456d651cb4bcc3bd9
+Ransomware GandCrab.30			b4b6f6c2588001e5b95eed79faf99a92b9d9224f65af6a92e055ddfb145a1ecc
+Ransomware GandCrab.31			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
+Ransomware GandCrab.32			ed8875c88bf061f45601629fbb3faa9f5b9ea4a076ba5a7accd566dc40862072
+Ransomware GandCrab.33			99eb1d90eb5f0d012f35fcc2a7dedd2229312794354843637ebb7f40b74d0809
+Ransomware GandCrab.34			846ad2d7e1e133ae4bc2decbc22ae686a44cccaffbee15b4d9b23143f6aa8d3f
+Ransomware GandCrab.35			f93379f495ce3c025b8f2ad59799d2de28f00a25b6206572522a71028f925f01
+Ransomware GandCrab.36			e7851a1b3e93968e7f6b92a1a3f59d250402be15a5bcb3262acff1e0a27b912c
+Ransomware GandCrab.37			6a8d922e34de35ac074b7de54d71227fb1a1ed92b9cfbc4daf8d64a9c5bc46b8
+Ransomware GandCrab.38			67c50459db7f0042d7e1a96ce113e60f0179978dfe810bdb0f5320a092ce3b71
+Ransomware GandCrab.39			a67a98047097f2249eba7a31138efde45f3c02a3f7f46d3a9de85d630da7cd94
+Ransomware GandCrab.40			6fafe7bb56fd2696f2243fc305fe0c38f550dffcfc5fca04f70398880570ffff
+Ransomware GandCrab.41			469961813372d2a3645cf9927c983f5d661e2a60589425d9259e7658de63a181
+Ransomware GandCrab.42			ad5dbe133679c987f95fc890ab37a48d9d2f9324a53356affd078e26d3cbb8fc
+Ransomware GandCrab.43			7fab866ce5474e690a06ca556c76e63a3c3c184ae493fce03bb2a839ef7ef725
+Ransomware GandCrab.44			c0db3c329592294a81f23c37e701a189110913c17d1371bc625a3eae97f37a94
+Ransomware GandCrab.45			243cafdc3582a750537fb7a4ba4e9640f4142f385478c106514bae0d736f462e
+Ransomware GandCrab.46			8a1e66b4834499dacc24abb27933c387933d919070fc504b14ee865678952559
+Ransomware GandCrab.47			e9bfa9691b48a75fa917a37290cb32b02ded3ae60dab4bcd625e8f390fd345a1
+Ransomware GandCrab.48			5ab28933afa89bd0924ed45538b753cd260d0a6cec76eeca30d040476cf6d363
+Ransomware GandCrab.49			b4d0b03ca50f013b4f0f9efc2ecd822bfc13325356100f2f4d36eaf217d9079b
+Ransomware GandCrab.50			be54bb05adbda29316ba03d61b3365d8a03e1121a39ae492078787aff4f1248f
+Ransomware GandCrab.51			589e188602c4a24c68bc095c1105894a5e97e1df6218eaead89b7ab9a4e88eac
+Ransomware GandCrab.52			03b73dfe73dc7f9191e0c3a34801dd0e906b3ba8c79de76681a23a7c34cb5133
+Ransomware GandCrab.53			229275aa89ea8d39b3cc721d45d51d50707339b64afddde99119ebdf50ef6790
+Ransomware GandCrab.54			ef7b107c93e6d605a618fee82d5aeb2b32e3265999f332f624920911aabe1f23
+Ransomware GandCrab.55			786e3c693fcdf55466fd6e5446de7cfeb58a4311442e0bc99ce0b0985c79b45d
+Ransomware GandCrab.56			8ecbfe6f52ae98b5c9e406459804c4ba7f110e71716ebf05015a3a99c995baa1
+Ransomware GandCrab.57			e454123d852e6a40eed1f2552e1a1ad3c00991541d812fbf24b70611bd1ec40a
+Ransomware GandCrab.58			6987fd73457ac0b5c245886532b1bdf5d58cb43890e04b706ebba44727403311
+Ransomware GandCrab.59			06ee45a790fa1a88b62d28059c2c44310f7ff56edbdaf35a0b9c44f2a4e57536
+Ransomware GandCrab.60			f5e74d939a5b329dddc94b75bd790d11c8f9cc3a640dccd8dff765b6997809f2
+Ransomware GandCrab.61			c13962f54a949724c0713a133035de7fbd48d49722ee5805be2ef1f8437d275a
+Ransomware GandCrab.62			53c98a623d23798790be0273254515786514fae00d11a928f32d43b5a3e33ed5
+Ransomware GandCrab.63			e9b4d828790e0ee6bbfc0675e09efc212dce7b84e07958a2f0444aeb24914e69
+Ransomware GandCrab.64			e7dc7b0fe39c98d63983eac54326bdf60e79a4f3aa0178564a6c905d11033ddf
+Ransomware GandCrab.65			5746e9436b95b620e5197ea718a598688fd6a587f8f9c2e9ddb9ec13193329b6
+Ransomware GandCrab.66			316a9295cf30b759c02b392f0b5b3e1f28ad2f6ed5ad1a11ad079e3dbcb141e1
+Ransomware GandCrab.67			b0c7057c8467f15e5e4875b696def20fcab892e1d254a369249a3159f0670854
+Ransomware GandCrab.68			428ffc236bc0b08d88f2990a3c1aa4dfab715aa90d65f60217e4f3651bc1b0d1
+Ransomware GandCrab.69			f3c921379c73cd3eec1ff5561ba603480f33caea6d49fc79b8fdf0e642d924dd
+Ransomware GandCrab.70			e11dcc64efb1ce8b8d5237590754c13e92a455095f7f1f501ce64a200f64ffe2
+Ransomware GandCrab.71			6498b44ed0de93353b5b798bb022ec407e85266ca0341e668ef03307d24ceda1
+Ransomware GandCrab.72			97547a45953be24a4261b2fd925748676627112ad53bd3b7240b1643eac4b94f
+Ransomware GandCrab.73	qwerty.exe		ae0d1591385c573af2ad6b04816a7d6a30c87ccf40e8f02b3c76e66a4c8450e6
+Ransomware Sage	4846.doc		b0aed0e368425dfe126491b71546ad27061a1c4346b4de51202766b4113620a7
+Ransomware Sage.1	28255.doc		55d6e3ed606acddf3c4112ffe4b4447f4bfacda9d03d187cbc2374b6048f5712
+Ransomware Sage.2	88507.zip		da8db4d594370f36b93d4121897d4056cf2f36e61b55b6e8a9569e3121fad1df
+Ransomware Sage.3	67214604.zip		13584b8ab9b4c5cb7c89e60ca2fd46e0ce3791d50c0e9a5402415580179a13e0
+Ransomware Sage.4	92181052.zip		26ad4cf58b40b2df9ff39ab302d7bf15bbd4a7e064f614015797a13631160ee8
+Ransomware Sage.5	31084472583.zip		b9216e8e5201a8fc2433ce60cd379079c60c11c888edffc5d130e328ed2c7ffb
+Ransomware Sage.6	525463435470.zip		12f96c81580efc35193561fd45e51abd9b742df11797a198d0df9e6800ce1c15
+Ransomware Sage.7	599450048391.zip		dd18a44aa3166de08c79083dde6b0d697fde882a38a95f749a451b52c4eac4bc
+Ransomware Sage.8	58843249449955.zip		caf07e4e2670dc3c6b824a1fdb0a0de90a00b0759e95c97e88d07f65d646769b
+Ransomware Sage.9	004765275711512.zip		3528de5cdcf6529e1dd7f0e24ead27c0ae360f311e879530f98fb2ac9367c5cc
+Ransomware Sage.10	940.js		b1ae04485794079bc11902bcd56f4b36408fdedb18c44a55d2d919c65fab579a
+Ransomware Sage.11	3822.js		35abf5d73f96856c535499f04791f27103fdb1275e0e74bd4c963b9c3225e94e
+Ransomware Sage.12	3902.js		bab55dc85f006ae26ed5ad447089eb1be80cac75519a199d94620a01651cad13
+Ransomware Sage.13	9660.js		e89ffc61e3c79115bfc3d855227405a850eb7a8fa3ac5c4bdd79389ba6945e31
+Ransomware Sage.14	22032.js		aba9d22dd3573f0902a7219790915de8dbb0b07b5e25ed28c6a87b4acfaa0c39
+Ransomware Sage.15	28588.js		6bcb0a226921fc1a9e6bebd92dffd5dd528937e6bde50bbcc08fd7593e9da27c
+Ransomware Sage.16	29219.js		942f64e913a1f3781adecd88e47f8da75981f69d20ce9206e3374f5331a54e0f
+Ransomware Sage.17	29459.js		24fc14ae2bfa634a54cafc6b22a596ad2b85dba621388255d3e0eb6294cd03ae
+Ransomware Sage.18	32148.exe		6132c32a717ff1d5f5ff86ce0d4a27d59b332ec1f5e75f12c1346c0ab3fbda0c
+Ransomware Sage.19	4051.exe		b16eea3a52ad7ffe0b18309395da9394982b6219f16e021e43ce57931d29a0ec
+Ransomware Sage.20	417187.exe		81609d5cdc5068ffd5975c1045710cecdbaa33a2eed682894322847e93c9cb21
+Ransomware Sage.21	220986.exe		cb219bf88ceeb2ecf95072576148e17e52e56e5f02876ac00a204a3bcb9352cc
+Ransomware Sage.22	27599.exe		008484650884010ac949d1041e48dd0abf4967c9ddf305a971ddfc32f9d4cfeb
+Ransomware Sage.23	483882.exe		5a99897d463f1685b83b2d017dc734ba657fe3f612a74fcba730b826fce5e44c
+Ransomware Sage.24	636057.exe		64978bc162765959aa0c3de15f4fce90041bf3bc01e668ba649eb7e686222a30
+Ransomware Sage.25	496938.exe		046b9330d7da6619ff96ce3c94adc5f35fa2fb26cd1da7d2f57890bfde5e4f59
+Ransomware Sage.26	803051.exe		8f1374b432fa7580397e57949b32044e89663215e71ad0252638875a61908323
+Ransomware Nebula.Gootkit		48ae9a5d10085e5f6a1221cd1eedade6	6fe13d913f4d3f2286f67fbde08ab17418ba8370410e52354ffa12a0aaf498f8
+Ransomware Nebula.Pitou		6f9d71eebe319468927f74b93c820ce4	b976cf6fd583b349e51cb34b73de6ef3a5ee72f86849f847b9158b4a7fb2315c
+Ransomware Nebula			f4627005c018071f8ec6b084eef3936e3a267660b0df99ffa0d27a8d943d1af5
+Ransomware Nebula.1			be86dc88e6337f09999991c206f890e0d52959d41f2bb4c6515b5442b23f2ecc
+Ransomware RigEK			0e78c0dc543ae85b59d60d6a0de3986cb4cab1640cb0809a3e9ce10657a71851
+Ransomware RigEK.1			c9b281940374a6b02349c8804b6f58ae1faec061dccd346118acdf68c050824d
+Ransomware RigEK.2			e5df732f8fca61061901a1f56cd7c2dbcb8bd2422ace9c2e9237250fc2179331
+Ransomware RigEK.4			0e9bedc57f97bb2c7119ad4713b03fc9b10df09202fb7a237b610aec4687b736
+Ransomware RigEK.5			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
+Ransomware RigEK.6			2ab8768a94a4983f4c5a19fc486c85386305e51d6f86854cc50db89f98701d5d
+Ransomware RigEK.7			31f8dbc34d8c34982ff6248a60786175cd010bbb80f18eb6cfd8ff83d2c3a0e5
+Ransomware RigEK.8			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
+Ransomware RigEK.9			6ca263b7d150b820c5f13458d1ceaaf0360ac401799379bcec79a99f2bf8e5ce
+Ransomware RigEK.10			6993b911a6310ff7097105922de714d7a070c13633e79c36701d3cccf4086719
+Ransomware RigEK.11			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
+Ransomware RigEK.12	krp3cmg		d871fa0e1ac9e03e65b71fc9f3261a320e63fd1731fae33595f79ec51d5fabc4
+Ransomware RigEK.13	381m6bv285.exe		12dc4c44b0bdbe2efb8d10de14b09682589069e3f2ea0c82b21c4270455d199d
+Ransomware RigEK.14	eunlock.dll		8411ffb402372f51fbcc5f4d80f23eaf79871650d5cbbac8597c3667a49870b6
+Ransomware RigEK.15			25b36b3ae96b38259cb473df2b0d02fe94135b8d53b960dc95315567590c683c
+Ransomware RigEK.16			9c18ef0d4b441cdcefcdbaceeb111a207dc1460ac2a082785cc028551606a5de
+Ransomware RigEK.17			e7b3102e3e49c6c3611353d704aae797923b699227df92d97987a2e012ba3f25
+Ransomware RigEK.Cerber	radF22EA.tmp.exe		840ce47e94db6dae302dddbfe33f9548a47541a0917def5e2e5644fc2965ba52
+Ransomware RigEK.Cerber.1	Rig-EK.swf		5a49dfdc87158cca5e0990361d57d870fde6aa6f63d16096698ba4c244bc3b54
+Ransomware RigEK.Bunitu			b27b370597fc8155f518dbc07f188c30ebc8e1d210f181acaf36ddb20714d64e
+Ransomware RigEK.Bunitu.2	airzaxz.dll		43be87120cbd555dc926becbe92fd7a0b2a43d1dd0418b3184d59c676c81eaf6
+Ransomware RigEK.Bunitu.2	diamond&basket		e4a1f94d58bd5ef7875991688017465441d99edc0d663bdac813bb9d03cae258
+Ransomware RigEK.18	experimea.info		8c9566ff0ab6df29f5d879e26d294e5836e3741b269a644ce497440a5e380164
+Ransomware RigEK.19	ipinfo.io		644b6905a1a1b35620c5dd44bfd30e039bbeaa54799853b4b93ee7ee51bbbe0e
+Ransomware RigEK.20	/windowsxp/t3.css		8bc2a1f203d87c731d036130c419ae6c7ad85eca159fe9c0effa32e5f97514ad
+Ransomware RigEK.21	/banners/countryhits		db6c76521f9adfbadd0f8bb54279d81fa784025dc9e0250d50e92f4742f0b669
+Ransomware RigEK.22	d84d21ud9dm9a74y.keyvote.webcam		515739205714a47c92e117342abdb1a7afa16747816a935bcb7b4a9ce7405401
+Ransomware RigEK.23	b16eauf5z38u9l.ourspen.com		16aa9721fc22325227e041a7bc7a6a32b7523dc986c20a0f62513abe7261a8d9
+Ransomware RigEK.24	_R_E_A_D___T_H_I_S___		46a6356f31fc40cf9d5adc5ded0d56fc595b13154045b11e86882b5fbf62aa5d
+Ransomware RigEK.25	3Np2K9XwEp3C.txt		cf3459cf29125101f5bea3f4206d8e43dbe097dd884ebf3155c49b276736f727
+Ransomware RigEK.26	8EUj3DVsJ3l6.txt		ec01ef73e22bb706baa87f994397d827b0cfeae0cc6bb8e9d5785e8171ed785c
+Ransomware RigEK.27	QMxBnqBlgl4e.txt		cee87e61f13e50217169e338342370aa94e31f0bacdf3d1b901e1dd79c9f8d87
+Ransomware RigEK.28	TyIPdwZ096Uf.swf		9cf8ed1111cb5b04b040ad57dcf87225659a6cb4ac10e7cf4381d397b5f67c89
+Ransomware RigEK.29	Uhg2F49WHwXu.txt		0dbb15afb887069b2f75308d2cff947db56d08adf8ceb17bb39ccdc71db28db3
+Ransomware RigEK.30	cZV9AQd9UyjN.txt		7ff9703ac519fa05d323e032b16b2b55cbaf8e1f51d1e89a0a337c4125aebe97
+Ransomware RigEK.31	mESH7HMjAcFA.swf		adc668371b43cbd6711a01a49015e3f2f52de6ed6080bbe873bc7366593f235b
+Ransomware RigEK.32	showthread-php-id-7991937328.txt		6e7f74fb50217ee363622f8e70976342638049499523325df4c03c340e64bb15
+Ransomware RigEK.33	S2hpxwQ/		
+Ransomware Gryphon	support.php?f=1.dat		9db57550187c44ea708052f8c351717f55e629de1841b9e84575dee0460fa532
+Ransomware Gryphon.1			7c2d071458efb62cc542ad3f078549a04431754c0e45fa6a618790e016bd8593
+Ransomware Gryphon.2	pHzI.js		315281c5c0441e79907f2503a406c013bc7bae8ed568c4f04103ef4d2717847c
+Ransomware Gryphon.3	lI85VOyk.js		dfaa0426b78d14eeb514ab6d479aae65ba7c52445bd0eda654e39557fa5a366d
+Ransomware Gryphon.4	RLbPRgWrsX.js		963414d992fb832d1fc46c160e9dffb35316226843c3b9e5b5da629d0b5d05f4
+Ransomware Gryphon.5	7oSZHYt.js		ca228784df33a56566e9435455daeb799736f300392c183b47fcc024f6b50392
+Ransomware Gryphon.6			dbe99b18ad9ae46e26a96d323f1587dd01cf634db9da4f3ce8ab9be682cbab24
+Ransomware Gryphon.7			4022bfb198bbe1ca5386f7a9cd760492f662255eb400c855eeb88c92d89c8467
+Ransomware Gryphon.8			933af0c69e1e622e5679e52c24545761c2843b3f52ea38e63bbe4786bfd6276e
+Ransomware Cerber.1			e9e8510d4ae6d8b2498079ec3100452dc78dbec24b10bf0fcaac84538f5d412a
+Ransomware Cerber.2			748a3c119026f2579867963c33f6fd16375e8f62a38be580654c726709484b94
+Ransomware Cerber.3			8745da2b43f07167e6f2c2eb84a646c0feb236671f206047fc2cdc1081b3f982
+Ransomware Cerber.4			b36bb18faa7adea81436651e6062df0200dca5a578842dc5d6ea03379c4795e9
+Ransomware Cerber.5			aeab730e99827a820e318f43a57463f3dcdcb5182b4e41e71a4d5f436623e792
+Ransomware Cerber.6			4fb39a97921f066af6a551274550461874138683979bf5e52acd937ea19bfc0c
+Ransomware Cerber.7	19206_ZIP.zip	b8658a91138b7be842293612c1c1d9dad873ed4638f84262cb58fcee60eab8a4
+Ransomware Cerber.8	19206.doc		03aa2410d07ea49dd6f05f2e0b0815ad400a83725ac88281b5f85ee7a7314bc7
+Ransomware Cerber.9			ccd2a5c27c92ed489287d7c9d48c42c8c0c12902ad598ac51458e388e22c4385
+Ransomware Cerber.10	4tjgwc3p.exe		1c693f3448d0bd9f300f9f8d752f50db352aea7a8c1961f369291d8e6010fd0d
+Ransomware Cerber.11	oqwygprskqv65j72.1hbdbx.top		9cf8ed1111cb5b04b040ad57dcf87225659a6cb4ac10e7cf4381d397b5f67c89
+Ransomware Cerber.12	d84d21ud9dm9a74y.keyvote.webcam		cee87e61f13e50217169e338342370aa94e31f0bacdf3d1b901e1dd79c9f8d87
+Ransomware Cerber.13	b16eauf5z38u9l.ourspen.com
+Ransomware Cerber.14	_R_E_A_D___T_H_I_S
+Ransomware CryptXXX	a89f7c458d358615f2d3f0642141febb	fdbeed00cacca229607aa70ee3538c92d57bab7b29cbce0f1c05c1f84c68aa20
+Ransomware CrytXXX.1	41706d9153eef3a2f5795e58a334b00fa3f40e8d	d9888e38a2f813139331dbac1f07fede19c784a4c2212cff8c17c83a40a2f84d
+Ransomware CryptXXX.2		275ebe2a72951737a3502d00f967c87d4f2fba03c4828d27270ab0f88a4d8f65
+Ransomware CryptoWall.1		3769639c17f0cd5045964b0839c9f009	03467f231a3fce6795545ae99a6dad161effa3bf681031693815eabf1648ee66
+Ransomware CryptoWall.2		b6c7943c056ace5911b95d36ff06e0e4	d5a70ba5a194ab737fc52b9f4283ce9d32f090590aea34224f7ea9ec63557a4f
+Ransomware CryptoWall.3		b30a8168ff49145d7d3cdcfd47dbfaef	23eae15fbd3fff11ae9c0a74dec2f078a0213b6df54cf0011a0f5feae20437ec
+Ransomware CryptoWall.4		167f16c8ae349cfb7d450cdf335dd9ca	fa706ed93469c257ee1531ddcf57bbab8734f3d092712158faf4e27656ab832e
+Ransomware CryptoWall.5		a7e38522f8ff161968f72d8bcc956b4e	fc5e57f70bdce3af0e8c43d124eacd1ead0be79bf369284f85a5f81c629f345e
+Ransomware CryptoWall.6		f612500ee9764e18ca78d2e78df5b017	7351e53bd863795104d609f2192e3436d3a07fb597f0bab35d175df88a34c3e0
+Ransomware CryptoWall.7		e36bbd682b5dd435baec8ec268c9c825	d14f1d1e07bd116ed0faf5896438179f36a05adacf5af4f32910e313e9c1fd93
+Ransomware CryptoWall.8		44150a32a84d3e1e07a042c3042a854c	114df2c79884312fc58d48bb6c4eb2ae23bbea2c37aad29c6fc0f544d7a16e36
+Ransomware CryptoWall.9		189d1d0c7ec162533b4aff4b8d0e95b1	a7c2b304848f18c412796e5f461b42186b690eeed7b2955522f9fe716cfa3876
+Ransomware CryptoWall.10		e9929a6751f184cb71d3c4adfc6fb78	ab89a375ba9a0ec6ddc875ddde7647c4d2a140b07233580b143e0ca9aaf581f5
+Ransomware CryptoWall.11		2fde49072741d59fd941b494403b9b0f	63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070
+Ransomware CryptoWall.12		934b014689791a7689c70cd179c8bd71	a66b62735473fe257d35d003eb71aeb832e055d6f727e42ef1880c4d054118bb
+Ransomware CryptoWall.13		fc8db5b43ddf09bf0f03171e262495f6	47faaf4ab59c18ad9c72df1bec65873c350b5d72f361a723ae5f8b279a5b6b22
+Ransomware CryptoWall.14		00b536d9838b3e19d0ded1a6612a8b53	a3ccdcf57d11314b8db4733eb67ab06f41a710c2e3404a26e5390465bcff7609
+Ransomware Locky		7a23368ee84781d7584e058a9922f324
+Ransomware Locky.1		74dde1905eff75cf3328832988a785de
+Ransomware Locky.2		d9df60c24ceca5c4d623ff48ccd4e9b9
+Ransomware Locky.3		c5ad81d8d986c92f90d0462bc06ac9c6
+Ransomware Locky.4		357c162a35c3623d1a1791c18e9f56e7
+Ransomware Locky.5			7b45833d87d8bd38c44cbaeece65dbbd04e12b8c1ef81a383cf7f0fce9832660
+Ransomware Locky.6			357c162a35c3623d1a1791c18e9f56e72bcd76f6ef9f4cbcf5952f62b9bc8a08
+Ransomware Locky.7		b0ca8c5881c1d27684c23db7a88d11e1
+Ransomware Locky.8		c325dcf4c6c1e2b62a7c5b1245985083
+Ransomware Locky.9	mrsweeter.ru/87h78rf33g
+Ransomware Locky.10	185.130.7.22
+Ransomware Locky.11	sBpFSa.exe
+Ransomware Locky.12	WRwe3X.exe
+Ransomware Locky.13	gvtg79996
+Ransomware Locky.14	buhjolk.at
+Ransomware Locky.15	dIseJh.exe
+Ransomware Locky.16	aY5TFn.exe
+Ransomware Locky.17	buhjolk.at
+Ransomware Locky.18	23.exe	f3d935f9884cb0dc8c9f22b44129a356
+Ransomware Locky.19	24.exe	0d01517ad68b4abacb2dce5b8a3bd1d0
+Ransomware Locky.20	details_AneLU.zip	bb84729c02b898b7aeef6b65c119f0c4
+Ransomware Locky.21	details_bkxeL.js	10c1be3b95fa013458081d19747bc0df
+Ransomware Locky.22	details_cOBYkk.zip	cc095bc05e61a0b373671e6f80f72686
+Ransomware Locky.23	details_CRFuvd.zip	c9cf8185d1168b0712e532a6a7d88fe9
+Ransomware Locky.24	details_dFTHp.zip	5ad3fec19d0723532dea49a2ccc3ea9c
+Ransomware Locky.25	details_FyReR.zip	f2284d51a3daffcb12ff91f57601c246
+Ransomware Locky.26	details_LKXcNI.js	a811a54525161017e5ac1f85b83d2758
+Ransomware Locky.27	details_MGStju.zip	ab5540f78e67fd196c1be1dfd3612947
+Ransomware Locky.28	details_mSplK.js	cdacbaf9b13333ac264b798797432391
+Ransomware Locky.29	details_pKvHWv.js	17d0d6d8176e01e92f74b9ce08ba188b
+Ransomware Locky.30	details_PpxpD.zip	320151d35fd61ef1b17f8fe921c4beef
+Ransomware Locky.31	details_rqpOqK.zip	f30d21a5c882dbdb011b361a5cba67a4
+Ransomware Locky.32	details_shHih.js	111af7979728443aa268479a87c29656
+Ransomware Locky.33	details_XCFvfh.js	b4179c5a075fed9b606e9b7f068dca4c
+Ransomware Locky.34	details_XHZms.zip	c3e012a26c9fee9ff72bddf413f74f52
+Ransomware Locky.35	details_YAVSi.zip	e0cabfc058cc4d6ff2419743a79f6b1a
+Ransomware Locky.36	details_ZHewkz.zip	f7a7d41def5a90ed504581edf719c079
+Ransomware Locky.37	details_zZcSMY.js	d2096cc86d4d89904316caca5b2242f9
+Ransomware Locky.38	doc-details_cLOFYn.js	doc-details_cLOFYn.js
+Ransomware Mole	Font_Chrome.exe		c2e1790241fcc4b5c889fec68df024a6838e63e603f093715e3b468f9f31f67a
+Ransomware Mole.2	?number=879-804-5390		efd50264cee4f36e18f78820923d8ad4c1133c35cdfa603117cc4f5d5ded7ff5
+Ransomware Mole.3	newantikas/?nbVykj		
+Ransomware Mole.4	clinicalpsychology.psiedu.ubbcluj.ro		
+Ransomware Mole.5	supportxxgbefd7c.onion
+Ransomware Mole.6	supportjy2xvvdmx.onion		
+Ransomware Ransom!Gen7			1e6353973206502c55d6f1a2370d8a0a50cc2946f88e033fa580f88df52f6cfd
+Ransomware Ransom!Gen7.1			1e6353973206502c55d6f1a2370d8a0a50cc2946f88e033fa580f88df52f6cfd 
+Ransomware Mordor	/admin.php?f=404		83b435bb1349e8676f671505c4850ef2be1dbc4da27adf246c8452553096a5ea
+Ransomware Mordor.2	1327.doc		7f2335466ecca7be6888f92b5ba260780ce0a38039ceb54ac99b0485b3b086de
+Ransomware Mordor.3	20780.doc		5be2c27d9ad2bf91b8263273e992744e074fcce7967643bd9bab8c05622583c0
+Ransomware Mordor.4	4033.doc		74616a15e79b58e1dc6fac225865fb0fdd6470e76bbf358260317cba44ee9636
+Ransomware Mordor.5			3c858a40d94d1c9ba1b3d9d637b295eaa48f491dc24eb2e43f964cac518270fb
+Ransomware Mordor.6			dd24b0eb3b2126683c961731244ccee63e0b25c26186811da33be0d7ff1f98c3
+Ransomware Mordor.7			f853d76ad14ffec2799706a9861d79ba37d5ebb7c494b88d735330d571caa54d
+Ransomware Mordor.8			15d5f8faf33a50a973ec36f70c69459c3bdcac27b929a6a76d5a9dac50e4cc27
+Ransomware Mordor.9			0b58b14a4f500314414bb793aacd00336a454f3543e0c126a86544f823aabbfa
+Ransomware WannaCry		07c44729e2c570b37db695323249474831f5861d45318bf49ccf5d2f5c8ea1cd
+Ransomware WannaCry.2		09a46b3e1be080745a6d8d88d6b5bd351b1c7586ae0dc94d0c238ee36421cafa
+Ransomware WannaCry.3		0db91ff8822f1623fe36d712b5f56d339dc21008f1ecc617a5de2f522039c5b3
+Ransomware WannaCry.4		11011a590796f6c52b046262f2f60694310fa71441363d9116ada7248e58509a
+Ransomware WannaCry.5		11d0f63c06263f50b972287b4bbd1abe0089bc993f73d75768b6b41e3d6f6d49
+Ransomware WannaCry.6		16493ecc4c4bc5746acbe96bd8af001f733114070d694db76ea7b5a0de7ad0ab
+Ransomware WannaCry.7		198a25e52018dce7b2f76c3b49948211761dd4f29fc43599079155e61b335234
+Ransomware WannaCry.8		22ccdf145e5792a22ad6349aba37d960db79af7e0b6cae826d228b8246705092
+Ransomware WannaCry.9		31c2024d0df684a968115e4c3fc5703ef0ea2de1b69ece581589e86ba084568a
+Ransomware WannaCry.10		32f24601153be0885f11d62e0a8a2f0280a2034fc981d8184180c5d3b1b9e8cf
+Ransomware WannaCry.11		3463ea99389ef4836cfe0565539ee80c4c3a8159930c408f86147a59632d593a
+Ransomware WannaCry.12		38c6efb48b32a3f22cc4c307e9043d59aedb0e008300663f83803819e5f260b3
+Ransomware WannaCry.13		3dc6191c1255cfbaf94461e9a44f5b698c5563bbf846c94c4edd343828943a1e
+Ransomware WannaCry.14		4186675cb6706f9d51167fb0f14cd3f8fcfb0065093f62b10a15f7d9a6c8d982
+Ransomware WannaCry.15		4384bf4530fb2e35449a8e01c7e0ad94e3a25811ba94f7847c1e6612bbb45359
+Ransomware WannaCry.16		55454390f7be33ab5c11b5e0683800dd9a892ce136f1962b0989526fff5592d5
+Ransomware WannaCry.17		57bf2fbb8e42993d96f0e00f1d0140713a6676156ad83ad81e983099123f796e
+Ransomware WannaCry.18		5ad4efd90dcde01d26cc6f32f7ce3ce0b4d4951d4b94a19aa097341aff2acaec
+Ransomware WannaCry.19		5dee2ac983640d656f9c0ef2878ee34cda5e82a52d3703f84278ac372879346d
+Ransomware WannaCry.20		6bf1839a7e72a92a2bb18fbedf1873e4892b00ea4b122e48ae80fac5048db1a7
+Ransomware WannaCry.21		7b7aa67a3d47cb39d46ed556b220a7a55e357d2a9759f0c1dcbacc72735aabb1
+Ransomware WannaCry.22		7bb9ea2c0f53fa96883c54fa4b107964a6319f6026e4574c9feec2cb7d9e7d21
+Ransomware WannaCry.23		9727be564431c50cad790d13306a5848a230a41761ec550d13a569e7992a193c
+Ransomware WannaCry.24		9b60c622546dc45cca64df935b71c26dcf4886d6fa811944dbc4e23db9335640
+Ransomware WannaCry.25		9bde3b313a2161f01ec0165d7871791b37fdc9311b4ccfbba02e14ae765d0761
+Ransomware WannaCry.26		9f35e3393e442b4a35422e4b927e530712bac8ee2034a884b6ef724f0d8ec0ef
+Ransomware WannaCry.27		9f35e3393e442b4a35422e4b927e530712bac8ee2034a884b6ef724f0d8ec0ef
+Ransomware WannaCry.28		a50d6db532a658ebbebe4c13624bc7bdada0dbf4b0f279e0c151992f7271c726
+Ransomware WannaCry.29		b47e281bfbeeb0758f8c625bed5c5a0d27ee8e0065ceeadd76b0010d226206f0
+Ransomware WannaCry.30		b4d607fae7d9745f9ced081a92a2dcf96f2d0c72389a66e20059e021f0b58618
+Ransomware WannaCry.31		b66db13d17ae8bcaf586180e3dcd1e2e0a084b6bc987ac829bbff18c3be7f8b4
+Ransomware WannaCry.32		b9318a66fa7f50f2f3ecaca02a96268ad2c63db7554ea3acbde43bf517328d06
+Ransomware WannaCry.33		b9c5d4339809e0ad9a00d4d3dd26fdf44a32819a54abf846bb9b560d81391c25
+Ransomware WannaCry.34		bd927d915f19a89468391133465b1f2fb78d7a58178867933c44411f4d5de8eb
+Ransomware WannaCry.35		d849067bf9365d99088cbb935a98479cd38519e3ab8ac1bfe662588f8179d22d
+Ransomware WannaCry.36		c354a9a0bbb975c15e884916dce251807aae788e68725b512a95f7b580828c64
+Ransomware WannaCry.37		e14f1a655d54254d06d51cd23a2fa57b6ffdf371cf6b828ee483b1b1d6d21079
+Ransomware WannaCry.38		ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa
+Ransomware WannaCry.39		e8450dd6f908b23c9cbd6011fe3d940b24c0420a208d6924e2d920f92c894a96
+Ransomware WannaCry.40		ff8fcdc4cae2c9ed5207e53bb5bf1d97eef8147979d2bddfe8f55be91410f32c
+Ransomware WannaCry.41		f8812f1deb8001f3b7672b6fc85640ecb123bc2304b563728e6235ccbe782d85
+
 Malware Hanictor	hancitor.dll	f472c00abef3324460989972362458e1	420b028db799bdee1355b568fd1757a579505df41a1f3f620954a34d2b49a926
 Malware Hanictor.1	42239.exe		9041418337322cbdf1f6105d4ade74110b25675f00c72b0728f66faa56a73f05
 Malware Hanictor.2	BN53F9.tmp		63733fe624b6e2ca7941a30e33f2e664a973d91c5a28abe6204aab4a0062d917
@@ -437,445 +1156,113 @@ Malware Jaff.14	NCVH2PL.doc		8abb70a36f99ee613f65535aeaaf28a3d0e79df7129110f4f9e
 Malware Jaff.15	WXEVIR.doc		9383ade91f05af3f350831ac76ba218e42fc033964753e6db71c0fded5b0b832
 Malware Jaff.16	W2X2PEW.doc		c47090ad7c20f9cafee4e162985f6a2d8b60c4e3b3327d532e70a167b8a1a9e8
 Malware Jaff.17	bruhadson8.exe		2cc1d8edc318e0e09aad6afbc48999980f8e39e54734bca4c1a95c7b5db39569
+Malware Malspam.155	+gPp6bGvrqa9/fz2790A/amupqawrp8=	474b3cd073b0a40d656b1a2f5bb673cf	07a99580b94a4854a7e49ef38d03f070350baab088130b23d79dde29242eb346
+Malware Malspam.156	printto(\"%1\",\"%2\",\"%3\",\"%4\")	9bce099b5b01c305a5d98f1fd262bce1	468200d4d207a7cc1df245b9670fcf9e3c491dd344643cd7edcf8a82f2cde214
+Malware Malspam.157	SUSRAIZCqllahrCohrlojSarZSalpecasZ	00aaf0ddcc8d9b197c148e44d9e72d8d	2cccdc51aea02049dc7f96f510a13311f112096a7d870a97d70232356ddef42b
+Malware Malspam.158	SYST%-\\#urrENt#ONtrOLSEt\\SErvICEs\\	a548c18aa678626dab9b60628712cc18	d4d1708e2ea1f897d2db66e0c1be8486a0bb62e0834d65d98991fe0f79cb7c11
+Malware Malspam.159	\\\\.\\agmkis2	03B196D513E102D7035A19204A36EC4C	8ecf4f11e3ff132b88d72fa3dd458e1e2d1badfee892fed7d855228ecc9495a1
+Malware Malspam.160	dwm_dropped	74B6EB643F42253B9B60116723B95D22087A765A	a0bdb809a45a5558bcad4d66290f084f8eb7e9ceb6bdd13132fc3e5f3c9255c6
+Malware Malspam.161	Tdx_Dropped		ca30c42334fcc693320792b4ce1df26fe5f1d0110bc454ec6388d79dffea4ae8
+Malware Malspam.162	TdxWCfg.exe		38ac35fd95358b84cd91d9ba55ceda9039dde7d908fb1ac736aa332d6d7d9e28
+Malware Malspam.163	_Heather_Tamse.doc		b7ef644b7883bbbbf5f0869b193d22190260570606646e61099a7df383144b41
+Malware Malspam.164	_Gould,_Carolyn.doc		9bdd885fdc1fcdcc34054062c0e3fce007a2ea5c0a4f4366eefac836c697b465
+Malware Malspam.165	_Stinson,_Lisa.doc		507d1559ec7507a311f2be88cd7110511402300769f0fe89fe17d36d4224c6e8
+Malware Malspam.166	_Michael_Kaba.doc		2d6a7cc9a14b7d9764bd481abc84a06739e94a9bef7a84c6a30b0c5b65cdf463
+Malware Malspam.167	_Oleksiy_Shapovalov.doc		e54dd6213683d48db6b86af92636817106138bc49f8cb6bebe39926ccb4f0af7
+Malware Malspam.168	_Beatriz_Márquez.doc		01e7207e732e67fb3280597ea39bb8ca59fba7bdede1bb4d509e0947d69a5e0a
+Malware Malspam.169	_Sharon_Gough.doc		19554594d13500ff0c0f5d73d07fa4ec0bf44ca2b3b2581be470cdd02919a7d0
+Malware Malspam.170	_Brian_Roberts.doc		ea52d89e63297de4bfbe6bae72e3c928dfdacde64b5585c797d08dc6595c9557
+Malware Malspam.171	_Tran_Nguyen.doc		1790952c31d0f142519e8d5762bd441be97cb050b353ecdc91b19a8b44ea59d5
+Malware Malspam.172	_Troy_Yochelson.doc		58449c472d5841504af747b8558245b3416c01faae9843f8dd395000a9a6e704
+Malware Malspam.173	launderability.exe		51f670520fe4b7f5d827e2f1798c45439d35fed19e9aca6ed0a21acb93527f00
+Malware Malspam.174	WUDHost.exe		204d34b2c3271db299dec30ccf0ca845dcd33558b0ee86eb956db3e2a6b4d5c2
+Malware Malspam.175	Ogtqhhyuwind.lnk		a8fa0aa5f33508d872863684f2ddec8146b3287b0de25e24516b1d9f97e39acf
+Malware Malspam.176	jrv0q		be176c34ee14506001aa17e6570be57c79038b23789f3d407db370ad5bc2a6c6
+Malware Malspam.179	nircmdc.exe		d7bb1f853e55fa7f80f04bf1cd4b20129843a6821881dff0bf860dbcfbf33bac
+Malware Malspam.178	taiwantotallydeputy		6432d90a7ffbbdd41b0da8443d2d1c4f379dabb6ffde4f6e28a8bd88d41732fb
+Malware Malspam.179	blog/inv.exe
+Malware Malspam.180	ivanajonkovic.com
+Malware Malspam.181	9684ff.
+Malware Malspam.182	bJava.exe
+Malware Malspam.183	afroamericanec.bit
+Malware Malspam.184	snap.cr-acad.com
+Malware Malspam.185	nledarwoq()
+Malware Malspam.186	xyiihcxp.exe
+Malware Malspam.187	Chrome.Update.dce
+Malware Malspam.188	PrBhQkFh.xQE
+Malware Malspam.189	iellsorting.exe
+Malware Malspam.190	FYRINGSSEDDELEN
+Malware Malspam.191	TAPI32.dll
+Malware Malspam.192	WTSAPI32.dll
+Malware Malspam.193	BdeUISrv.exe
+Malware Malspam.194	chaibuckz.com
+Malware Malspam.195	cognitionclassroom.com
+Malware Malspam.196	fastandup.co.in
+Malware Malspam.197	intecwi.org
+Malware Malspam.198	mcnconstruction.net
+Malware Malspam.199	propertiesfirst.com
+Malware Malspam.200	sewardsfollybarandgrill.net
+Malware Malspam.201	unlaca
+Malware Malspam.202	etsofevenghen.com
+Malware Malspam.203	hincasupheck.ru
+Malware Malspam.204	seromratbo.ru
+Malware Malspam.205	milaromanoff.com
+Malware Malspam.206	docusign@milaromanoff.com
+Malware Malspam.207	ivanajankovic.com
+Malware Malspam.208	dokucenter.optitime.de
+Malware Malspam.209	jointings.org
+Malware Malspam.210	kitcross.ca
+Malware Malspam.211	shawneklassen.com
+Malware Malspam.212	laxmigroup1986.com
+Malware Malspam.213	BN13CB.tmp
+Malware Malspam.214	degrand_lemunst@yahoo.com
+Malware Malspam.215	neighbor.onegooglechecksim.xyz
+Malware Malspam.216	chichi.onegoogledeleterent.xyz
+Malware Malspam.217	lot.onegooglechecksim.xyz
+Malware Malspam.218	pppoe.bit
+Malware Malspam.219	weather0.bit
+Malware Malspam.220	mygranny.bit
+Malware Malspam.221	six6.bit
+Malware Malspam.222	PERSPIRATIONS.vbs
+Malware Malspam.223	PERSPIRATIONS.exe
+Malware Malspam.224	Hestekraftens.exe
+Malware Malspam.225	xenophora.exe
+Malware Malspam.226	learncpp.bit
+Malware Malspam.227	/eesti-amatoare-neighbor
+Malware Malspam.228	dkdkq.exe
+Malware Malspam.229	?s=d14d8cd32ec253835c076c04f7e67da2mf
+Malware Malspam.230	dffc4090b3576aae0fb5f800c91f9173fl
+Malware Malspam.231	198e4404289f5109a67192288b5294f5sw
+Malware Malspam.232	pantera-classic-chichi
+Malware Malspam.233	e31e6edb08bf0ae9fbb32210b24540b6fl
+Malware Malspam.234	336d3757542e4bd97b71091bffd0c275mf
+Malware Malspam.235	holiday-titanime-lot
+Malware Malspam.236	a6acd7f14a570b2aed5b7175b47133bbfl
+Malware Malspam.237	d4a09da02780baeca3114b1b9162871bsw
+Malware Malspam.238	606b700bb49450ae37ad3a041661df07mf
+Malware Malspam.239	rozhan-hse.com
+Malware Malspam.240	newageconversions.com
+Malware Malspam.241	CVE-2018-8174.py
+Malware Malspam.242	beaveries/aoer.phtml
+Malware Malspam.243	Psoriasic
+Malware Malspam.244	onlinedattingforlive.info
+Malware Malspam.245	russkistandart.info
+Malware Malspam.246	not-my-guilty.com
+Malware Malspam.247	capitalinvest.ac.ug
+Malware Malspam.248	https://raw.githubusercontent.com/w7374520/CVE-2018-8174_EXP/master/CVE-2018-8174.py
+Malware Malspam.249	http://51.15.252.131/CC/index.php
+Malware Malspam.250	http://51.15.252.131/files/go.exe
+Malware Malspam.251	ddosprotected=1
+Malware Malspam.252	1u2.exe
+Malware Malspam.253	yourseo.ac.ug
+Malware Malspam.254	wog92bqzqg1m9j4i3.website
+Malware Malspam.255	http://95.142.47.43/v2.bin
+Malware Malspam.256	http://95.142.47.43/c2.bin
+Malware Malspam.257	http://pastebin.com/raw/jkBxauyv
+Malware Malspam.258	\AppData\Roaming\Temp\rad
+
 AdWind			c3a3ac48b3c6e0f7e48c7a2bb2dc3fa4f2c8d5fd0fcf1e0bce096b6b0f50eccf
-AdWind.2		c5387a9af9ee4ee5809d59680161059c03c029794dec391b142a97baa8d5d42c	
-Exploit CVE-2016-7200	188.165.163.226
-Exploit CVE-2016-7200.1	<Session SID="161" BitFlags="208">
-Exploit CVE-2016-7200.2	chakraBase.add(0x1DA2F5),
-Exploit CVE-2016-7200.2.1	<SessionFlag N="x-responsebodytransferlength" V="7,757"/>
-Exploit CVE-2016-4117	import com.adobe.tvsdk.mediacore.timeline.operations.DeleteRangeTimelineOperation;
-Trojan DarkComet			7d14025275fbcd279f74aaaa0533bfe02f22c070a954c813d75140a8c352b36d
-Trojan DarkComet.1			f5118f6534b0bb265f563421697bdcb29fed31267f75a71d7dd0da7a31be662a
-Trojan DarkComet.2			7a141eba6dc8b7e6a27bdcf067e1c45fc9e35aa2f699b3b526f44be6b47a54d5
-Trojan DarkComet.3			1520fb831f4c79f57f663e393b0ba0f2edc8bc0455b86e0641485432acd1bfe8
-Trojan DarkComet.4			c15d6ce3051ecb4a4aa1e128ea85c0b4159de3d36430578b5bacdb074cca0d2d
-Trojan DarkComet.5			a68083aaddbba3d8e23f607aee07cc1b4ace727c9f0539ad9edda594b0ae0b1d
-Trojan DarkComet.6			93f1b692dc95fc9d1fe0fbb68b82841bc5ad02561a90d5e081ae00e08e02c350
-Trojan DarkComet.7			25437f103f7ccbc444d8703bbf7a08d7691c5d00066bdeb80bd60883bfb16327
-Trojan DarkComet.8			fea9e7094bc95dc152f595f7b45c78ec15a76fc6ceec9812d38de6c601c4170e
-Trojan DarkComet.9			d142c0342a9540a8b78fe649c92a0e960da4cda5f45d3d54d0502abc41e29fef
-Trojan FormBook	winz6j8.bat
-Trojan FormBook.1	Receipt.exe		a341876e11f1a7e0bc370df8affccf52532ab95003bc83199522376eb51a5fa1
-Trojan FormBook.2	Receipt.r22		c9acea81a8eaece1bea16dba794393907a6141ca260cc072ea9e2d0c0ae6aee4
-Trojan FormBook.3	/ch/?id=
-Trojan FormBook.4	gifcos@tutanota.com
-Trojan FormBook.5	hxxps://superiorleather.co.uk/Receipt.r22
-Trojan Loki			2bebe4a5acb9940a295a167aff62e81e9c11b55051450e1f8e979ff63d964071
-Trojan Loki.2			326030d71dfb79f98d37eea3498d7dadd76c5ab59bd5fe279298c184ac3e08fa
-Trojan Loki.3			121118a0f5e0e8c933efd28c9901e54e42792619a8a3a6d11e1f0025a7324bc2
-Trojan Loki.4			34a19d2fb7e045bb1c985ed727beff59f169b3021ee67cfc462366a66ce14251
-Trojan Loki.5	7571BA.exe		54ef1c6df5b3b288366b560f7921f1cc5e556bd2fa3c8b0edee7fdb2fe871ffb
-Trojan RoughTed			9fc5fb99f72be24ec7d1e2004f1c1f2083885059e0e072314cb712934415bc24
-Trojan RoughTed.2			0434a5b69bea3a10443c0740bca4f36792cf67130c6b7da5b1b16494b3e12379
-Trojan W32.Adware.Gen!c		471f0993ccf1c5cb3c715740141b6d49	2d02ddb75f42e67f76da4df375834c7e79a62a5828875870d23b236a1d7ae19c
-Trojan	chaqiriq.doc	c9d2eac2c5c415f94ad599d1327f1e8f	e1e5bdecaa621a45c97fc732917c1c36bfd8d83158c88a3f444536c3e2bd389b
-Trojan Zeuss Panda			6dc0bd79e51eb9af143c749539bd638020d557083479bcd4c4b9639fe61eb0f8
-Trojan Zeuss Panda.1			1cccc844fcdb255f833a9ef36c2d3c690557b828ed5d0a45d068aeb2af1faac7
-Trojan Zeuss Panda.2			0fd5413365f474b99f4a49560e20c5e97418d09a2f53e5e7436b88e3f5c16668
-Trojan Zeuss Panda.3			a395357a9012b0a4087e0878e7d642879d3b856de53c71cb9805f806dc958264
-Trojan Zeuss Panda.4			fa867ddf9f3116da75b62a1bf8007410ac0d3adf7a92e7f3d2effeef982ad73d
-Trojan Zeuss Panda.5			bdc912caf9b9e078bc7bd331deacae9c460c8e8893442048b9474790c52e1ab9
-Trojan Zeuss Panda.6			6dc0bd79e51eb9af143c749539bd638020d557083479bcd4c4b9639fe61eb0f8
-Trojan Zeuss Panda.7			8d381ee21b6cbc7d3ae0e503ab7b05235eb31594d2810e67093c5e9a51437992
-Trojan Sednit		f1d3447a2bff56646478b0adb7d0451c
-Trojan Minzen		B469B78CA04E8FDAD957CCC68B5B1C3D
-Trojan	Dreambot
-Trojan Vawtrak		5238cd34caae600b3f592e2595aa6949
-Trojan Vawtrak.1		6fad86a0fcc912f32474f6c7a86fe37a
-Trojan ZeroT.1			3124fcb79da0bdf9d0d1995e37b06f7929d83c1c4b60e38c104743be71170efe
-Trojan ZeroT.2	0228.doc		b5c208e4fb8ba255883f791d384ca85566c7be8adcf5c87114a62efb53b73fda
-Trojan ZeroT.3	0228.exe		bc2246813d7267608e1a80a04dac32da9115a15b1550b0c4842b9d6e2e7de374
-Trojan ZeroT.4	news.php?id=7557		a64ea888d412fd406392985358a489955b0f7b27da70ff604e827df86d2ca2aa
-Trojan ZeroT.5			868ee879ca843349bfa3d200f858654656ec3c8128113813cd7e481a37dcc61a
-Trojan ZeroT.6			4601133e94c4bc74916a9d96a5bc27cc3125cdc0be7225b2c7d4047f8506b3aa
-Trojan ZeroT.7			5fd61793d498a395861fa263e4438183a3c4e6f1e4f098ac6e97c9d0911327bf
-Trojan ZeroT.8			ab4cbfb1468dd6b0f09f6e74ac7f0d31a001d396d8d03f01bceb2e7c917cf565
-Trojan ZeroT.9			79bd109dc7c35f45b781978436a6c2b98a5df659d09dee658c2daa4f1984a04e
-Trojan Emotet		7c401bde8cafc5b745b9f65effbd588f
-Trojan Emotet.1		34c10ae0b87e3202fea252e25746c32d
-Trojan Emotet.2		9ab7b38da6eee714680adda3fdb08eb6
-Trojan Emotet.3		ae5fa7fa02e7a29e1b54f407b33108e7
-Trojan Emotet.4		1d4d5a1a66572955ad9e01bee0203c99
-Trojan Emotet.5		cdb4be5d62e049b6314058a8a27e975d
-Trojan Emotet.6		642a9becd99538738d6e0a7ebfbf2ef6
-Trojan Emotet.7		aca8bdbd8e79201892f8b46a3005744b
-Trojan Emotet.8		9b011c8f47d228d12160ca7cd6ca9c1f
-Trojan Emotet.9		6358fae78681a21dd26f63e8ac6148cc
-Trojan Emotet.10		ac49e85de3fced88e3e4ef78af173b37
-Trojan Emotet.11		c0f8b2e3f1989b93f749d8486ce6f609
-Trojan Emotet.12		1561359c46a2df408f9860b162e7e13b
-Trojan Emotet.13		a8ca1089d442543933456931240e6d45
-Trojan Emotet.14	Trojan Nuclear Pack
-Trojan Emotet.15		179ae9a7fc02130009762858ad182678
-Trojan Emotet.16		1a6fe1312339e26eb5f7444b89275ebf
-Trojan Emotet.17		257e82d6c0991d8bd2d6c8eee4c672c7
-Trojan Emotet.18		3855724146ff9cf8b9bbda26b828ff05
-Trojan Emotet.19		3bac5797afd28ac715605fa9e7306333
-Trojan Emotet.20		3d28b10bcf3999a1b317102109644bf1
-Trojan Emotet.21		4e2eb67aa36bd3da832e802cd5bdf8bc
-Trojan Emotet.22		4f81a713114c4180aeac8a6b082cee4d
-Trojan Emotet.23		52f05ee28bcfec95579d154c62d40100
-Trojan Emotet.24		792559c590cff62587c08a4a766744a7
-Trojan Emotet.25		806489b327e0f016fb1d509ae984f760
-Trojan Emotet.26		876a6a5252e0fc5c81cc852d5b167f2b
-Trojan Emotet.27		94fa5551d26c60a3ce9a10310c765a89
-Trojan Emotet.28		A5a86d5275fa2ccf8a55233959bc0274
-Trojan Emotet.29		b43afd499eb90cee798c22969f656cd2
-Trojan Emotet.30		b93a6ee991a9097dd8992efcacb3b2f7
-Trojan Emotet.31		ddd7cdbc60bd0cdf4c6d41329b43b4ce
-Trojan Emotet.32		e01954ac6d0009790c66b943e911063e
-Trojan Emotet.33		e49c549b95dbd8ebc0930ad3f147a4b9
-Trojan Emotet.34		ea804a986c02d734ad38ed0cb4d157a7
-Trojan Emotet.35	188.166.118.34
-Trojan Emotet.36	Joyce Lynch: 901597
-Trojan Emotet.37	Purchase-Order-50717202/		5a8b91fac4cdd9220dae03dc4160d8d79fb509482d14370da38227b5de7ee639
-Trojan Emotet.38	OVERDUE-ACCOUNT/		ae388ef426ffac2888e3c0d616619091048e07f7dadb04051a895b71c9123626
-Trojan Emotet.39	gescanntes-Dokument/		32eb4a34d123927ca5fd2e5f36634c1e50017e156e4ec7e5cdce3feb23c6c543
-Trojan Emotet.40	Payment-and-address./
-Trojan Emotet.41	Rechnung-Bestellung-97866
-Trojan Emotet.42	2017-11190
-Trojan Emotet.43	Rechnung-2017-10-76709
-Trojan Emotet.44	Rechnung-im-Anhang
-Trojan Emotet.45	Inv. 3653869422
-Trojan Emotet.46	=?UTF-8?B?SWhy
-Trojan Emotet.47	MKN3-97971796420
-Trojan Emotet.48	UmVjaG51bmcgZsO8ciB
-Trojan Emotet.49	0999639 Survey questions
-Trojan Emotet.50	die Rechnung 528924152756594
-Trojan Emotet.51	73861846
-Trojan Emotet.52	PoolCar Sales invoice
-Trojan Emotet.53	251580728
-Trojan Emotet.54	Seperate Remittance Advice Layout - paper document A4
-Trojan Emotet.55	Zahlungserinnerung vom Juli
-Trojan Emotet.56	gescanntes-Dokument-SZC2467896999.doc		369382490deaf9246e39d07c57db6b56fa3fd9454671ec728bf81a4c4a1a549e
-Trojan Emotet.57	MG-921280152.doc
-Trojan Emotet.58	VeloBatFX.exe		2f93c8c97f99c79880027b149d257268f45bce1255aeaefdc4f21f5bd744573f
-Trojan Emotet.59			e90cbb0729e523bc8647e2437cd7f91ed4dafe131b945599aca1e64058fe76e7
-Trojan Emotet.60			f0138f78c1fd8b47be240bb799b32dda0be2e681145b50765f5bb5715be9d5eb
-Trojan Emotet.61		abf6b315.gxe
-Trojan Terdot.A			151798e132753186eb8bb0dd5b6563a3d919af7e6bbdc4395e17442556021741
-Trojan Terdot.A.1			61a3ece84544ab539e69156a882f49d1082555a48e79b3ffab0dd854b7bac8d3
-Trojan Sundown	542.swf
-Trojan Sundown.2	225.swf
-Trojan Sundown.3	fvdvsdfv.png
-Trojan Sundown.4	542.swf
-Trojan Sundown.5	fvdvsdfv.png
-Trojan Sundown.6	542.swf
-Trojan Sundown.7	208.swf
-Trojan Sundown.8	5421.swf
-Trojan Sundown.9			4fe30eb4fd3c1e54b58f901e94e36fc1a8c7a514bf827e7611740d260dd73f4b
-Trojan Sundown.10			cf730db69db781c515919b26ac46698c5249a62a5413edd11e1dd92fd3a44acb
-Trojan Sundown.11			67d598c6acbd6545ab24bbd44cedcb825657946923f47473dc40d0d1f122abb6
-Trojan Sundown.12			0744ba67c5f8210fcdcf4acb328df68780e96d10f2c68b8eddbb9a355bca213e
-Trojan Sundown.13			fc4bb31eb4e3d533e369b3687d72abb263937c698019b4f50229a5ca2d083bbb
-Trojan Sundown.14			112db20b0f6cbb39bd24dd2dbe121e62506c6862b1db1276b0219bda76a903dd
-Trojan Sundown.15			c4b894094c08ea234a2a2652f79383f4a22c5402918c330a7ad6f39520dcc53c
-Trojan Sundown.16	etgerf.exe
-Trojan Sundown.17	rgfrf.exe
-Trojan Sundown.18	radEF99C.tmp.exe
-Trojan Sundown.19			9ee649300ee66768afdb2b8866d504e802bd40fd8e4125667bb0f0e2bb6d339f
-Trojan Sundown.20	z.tmp
-Trojan Sundown.21			67d598c6acbd6545ab24bbd44cedcb825657946923f47473dc40d0d1f122abb6
-Trojan Sundown.22			04fb00bdd3d2c0667b18402323fe7cf495ace5e35a4562e1a30e14b26384f41c
-Trojan Rammit			1a22211d01d2e8746efe0d14ab7e1e547c3e30863a83e0884a9d90325bd7b64b
-Trojan DiamondFox			6764f98ba6509b3351ad2f960dcc47c27d0dc00d53d7e0ae132a7c1d15067f4a
-Trojan Sagecrypt		4bbc2b40ca476c9d2dae44c86258ae80	50624b1338349dcab4ad8345e0100ea75d3b643ef1e3a487b32fd711418b281b
-Trojan Kovter		6295e092bc3ce94e18aedc69bcfbbbda	51d57d7f8d68391c295f97f5ec01fa57cdba2454fc0864dd336fd5008fd6fb40
-Trojan Kovter.1	fmvododa85268130			15154f826f688526cf28744004d287e60f99ed615c155d2727928cd8004edc66
-Trojan Kovter.2	hi8506440		2bb01dd8b37676d3f269c1dcbf993f6132e5d529ace8402b47620f959839e80b
-Trojan Kovter.3	ryyqodaw38031427		37926fbda637329bd2ca291c5f4084f969107e4ea436a11cdd5e745e4c598eb9
-Trojan Kovter.4	8506440		381050fbf4be05137460718033f85164a00a8182af0b2d4aa736cf5f73d96c82
-Trojan Kovter.5	oyerivy4738		386ccbd70bc728928c28bc6ac49f63d2c15f32f229bf9165402e4ca245a07c6a
-Trojan Kovter.6	fny82478508		3ab5b917e84039664aeec866abb65d7abcb815ae65f4cd7c3e0286092b5d93bb
-Trojan Kovter.7	dyoaizx8178230		44da582baf43d512b01ff080398f1f0d9a6978145c84be66acf061fd9664bff5
-Trojan Kovter.8	tvobha211622		562cd9884810c90422cbcd4e3ee633d24a748ae5976a37b2629f38d704b89878
-Trojan Kovter.9	oixyzih7073880		599b647e2ead9807e6dde2f171d7ef93bc74353a864fb85c59ffc39aad3b3001
-Trojan Kovter.10	uwszas1125562		673b523bc0c24024236bca085e6c9300b735f8c769cd0504b42d6d0b05d3a173
-Trojan Kovter.11	beeye70480280		7a80ab581a21abfa030f8b3a4b9adefc2dda239ba95483a30fd66822ba3dc3c9
-Trojan Kovter.12	fozuibig05181462		8ddee69d72fa96c7dfdf79c3635a74f5a62cfef9ea68b43c7f18e6f0ea30a1e9
-Trojan Kovter.13	omey38502300		975926cced9430753f66231f7c4270c1b727d37c10698c6ad41498de896df120
-Trojan Kovter.14	bekxomu08		9943dccc12163b47242da45e6b9e5488cc2c4d1d3ebe0af21f9b44141c36e45b
-Trojan Kovter.15	etabeiya16554848		9b9ac10197debfd084c41002da508a6b60bb99f2959e75e61abaf491d3c5a7c9
-Trojan Kovter.16	nudmzu345271		a06270053b4ee25a8f34918ebc3a9173e3e40c16a1679e07979a7ad3dc54d341
-Trojan Kovter.17	DeliveryDetails		aa505089e1eb14c3bac3e2e87cde8c5717ac8a9104851d4a3e70ae879ee362cb
-Trojan Kovter.18	ejoycsoq211468		c1da68a720141a8fb1ada696fb1e5a0460aaa72c4bcafc110cf36f4b35d5100e
-Trojan Kovter.19	comywu8		c6eeb0a0e6284f29401f4efd9988ce32820ac33e749ecd5ec71b4a1e0f93d6a9
-Trojan Kovter.20	DeliveryDetails.7z		cb42a941e1d61a3a533ae04aeb21b98c5d8cded683a2422b52478f8f63a97a61
-Trojan Kovter.20	mefewciq840886		daa8cc8142103a5050afd3eb821632b9b5361375566db1a9347e262117ca18ca
-Trojan Kovter.22	ckavo15382482		ed2cf15fcac6afa24792f812a8aebaf79c632ebafcb567570e40b2d2b697ca3c
-Trojan Kovter.23	kiztwupe511502		08bc79ea66a15ab7e4023782a050569fa44b208b4890e14c8762ce00a904adc3
-Trojan Kovter.24	eeimeiy47		2ea8b273faec8aff7401d8c16fab33c028dfda28c7a06cef23707c51d97ba7af
-Trojan Kovter.25	esyuvmg0375		34e97903ff1264c42e53789df89e317376f80c594401c9ef37603ffbb7affd19
-Trojan Kovter.26	tuvec53		3679fd53384fef5251713bee8c63d2a86b25d3c8fe9624ead70ccd144cd7d907
-Trojan Kovter.27	demirbasetiketi		4864e17e02abaaa10ba59de14954ccc46910b1e7e09f57d4711da2bc04f0db66
-Trojan Kovter.28	gokcentunc		633f86e941b36b0dbe5ee8f4466fa14423958d82204e30bad95874699fdef5d1
-Trojan Kovter.29	ikincielesyaevi		6c4ab2c20634714b04e813dcaba107b54c133b2b1ae6ea89cfb92835a96e5364
-Trojan Kovter.30	ronakco		73e2bf29c9ac6d110685e42f3daaf2470479cd0b8675f99ced1e945c8aac3102
-Trojan Kovter.31	samenloopvanomstandigheden		79925ad9de7529dced296a767b464d879a791c5759aed4415a0ae904f4482959
-Trojan Kovter.32	steuer-wirtschaft		82fb5b16929b1b760f336336602a02d920bbdd7d526ed2c7cbca1aa028a2db75
-Trojan Kovter.33	DeliveryDetails.js		91e726c0c1c757f833806a0f7352e2db34d30359d78c4dbc2aa51fc3f67b69bd
-Trojan Kovter.35			9e51ed0a16ff02b5ddf902040458d6a0459b41a33137186dd5e7565a5e5d62d7
-Trojan Kovter.36			ac5fe4902481c5a042c8a9eff57ec3d4add7970dd28cf6e503a9e8f8356bbbff
-Trojan Kovter.37			ade07634297bf58b3cb2f035d8e137eecb5f92cbec199d3e0d4265086d9692e2
-Trojan Kovter.38			b6d3cbc80dfc926c3dbe94f15f7c2b9b41d68c7fdd9b91c41039ad43706a017b
-Trojan Kovter.39			c340306c2535341fa158379670f67e25393916cb43de8f7570c86f736e313f27
-Trojan Kovter.40			c88ce680a263fdbc1dcb73a8584355324e9351d4cb86afb59b71e9933bfe7408
-Trojan Kovter.41			cfc1dd2a7b92dca90831b41667392573f482b0da4e191a8b6eb7046baef668c9
-Trojan Kovter.42			da191f4abf0cde5361f2cec7a3f22782cc259867605c65ac5357bd7c5304f097
-Trojan Kovter.43			de8add13460b65f9ca640f0e627e090995e964f6bdc1533913aaf2126b4d03c1
-Trojan Kovter.44			ecf8fa11887daa9df59e2812cddd22371fb49a0178df5d349512cc9012a5a6ff
-Trojan Kovter.45			ee4d7b8265372117aa81fb304f97833a9e7eddf65c81b602b4f930aca637f538
-Trojan Kovter.46			594cf9e10d53e960fac2dc9dc95b43c30d6f13c1620e061e17a3859cb4760942
-Trojan Kovter.47	zl82@officedutourisme.info
-Trojan AgentNed		4b64dc7993800e0fb60410471356a976	4e7cc2c1b3e8bb6ed8d9016420daed0585d0cbd75d5616830a4c184024371a51
-Trojan AgentNed.1		e9cae89d83c6b8679ed0e3ca04a07a88	65724f46794f01dd6907f56f0ac036f2e2ada0217e7c649f3461c4420f157e9a
-Trojan Injector		d4af8503f15557f1bf69d0a6afc7d2b1	21d31765daa07c200ed8f13078501f333d2673af1bde373cac976de594d02aab
-Trojan Huer		92935ec0ee4a7bb127cd2fe83296e93f	5144431e4346fe03a13986e28da71d8ea03fc054b6293c4cb0ffac037cc1f1b2
-Trojan Huer.1		1a92eedafc10d92671895bcc1c8e25a3	04d194e8489c34fc8c1d0b96c22f21b4edb6ac9ac6fc9db7953f4366060e3f44
-Trojan Huer.2		c4d005201679dd00cba0e1cba245ae40	409d329ba9af1b13b97e8ff36cadd68703c985107245a07991c5cf84d11e6db4
-Trojan Huer.3		c0537f589bcc24263a93cf190a7efdfb	4f7e01215c9e59ee14e6110d6f9de131a6b27a8ceb9182edbefd8790e173c2b7
-Trojan Supermulti.zd1	zd1.1	3c1178ec464296af96fb3458253f6bc6	83966011b63437110c9b28dbd46533974005b24bdd5a6c94bdae04aeb9ba03f0
-Trojan Supermulti.zd2	zd1.2	ebc51f6facae5d8bb3d41bc3eca56f67	c20fff01ea21b78ae29f417934a9da2eaf963de0e47b408ab50eb5905fd343e6
-Trojan Zbot	 ba5cd871e53b6808b3b404b49c9b5ead	f54ca0492592d6e910fc4f17cbb5096f3e0ecda437a717e50de90f0b60e64195
-Trojan Zbot.1		4b96cdeac867a0ac5d853f678feb0c4b	8eb282d2a6720a73e09282875cbdfce5fd78122797484023883db2257fb35a9c
-Trojan Zbot.2		c619412f0d38b3ea41ea865c3c94b331	27c85756c2cbdd89674c50868d2f8127025cd740f24c888e6d9b047ff6cc2a4e
-Trojan Bedep		2af7a33ffd6755d6046112b33b9018b1c3bb012b332cda4b8b0a30759ec67a18
-Trojan Bedep.1			13e62c23322cf915171d874f14ebfd21abf16e58270aff58316f624ad144a3a3
-Trojan Bedep.2			ae295ee7804a316153434783d83c2fbc63954a9384e2343a349be88a84e4ffed
-Trojan Bedep.3			c44b368f73ffc548e5253643a0c4d33fb8f0a91b5d7fd948bfb1f3ba9b204e1c
-Trojan Bedep.4			60f049fd94527991fe7d6ab2a5c8b000cf88bc2b21ead056a53233b348b65458
-Trojan Bedep.5			079545cf2c63cab61b5b49875027847a12e6f254f89a9cd8accc51b107688fcf
-Trojan Bedep.6			0452cf22c867621c99a43564bef4d4cfe453c594b25667fc4d1fe412d0b335dc
-Trojan Bedep.7			c9eaf3480afe4cbddcd9df13d8579bfa0cae52b647eeb81253d45d826a41bc92
-Trojan Bedep.8			ce3a9bcdbfa2f76fea7f5a13bfe46e790ad5ab1b0ab224b7018ddd22aa9da026
-Trojan Bedep.9			9ed422799f846be0e630c75a8eaf8a46909e9a72ec2e3479795d0ce9ae476540
-Trojan Bedep.10			71b69881e549f6faaa82de459f3db239cebccea0e59f3447658ed4fd4c633ce4
-Trojan Bedep.11			ba8ca1c7ba3b0d615c0b3957004cc5f16f8c0d79c5f65aed88e3157cdeec6db0
-Trojan Dridex	uk_confirmation_ph954869378.exe		34884ec18d6bbc8262812ee5ecc8803b791fcd4c554d76bee9254278effe0b48
-Trojan Dridex.1	1530219.vbs		84c9028a1d25e5f171c170179f2f1ea3e1eab9514812ab9e4b617de822b46e69
-Trojan Dridex	/76gbce?		d21c83b527627d0a64beb28a5a72ca21228c438861de893618ffdf46d7ef8d1c
-Trojan Dridex			1814d47adfe7a34cd2e5b2a9d6841a32679764c8498012f3ff13a5792ba9107e
-Trojan Dridex			6adda664e3ab2936a8dbe8e95e10d33e34d13fbe375123c69abf3ac5fbf52fcd
-Trojan Dridex			898e44e0ebb73dcf8fc3b667baa6db930119d1979d8269437ab89e49633ff983
-Trojan Dridex			ac4d02637e1e01b16062f368658275cb8400b21f6592819d3a09dbee31cb5cc1
-Trojan Cerber.BS	/__files__/1		66fc3e7027cabc29c6ef9bcd40eb92e36530175a89c33dfb4a210ef868af13e0
-Trojan Cerber.BS.1	user.php?f=2.gif		59118ff55d6c20a08c6d4422972f9741de8b79755695cef9bc95126d46fb0026
-Trojan Cerber.BS.2	site/chrome_update.html		d4dbc24e07aca11e53f1bb733852e4416a8fc7db1c0c947994ec271895fdb0a4
-Trojan Cerber.BS.3			8ea494bd84bea2617922a9ed488db44937199b3764ab6cb9f64e49d7e6945a3b
-Trojan Cerber.BS.4			07be83b0e9ed748c11d16afbd42b5582f192539706f3996a6debebdb575ad259
-Trojan Cerber.BS.5			b0e6d0e366494f94fd05756ec4b6245c74eee8f1c0ea65b21ba5e5f1c79d69c8
-Trojan Cerber.BS.6			2e3652afd5d79020dd5aa1d95a61fa6c8e67271f16ccb15aacf11accdd9cc790
-Trojan Cerber.BS.7			434d95079879a99fc7cf9c01faabe37c185656bd5ffebe627a756641e41e1f5b
-Trojan Cerber.BS.8			5bcb16e6dd8a023f7daef3cf2193ec4d8b911e3af679be3ebfbe58dbaf6e6d41
-Trojan Cerber.BS.9			0a7986e86d3df2548e12176b5d8aa6db0de9e556450a90f7c36fdbab1392b48f
-Trojan TerrorEK.1			88cdbf79aba30f553a949fc281baaa5d2e5f887d6c3f05b617c4712a709d47a9
-Trojan TerrorEK.2			71ea85fd9a93949b4a22ed0ac43caebf991f9c046318bf6a490fe1ecb95537fe
-Trojan TerrorSmokeLoader.1	3458.tmp.exe		07e96eb325ef315ede680eca649426d6a4516e03a859926d651fda669a98873a
-Trojan TerrorSmokeLoader.2	4A97.tmp.exe		dda0f5b8759220bdbd8e5dba8bff49868b12e1d5e3bd273b366050dab0c8dd4f
-Trojan TerrorSmokeLoader.3	65A7.tmp.exe		a5bb96d731ef58cf17cc579578ab89c7c46f275982be8eb137ff64268dff1efc
-Trojan TerrorSmokeLoader.4	8C4A.tmp.dll		bdf3c4e804ebffad9f7ba9a3e3e467d0251c16f57e41095b593d226d2e7f399d
-Trojan TerrorSmokeLoader.5	C14F.tmp.exe		e70e429aa051017432921f4cdf2b8492c5cff9465ffdc3aabad2a865ecd2b326
-Trojan TerrorSmokeLoader.6	rvfwteia.exe		e6516d2911fc3378903b396b1b3ec97ddd497a1e8b974b531b1f140a485d39ca
-Trojan TerrorSmokeLoader.7			2090456737a6b44f2c16943662c9cb42acf05b1db6d63f89253a39f33e0ec02c
-Trojan TerrorSmokeLoader.8			c9f3397340e3671a47c6f15f9e6b1697265cecbb37b3c9c29d1eeae3b4312497
-Trojan Disttrak	pdwmtphw.exe
-Trojan Disttrak.1	caiaw00a.exe		010d4517c81bcdc438cb36fdf612274498d08db19bba174462ecbede7d9ce6bb
-Trojan Disttrak.2	sdwprint.exe		efd2f4c3fe4e9f2c9ac680a9c670cca378cef6b8796f2362ed278317bfb1fca8
-Trojan Disttrak.3	caiaw00d.exe		113525c6bea55fa2a2c6cf406184092d743f9d099535923a12cdd9b9192009c4
-Trojan Disttrak.4	kyiaw002.exe		5a826b4fa10891cf63aae832fc645ce680a483b915c608ca26cedbb173b1b80a
-Trojan Disttrak.5	sdwscdrv.exe
-Trojan Disttrak.6	briaw00a.exe
-Trojan Disttrak.7	saiaw002.exe
-Trojan Disttrak.8	_mvscdsc.exe
-Trojan Disttrak.9	hdvmp32.exe
-Trojan Disttrak.10	_s3wcap32.exe
-Trojan Disttrak.11	hpiaw001.exe
-Trojan Disttrak.12	lxiaw004.exe
-Trojan Disttrak.13	cniaw001.exe
-Trojan Disttrak.14	lxiaw006.exe
-Trojan Disttrak.15	caiaw00f.exe
-Trojan Disttrak.16	newtvsc.exe
-Trojan Disttrak.17	sbuvideo.exe
-Trojan Disttrak.18	caiaw00e.exe
-Trojan Disttrak.19	caiaw00i.exe
-Trojan Disttrak.20	olvume.exe
-Trojan Disttrak.21	usinwb2.exe
-Trojan Disttrak.22	briaw005.exe
-Trojan Disttrak.23	fpwwlwf.exe
-Trojan Disttrak.24	epiaw003.exe
-Trojan Disttrak.25	briaw002.exe
-Trojan Disttrak.26	olvsnap.exe
-Trojan Disttrak.27	dmwaudio.exe
-Trojan Disttrak.28	briaw006.exe
-Trojan Disttrak.29	miWApRpl.exe
-Trojan Disttrak.30	caiaw00b.exe
-Trojan Disttrak.31	lxiaw003.exe
-Trojan Disttrak.31	vdsk911.sys
-Trojan Disttrak.32	ntertmgr32.exe
-Trojan Disttrak.33	ntertmgr64.exe
-Trojan Disttrak.34	usbvideo324.pnf
-Trojan Ruby.1	if first_line != virus_top	b727b40999396587cf41dcb0e0a65ec0	131fa083cb8cd7ed02f48f4fba0f5190ea60d700031c00542c366097b4657463
-Trojan Ruby.2	= '#0x3a'
-Trojan Ruby.3	w.call(FUScaZXvqH,
-Trojan Ruby.4	FzJnoy
-Trojan Ruby.5	WMIC.exe shadowcopy delete
-Trojan Ruby.6	vssadmin.exe delete shadows
-Trojan Ruby.7	Bcdedit.exe /set {default} recoveryenabled no
-Trojan Ruby.8	Bcdedit.exe /set {default} bootstatuspolicy ignoreallfailures
-Trojan Ruby.9	cmd.exe /C wevtutil.exe cl
-Trojan PowerShell.1	110.10.179.65:80			638b7b0536217c8923e856f4138d9caff7eb309d
-Trojan PowerShell.2	download/microsoftp.jpg			d30e8c7543adbc801d675068530b57d75cabb13f
-Trojan PowerShell.3	<Command>mshta.exe</Command>			973b1ca8661be6651114edf29b10b31db4e218f7
-Trojan PowerShell.4	syscheck.vbs			691686839681adb345728806889925dc4eddb74e
-Trojan PowerShell.5	SndVolSSO.txt			3cf4b44c9470fb5bd0c16996c4b2a338502a7517
-Trojan PowerShell.6	activator.ps1:log.txt
-Trojan PowerShell.7	sunjavascheduler.txt
-Trojan PowerShell.8	Const HIDDEN_WINDOW = 12
-Trojan PowerShell.9	("/OGaaaaa6ytd
-Trojan PowerShell.10	kb-10233.exe
-Trojan PowerShell.11	product_info.dll
-Trojan PowerShell.12	208.67.222.222:53
-Trojan PowerShell.13	teriava.com
-Trojan PowerShell.14	$$cpte
-Trojan PowerShell.15	$$ecpte
-Trojan PowerShell.16	testObj.Remove 1
-Trojan PowerShell.17	kerberos::tgt exit
-Trojan PowerShell.18	logonpasswords exit
-Trojan PowerShell.19	sekurlsa
-Trojan PowerShell.20	lsadump::sam exit
-Trojan PowerShell.21	kerberos:ptt
-Trojan PowerShell.22	c:\programdata\log.dat
-Trojan Eicar	eicar_com	69630e4574ec6798239b091cda43dca0	131f95c51cc819465fa1797f6ccacf9d494aaaff46fa3eac73ae63ffbdfd8267	cf8bd9dfddff007f75adf4c2be48005cea317c62
-Trojan Eicar.1	eicar.com
-Trojan Eicar.2	$EICAR
-Trojan Eicar.3	X5O!P%@AP[
-Trojan Eicar.4			275a021bbfb6489e54d471899f7db9d1663fc695ec2fe2a2c4538aabf651fd0f	
-Trojan CPP.1	SetWindowsHookEx(WH_CBT, msgBoxHook, 0, GetCurrentThreadId());
-Trojan CPP.2	enablePayloads
-Trojan CPP.3	waveOutOpen(&hwo, WAVE_MAPPER, &fmt, NULL, NULL, CALLBACK_NULL);
-Trojan CPP.4	BY THE MEMZ TROJAN.
-Trojan CPP.5	KILLMSGS,
-Trojan CPP.6	"KillMessages"
-Trojan CPP.7	\nYour PC is
-Trojan CPP.8	Sleep(payloads[p].startDelay);
-Trojan CPP.9	HANDLE note = CreateFileA("\\note.txt", GENERIC_READ | GENERIC_WRITE,1
-Trojan CPP.10	considered malware.\r\n\
-Trojan CPP.11	CreateThread(NULL, NULL, &watchdogThread, NULL, NULL, NULL);
-Trojan CPP.12	LRESULT CALLBACK watchdogWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
-Trojan CPP.13	DWORD WINAPI ripMessageThread(LPVOID parameter) {
-Trojan CPP.14	void killWindows() {	5421781c2c05e64ef20be54e2ee32e37
-Trojan CPP.15	void killWindowsInstant() {	5394b09cf2a0b3d1caaecc46c0e502e3
-Trojan CPP.16	PUNICODE_STRING AccountName,	1a4d58e281103fea2a4ccbfab93f74d2
-Trojan CPP.17	OutputDebugString(L"PasswordFilter");	018433e8e815d9d2065e57b759202edc
-Trojan CPP.18	FILE* pFile = fopen("c:\\windows\\temp\\logFile.txt", "a+");	facec411b6d6aa23ff80d1366633ea7a
-Trojan Go.1	MAIL TO WHOEVER IS IMPORTANT
-Trojan Go.2	All your servers will be DDoS
-Trojan Go.3	We are Armada Collective.
-Trojan Go.4	struct scanner.PHP{
-Trojan Go.5	struct scanner.Service{
-Trojan Go.6	iface scanner.Dialer{
-Trojan Go.7	iface scanner.Scanner{
-Trojan Go.8	iface scanner.PHPExecutor{
-Trojan Go.9	struct scanner.ConnScanner {
-Trojan Go.10	struct scanner.HTTP {		0bf24e0bc69f310c0119fc199c8938793cdede9d1ca6ba7ac7fea5c863e0f099
-Trojan Go.11	struct scanner.HttpScanner{		3fcd17aa60f1a70ba53fa89860da3371a1f8de862855b4d1e5d0eb8411e19adf
-Trojan Go.12	struct scanner.Drupal{		513224149cd6f619ddeec7e0c00f81b55210140707d78d0e8482b38b9297fc8f
-Trojan Go.13	struct scanner.Wordpress {		941330c6be0af1eb94741804ffa3522a68265f9ff6c8fd6bcf1efb063cb61196
-Trojan Go.14	int main_main()		992ed9c632eb43399a32e13b9f19b769c73d07002d16821dde07daa231109432
-Trojan Go.15	tmweb.ru
-Trojan Go.16	"Ethereum-WalletFailed to find Failed
-Trojan Go.17	FindNextVolumeWFindVolume
-Trojan Go.18	"monero-keystorems: gomaxprocs=multipart
-Trojan Go.19	HyperCheats.rar
-Trojan Go.20	HyperCheats.zip
-Trojan Node.1	rawReq.write(JSON.stringify(body, null, 2))
-Trojan Node.2	var reproduce = function(target) {
-Trojan Node.3	var getEntryPoint = function(packageJSON) {		8b90859b19e3e3dea8d923996709210ed48ff3249563f56ff12eb1936ffcc295
-Trojan Node.4	var getTargets = function(targets, dir) {		afc100fb28f7bac05e41d9ae33f184502b8068642b7fd05970eb72bf1786892c
-Trojan Python.1	injecteex64	5ffefc13a49c138ac1d454176d5a19fd
-Trojan Python.2	injecteex86	b508908cc44a54a841ede7214d34aff3
-Trojan Python.3	MinerBlocker	e5ba5f821da68331b875671b4b946b56
-Trojan Python.4	proc = subprocess.Popen(data, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE)	596dc36cd6eabd8861a6362b6b55011a
-Trojan Python.5	SetValueEx(key ,'Adobe_ReaderX',0,REG_SZ,r"%TEMP%mw.exe")	645176c6d02bdb8a18d2a6a445dd1ac3
-Trojan Python.6	bablo39.php
-Trojan Python.7	188.225.18.203
-Trojan Python.8	@.*@ -> inject js/i.js
-Trojan Python.9	80 -> 24861
-Trojan Python.10	443 -> 24136
-Trojan Python.11	95.56.246.182
-Trojan Python.12	194.105.148.87
-Trojan Python.13	213.135.106.194
-Trojan Python.14	aWJhbmswbmVja2xhY2UucnU
-Trojan Python.15	b24saW51LmFsZWZiYW5rLnJ1
-Trojan Python.16	aWJhbmsuc3Bpcm10YmFuay5ydQ
-Trojan Python.17	dmJyci5ydQ
-Trojan Python.18	ZGJvMS51cmFsZm
-Trojan Python.19	b2ZjLnJ1
-Trojan Python.20	cm9kbmF5YXN2eWF6LnJ1
-Trojan Python.21	*{margin:0;padding:0}html,code{font:15px/22px arial,sans-serif}
-Trojan Python.22	l.IsValidCodePage(587903595)
-Trojan Python.23	l.GetFileSize(4028719249,0)
-Trojan Python.24	A.SwitchDesktop(2761630931)
-Trojan Python.25	l.VerSetConditionMask(4023949374,975516802,3027135998,9930938)
-Trojan Python.26	l.GetFileType(4282997275)
-Trojan Python.27	C.glColor3ub(255, 255, 255)
-Trojan Python.28	a = [[(- 1), (- 1)], [(- 1), 1], [1, 1], [1, (- 1)]]
-Trojan Python.29	_fields_ = [('pt', c_ushort),
-Trojan Python.30	A.RegisterHotKey(3322104681,3081727047,2221883463,745264245)
-Trojan Python.31	_fields_ = [('Lt', c_ulong),
-Trojan Python.32	drunkdared=spokenbier+meantreads
-Trojan Python.33	R('Not an MZ image!')
-Trojan Python.34	villainweapon('echorough='+solehers)
-Trojan Python.35	R(("Failed to resolve the the '%s!%s' import" % (string_at(LO), string_at(mG))))
-Trojan Python.36	pupilabhorred="r"
-Trojan Python.37	villainweapon=exec
-Trojan Python.37	dmJyci5ydQ==
-Trojan Python.38	cnNoYi5ydQ==
-Trojan Python.39	Y2hhc2UuY29t
-Trojan Python.40	fellreels="r"
-Trojan Python.41	aS12dGIuYnk=
-Trojan Python.42	Z29zdXNsdWdpLnJ1
-Trojan Python.43	aWIuc2xzcC5zaw==
-Trojan Python.44	ZGVsdGEtb25saW5lLmt6
-Trojan Python.45	dWJyci5ydQ==
-Trojan Python.46	eWFyYmFuay5ydQ==
-Trojan Python.47	c21wb25iYW5rLnJ1
-Trojan Python.48	d3d3LnlhbmRleC5jb20=
-Trojan Python.49	aWJhbmsyLnJ1
-Trojan Python.50	YmFuay50YWF0dGEucnU=
-Trojan Python.51	b25saW5lLmJtLnJ1
-Trojan Python.52	YWxiYW5rLnJ1
-Trojan Python.53	YnNiLmJ5
-Trojan Python.54	aWJhbTI0LnJ1
-Trojan Python.55	bW1iYW5rLnJ1
-Trojan Python.56	YXZiYW5rLnJ1
-Trojan Python.57	if (c.cd) eval(c01(c10(bd(c.cd))));
-Trojan Python.58	googletagmanage.com
-Trojan Python.59	h = JSON.parse(h);
-Trojan Python.60	eval(c01(c10(bd(html.cd))));
-Trojan Python.61	var exec = "di9+aC83PHA=";
-Trojan Python.62	1e22b;CertFreeCertificateChain->51380;5
-Trojan Python.63	1c8b6;WSAConnectByNameA->50c60;5
-Trojan Python.64	value = text.value # Dump the content in value
-Trojan Python.65	get_keystrokes(log_dir, log_name):
-Trojan Python.66	keylogger.get_keystrokes(log_dir, log_name)
-Trojan Python.67	elif i == 0x0d: # If <ENTER>, log the line typed then clear the line variable
-Trojan VBS.1	SmallPlasticKeyboard7 = Round(447)
-Trojan VBS.2	Avon82 = Round(608)
-Trojan VBS.3	backingup43 = "Web"
-Trojan VBS.4	copy23 = Round(MoneyMarketAccount37)
-Trojan VBS.5	Function reboot5()
-Trojan VBS.6	withdrawal60 = Round(412)
-Trojan VBS.7	"_4@http:"
-Trojan VBS.8	AwesomeSteelComputer16 = "nde.com.br"
-Trojan VBS.9	Metal33 = "2@http:/"
-Trojan VBS.10	reboot5 = withdrawal2 + ComputersGardenBooks30 + BooksGroceryBeauty50
-Trojan VBS.11	compelling69 = "" + program71 + GroceryBeauty72
-Trojan Java.1	<title>AhMyth</title>
-Trojan Java.2	assertEquals("ahmyth.mine.king.ahmyth", appContext.getPackageName());
-Trojan JS.1	victimsList.addVictim(
-Trojan JS.2	victimsList.getVictim(index).socket;
-Trojan JS.3	send("SocketIO:VictimDisconnected");
+AdWind.2		c5387a9af9ee4ee5809d59680161059c03c029794dec391b142a97baa8d5d42c
 Crazy Toolbar IE Exploit	crazy-toolbar.com
 JS.Scob.Trojan	217.107.218.147
 Liber Inc. Exploit	advadmin.biz
@@ -904,286 +1291,6 @@ Liber Inc. Exploit	sp2fucked.biz
 Liber Inc. Exploit	admin2cash.biz
 Liber Inc. Exploit	coolsearch.biz
 Liber Inc. Exploit	Web-res.biz
-Ransomware GandCrab	KRAB-DECRYPT.txt		ef7b107c93e6d605a618fee82d5aeb2b32e3265999f332f624920911aabe1f23
-Ransomware GandCrab.1			37e660ada1ea7c65de2499f5093416b3db59dfb360fc99c74820c355bf19ec52
-Ransomware GandCrab.2			222ac1b64979c9e24bdaf521a36788b068353c65869469a90b0af8d6c4060f8a
-Ransomware GandCrab.3			cf104f2ad205baee6d9d80e256201ef6758b850576686611c355808a681bec60
-Ransomware GandCrab.4			8ecbfe6f52ae98b5c9e406459804c4ba7f110e71716ebf05015a3a99c995baa1
-Ransomware GandCrab.5			6c1ed5eb1267d95d8a0dc8e1975923ebefd809c2027427b4ead867fb72703f82
-Ransomware GandCrab.6			b4b6f6c2588001e5b95eed79faf99a92b9d9224f65af6a92e055ddfb145a1ecc
-Ransomware GandCrab.7			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
-Ransomware GandCrab.8			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
-Ransomware GandCrab.9			6a8d922e34de35ac074b7de54d71227fb1a1ed92b9cfbc4daf8d64a9c5bc46b8
-Ransomware GandCrab.10			e7851a1b3e93968e7f6b92a1a3f59d250402be15a5bcb3262acff1e0a27b912c
-Ransomware GandCrab.11			67c50459db7f0042d7e1a96ce113e60f0179978dfe810bdb0f5320a092ce3b71
-Ransomware GandCrab.12			99eb1d90eb5f0d012f35fcc2a7dedd2229312794354843637ebb7f40b74d0809
-Ransomware GandCrab.13			846ad2d7e1e133ae4bc2decbc22ae686a44cccaffbee15b4d9b23143f6aa8d3f
-Ransomware GandCrab.14			f93379f495ce3c025b8f2ad59799d2de28f00a25b6206572522a71028f925f01
-Ransomware GandCrab.15			b4d0b03ca50f013b4f0f9efc2ecd822bfc13325356100f2f4d36eaf217d9079b
-Ransomware GandCrab.16			be54bb05adbda29316ba03d61b3365d8a03e1121a39ae492078787aff4f1248f
-Ransomware GandCrab.17			229275aa89ea8d39b3cc721d45d51d50707339b64afddde99119ebdf50ef6790
-Ransomware GandCrab.18			589e188602c4a24c68bc095c1105894a5e97e1df6218eaead89b7ab9a4e88eac
-Ransomware GandCrab.19			ad5dbe133679c987f95fc890ab37a48d9d2f9324a53356affd078e26d3cbb8fc
-Ransomware GandCrab.20			7fab866ce5474e690a06ca556c76e63a3c3c184ae493fce03bb2a839ef7ef725
-Ransomware GandCrab.21			c0db3c329592294a81f23c37e701a189110913c17d1371bc625a3eae97f37a94
-Ransomware GandCrab.22			243cafdc3582a750537fb7a4ba4e9640f4142f385478c106514bae0d736f462e
-Ransomware GandCrab.23			a67a98047097f2249eba7a31138efde45f3c02a3f7f46d3a9de85d630da7cd94
-Ransomware GandCrab.24			6fafe7bb56fd2696f2243fc305fe0c38f550dffcfc5fca04f70398880570ffff
-Ransomware GandCrab.25			469961813372d2a3645cf9927c983f5d661e2a60589425d9259e7658de63a181
-Ransomware GandCrab.26			5ab28933afa89bd0924ed45538b753cd260d0a6cec76eeca30d040476cf6d363
-Ransomware GandCrab.27			03b73dfe73dc7f9191e0c3a34801dd0e906b3ba8c79de76681a23a7c34cb5133
-Ransomware GandCrab.28			69f55139df165bea1fcada0b0174d01240bc40bc21aac4b42992f2e0a0c2ea1d
-Ransomware GandCrab.29			0c0def0788b5f946bb2d1a83d883d474550353c98eaffb4456d651cb4bcc3bd9
-Ransomware GandCrab.30			b4b6f6c2588001e5b95eed79faf99a92b9d9224f65af6a92e055ddfb145a1ecc
-Ransomware GandCrab.31			063cf82cd52acb6a0539a6ff59f72fb5de473293a06c470a92c6d35a151b73e9
-Ransomware GandCrab.32			ed8875c88bf061f45601629fbb3faa9f5b9ea4a076ba5a7accd566dc40862072
-Ransomware GandCrab.33			99eb1d90eb5f0d012f35fcc2a7dedd2229312794354843637ebb7f40b74d0809
-Ransomware GandCrab.34			846ad2d7e1e133ae4bc2decbc22ae686a44cccaffbee15b4d9b23143f6aa8d3f
-Ransomware GandCrab.35			f93379f495ce3c025b8f2ad59799d2de28f00a25b6206572522a71028f925f01
-Ransomware GandCrab.36			e7851a1b3e93968e7f6b92a1a3f59d250402be15a5bcb3262acff1e0a27b912c
-Ransomware GandCrab.37			6a8d922e34de35ac074b7de54d71227fb1a1ed92b9cfbc4daf8d64a9c5bc46b8
-Ransomware GandCrab.38			67c50459db7f0042d7e1a96ce113e60f0179978dfe810bdb0f5320a092ce3b71
-Ransomware GandCrab.39			a67a98047097f2249eba7a31138efde45f3c02a3f7f46d3a9de85d630da7cd94
-Ransomware GandCrab.40			6fafe7bb56fd2696f2243fc305fe0c38f550dffcfc5fca04f70398880570ffff
-Ransomware GandCrab.41			469961813372d2a3645cf9927c983f5d661e2a60589425d9259e7658de63a181
-Ransomware GandCrab.42			ad5dbe133679c987f95fc890ab37a48d9d2f9324a53356affd078e26d3cbb8fc
-Ransomware GandCrab.43			7fab866ce5474e690a06ca556c76e63a3c3c184ae493fce03bb2a839ef7ef725
-Ransomware GandCrab.44			c0db3c329592294a81f23c37e701a189110913c17d1371bc625a3eae97f37a94
-Ransomware GandCrab.45			243cafdc3582a750537fb7a4ba4e9640f4142f385478c106514bae0d736f462e
-Ransomware GandCrab.46			8a1e66b4834499dacc24abb27933c387933d919070fc504b14ee865678952559
-Ransomware GandCrab.47			e9bfa9691b48a75fa917a37290cb32b02ded3ae60dab4bcd625e8f390fd345a1
-Ransomware GandCrab.48			5ab28933afa89bd0924ed45538b753cd260d0a6cec76eeca30d040476cf6d363
-Ransomware GandCrab.49			b4d0b03ca50f013b4f0f9efc2ecd822bfc13325356100f2f4d36eaf217d9079b
-Ransomware GandCrab.50			be54bb05adbda29316ba03d61b3365d8a03e1121a39ae492078787aff4f1248f
-Ransomware GandCrab.51			589e188602c4a24c68bc095c1105894a5e97e1df6218eaead89b7ab9a4e88eac
-Ransomware GandCrab.52			03b73dfe73dc7f9191e0c3a34801dd0e906b3ba8c79de76681a23a7c34cb5133
-Ransomware GandCrab.53			229275aa89ea8d39b3cc721d45d51d50707339b64afddde99119ebdf50ef6790
-Ransomware GandCrab.54			ef7b107c93e6d605a618fee82d5aeb2b32e3265999f332f624920911aabe1f23
-Ransomware GandCrab.55			786e3c693fcdf55466fd6e5446de7cfeb58a4311442e0bc99ce0b0985c79b45d
-Ransomware GandCrab.56			8ecbfe6f52ae98b5c9e406459804c4ba7f110e71716ebf05015a3a99c995baa1
-Ransomware GandCrab.57			e454123d852e6a40eed1f2552e1a1ad3c00991541d812fbf24b70611bd1ec40a
-Ransomware GandCrab.58			6987fd73457ac0b5c245886532b1bdf5d58cb43890e04b706ebba44727403311
-Ransomware GandCrab.59			06ee45a790fa1a88b62d28059c2c44310f7ff56edbdaf35a0b9c44f2a4e57536
-Ransomware GandCrab.60			f5e74d939a5b329dddc94b75bd790d11c8f9cc3a640dccd8dff765b6997809f2
-Ransomware GandCrab.61			c13962f54a949724c0713a133035de7fbd48d49722ee5805be2ef1f8437d275a
-Ransomware GandCrab.62			53c98a623d23798790be0273254515786514fae00d11a928f32d43b5a3e33ed5
-Ransomware GandCrab.63			e9b4d828790e0ee6bbfc0675e09efc212dce7b84e07958a2f0444aeb24914e69
-Ransomware GandCrab.64			e7dc7b0fe39c98d63983eac54326bdf60e79a4f3aa0178564a6c905d11033ddf
-Ransomware GandCrab.65			5746e9436b95b620e5197ea718a598688fd6a587f8f9c2e9ddb9ec13193329b6
-Ransomware GandCrab.66			316a9295cf30b759c02b392f0b5b3e1f28ad2f6ed5ad1a11ad079e3dbcb141e1
-Ransomware GandCrab.67			b0c7057c8467f15e5e4875b696def20fcab892e1d254a369249a3159f0670854
-Ransomware GandCrab.68			428ffc236bc0b08d88f2990a3c1aa4dfab715aa90d65f60217e4f3651bc1b0d1
-Ransomware GandCrab.69			f3c921379c73cd3eec1ff5561ba603480f33caea6d49fc79b8fdf0e642d924dd
-Ransomware GandCrab.70			e11dcc64efb1ce8b8d5237590754c13e92a455095f7f1f501ce64a200f64ffe2
-Ransomware GandCrab.71			6498b44ed0de93353b5b798bb022ec407e85266ca0341e668ef03307d24ceda1
-Ransomware GandCrab.72			97547a45953be24a4261b2fd925748676627112ad53bd3b7240b1643eac4b94f
-Ransomware GandCrab.73	qwerty.exe		ae0d1591385c573af2ad6b04816a7d6a30c87ccf40e8f02b3c76e66a4c8450e6
-Ransomware Sage	4846.doc		b0aed0e368425dfe126491b71546ad27061a1c4346b4de51202766b4113620a7
-Ransomware Sage.1	28255.doc		55d6e3ed606acddf3c4112ffe4b4447f4bfacda9d03d187cbc2374b6048f5712
-Ransomware Sage.2	88507.zip		da8db4d594370f36b93d4121897d4056cf2f36e61b55b6e8a9569e3121fad1df
-Ransomware Sage.3	67214604.zip		13584b8ab9b4c5cb7c89e60ca2fd46e0ce3791d50c0e9a5402415580179a13e0
-Ransomware Sage.4	92181052.zip		26ad4cf58b40b2df9ff39ab302d7bf15bbd4a7e064f614015797a13631160ee8
-Ransomware Sage.5	31084472583.zip		b9216e8e5201a8fc2433ce60cd379079c60c11c888edffc5d130e328ed2c7ffb
-Ransomware Sage.6	525463435470.zip		12f96c81580efc35193561fd45e51abd9b742df11797a198d0df9e6800ce1c15
-Ransomware Sage.7	599450048391.zip		dd18a44aa3166de08c79083dde6b0d697fde882a38a95f749a451b52c4eac4bc
-Ransomware Sage.8	58843249449955.zip		caf07e4e2670dc3c6b824a1fdb0a0de90a00b0759e95c97e88d07f65d646769b
-Ransomware Sage.9	004765275711512.zip		3528de5cdcf6529e1dd7f0e24ead27c0ae360f311e879530f98fb2ac9367c5cc
-Ransomware Sage.10	940.js		b1ae04485794079bc11902bcd56f4b36408fdedb18c44a55d2d919c65fab579a
-Ransomware Sage.11	3822.js		35abf5d73f96856c535499f04791f27103fdb1275e0e74bd4c963b9c3225e94e
-Ransomware Sage.12	3902.js		bab55dc85f006ae26ed5ad447089eb1be80cac75519a199d94620a01651cad13
-Ransomware Sage.13	9660.js		e89ffc61e3c79115bfc3d855227405a850eb7a8fa3ac5c4bdd79389ba6945e31
-Ransomware Sage.14	22032.js		aba9d22dd3573f0902a7219790915de8dbb0b07b5e25ed28c6a87b4acfaa0c39
-Ransomware Sage.15	28588.js		6bcb0a226921fc1a9e6bebd92dffd5dd528937e6bde50bbcc08fd7593e9da27c
-Ransomware Sage.16	29219.js		942f64e913a1f3781adecd88e47f8da75981f69d20ce9206e3374f5331a54e0f
-Ransomware Sage.17	29459.js		24fc14ae2bfa634a54cafc6b22a596ad2b85dba621388255d3e0eb6294cd03ae
-Ransomware Sage.18	32148.exe		6132c32a717ff1d5f5ff86ce0d4a27d59b332ec1f5e75f12c1346c0ab3fbda0c
-Ransomware Sage.19	4051.exe		b16eea3a52ad7ffe0b18309395da9394982b6219f16e021e43ce57931d29a0ec
-Ransomware Sage.20	417187.exe		81609d5cdc5068ffd5975c1045710cecdbaa33a2eed682894322847e93c9cb21
-Ransomware Sage.21	220986.exe		cb219bf88ceeb2ecf95072576148e17e52e56e5f02876ac00a204a3bcb9352cc
-Ransomware Sage.22	27599.exe		008484650884010ac949d1041e48dd0abf4967c9ddf305a971ddfc32f9d4cfeb
-Ransomware Sage.23	483882.exe		5a99897d463f1685b83b2d017dc734ba657fe3f612a74fcba730b826fce5e44c
-Ransomware Sage.24	636057.exe		64978bc162765959aa0c3de15f4fce90041bf3bc01e668ba649eb7e686222a30
-Ransomware Sage.25	496938.exe		046b9330d7da6619ff96ce3c94adc5f35fa2fb26cd1da7d2f57890bfde5e4f59
-Ransomware Sage.26	803051.exe		8f1374b432fa7580397e57949b32044e89663215e71ad0252638875a61908323
-Ransomware Nebula.Gootkit		48ae9a5d10085e5f6a1221cd1eedade6	6fe13d913f4d3f2286f67fbde08ab17418ba8370410e52354ffa12a0aaf498f8
-Ransomware Nebula.Pitou		6f9d71eebe319468927f74b93c820ce4	b976cf6fd583b349e51cb34b73de6ef3a5ee72f86849f847b9158b4a7fb2315c
-Ransomware Nebula			f4627005c018071f8ec6b084eef3936e3a267660b0df99ffa0d27a8d943d1af5
-Ransomware Nebula.1			be86dc88e6337f09999991c206f890e0d52959d41f2bb4c6515b5442b23f2ecc
-Ransomware RigEK			0e78c0dc543ae85b59d60d6a0de3986cb4cab1640cb0809a3e9ce10657a71851
-Ransomware RigEK.1			c9b281940374a6b02349c8804b6f58ae1faec061dccd346118acdf68c050824d
-Ransomware RigEK.2			e5df732f8fca61061901a1f56cd7c2dbcb8bd2422ace9c2e9237250fc2179331
-Ransomware RigEK.4			0e9bedc57f97bb2c7119ad4713b03fc9b10df09202fb7a237b610aec4687b736
-Ransomware RigEK.5			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
-Ransomware RigEK.6			2ab8768a94a4983f4c5a19fc486c85386305e51d6f86854cc50db89f98701d5d
-Ransomware RigEK.7			31f8dbc34d8c34982ff6248a60786175cd010bbb80f18eb6cfd8ff83d2c3a0e5
-Ransomware RigEK.8			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
-Ransomware RigEK.9			6ca263b7d150b820c5f13458d1ceaaf0360ac401799379bcec79a99f2bf8e5ce
-Ransomware RigEK.10			6993b911a6310ff7097105922de714d7a070c13633e79c36701d3cccf4086719
-Ransomware RigEK.11			49d5fd5a5b0058eccd888a149f6f995e7c160dd3973c0c0edebf0311365847cd
-Ransomware RigEK.12	krp3cmg		d871fa0e1ac9e03e65b71fc9f3261a320e63fd1731fae33595f79ec51d5fabc4
-Ransomware RigEK.13	381m6bv285.exe		12dc4c44b0bdbe2efb8d10de14b09682589069e3f2ea0c82b21c4270455d199d
-Ransomware RigEK.14	eunlock.dll		8411ffb402372f51fbcc5f4d80f23eaf79871650d5cbbac8597c3667a49870b6
-Ransomware RigEK.15			25b36b3ae96b38259cb473df2b0d02fe94135b8d53b960dc95315567590c683c
-Ransomware RigEK.16			9c18ef0d4b441cdcefcdbaceeb111a207dc1460ac2a082785cc028551606a5de
-Ransomware RigEK.17			e7b3102e3e49c6c3611353d704aae797923b699227df92d97987a2e012ba3f25
-Ransomware RigEK.Cerber	radF22EA.tmp.exe		840ce47e94db6dae302dddbfe33f9548a47541a0917def5e2e5644fc2965ba52
-Ransomware RigEK.Cerber.1	Rig-EK.swf		5a49dfdc87158cca5e0990361d57d870fde6aa6f63d16096698ba4c244bc3b54
-Ransomware RigEK.Bunitu			b27b370597fc8155f518dbc07f188c30ebc8e1d210f181acaf36ddb20714d64e
-Ransomware RigEK.Bunitu.2	airzaxz.dll		43be87120cbd555dc926becbe92fd7a0b2a43d1dd0418b3184d59c676c81eaf6
-Ransomware RigEK.Bunitu.2	diamond&basket		e4a1f94d58bd5ef7875991688017465441d99edc0d663bdac813bb9d03cae258
-Ransomware RigEK.18	experimea.info		8c9566ff0ab6df29f5d879e26d294e5836e3741b269a644ce497440a5e380164
-Ransomware RigEK.19	ipinfo.io		644b6905a1a1b35620c5dd44bfd30e039bbeaa54799853b4b93ee7ee51bbbe0e
-Ransomware RigEK.20	/windowsxp/t3.css		8bc2a1f203d87c731d036130c419ae6c7ad85eca159fe9c0effa32e5f97514ad
-Ransomware RigEK.21	/banners/countryhits		db6c76521f9adfbadd0f8bb54279d81fa784025dc9e0250d50e92f4742f0b669
-Ransomware RigEK.22	d84d21ud9dm9a74y.keyvote.webcam		515739205714a47c92e117342abdb1a7afa16747816a935bcb7b4a9ce7405401
-Ransomware RigEK.23	b16eauf5z38u9l.ourspen.com		16aa9721fc22325227e041a7bc7a6a32b7523dc986c20a0f62513abe7261a8d9
-Ransomware RigEK.24	_R_E_A_D___T_H_I_S___		46a6356f31fc40cf9d5adc5ded0d56fc595b13154045b11e86882b5fbf62aa5d
-Ransomware RigEK.25	3Np2K9XwEp3C.txt		cf3459cf29125101f5bea3f4206d8e43dbe097dd884ebf3155c49b276736f727
-Ransomware RigEK.26	8EUj3DVsJ3l6.txt		ec01ef73e22bb706baa87f994397d827b0cfeae0cc6bb8e9d5785e8171ed785c
-Ransomware RigEK.27	QMxBnqBlgl4e.txt		cee87e61f13e50217169e338342370aa94e31f0bacdf3d1b901e1dd79c9f8d87
-Ransomware RigEK.28	TyIPdwZ096Uf.swf		9cf8ed1111cb5b04b040ad57dcf87225659a6cb4ac10e7cf4381d397b5f67c89
-Ransomware RigEK.29	Uhg2F49WHwXu.txt		0dbb15afb887069b2f75308d2cff947db56d08adf8ceb17bb39ccdc71db28db3
-Ransomware RigEK.30	cZV9AQd9UyjN.txt		7ff9703ac519fa05d323e032b16b2b55cbaf8e1f51d1e89a0a337c4125aebe97
-Ransomware RigEK.31	mESH7HMjAcFA.swf		adc668371b43cbd6711a01a49015e3f2f52de6ed6080bbe873bc7366593f235b
-Ransomware RigEK.32	showthread-php-id-7991937328.txt		6e7f74fb50217ee363622f8e70976342638049499523325df4c03c340e64bb15
-Ransomware RigEK.33	S2hpxwQ/		
-Ransomware Gryphon	support.php?f=1.dat		9db57550187c44ea708052f8c351717f55e629de1841b9e84575dee0460fa532
-Ransomware Gryphon.1			7c2d071458efb62cc542ad3f078549a04431754c0e45fa6a618790e016bd8593
-Ransomware Gryphon.2	pHzI.js		315281c5c0441e79907f2503a406c013bc7bae8ed568c4f04103ef4d2717847c
-Ransomware Gryphon.3	lI85VOyk.js		dfaa0426b78d14eeb514ab6d479aae65ba7c52445bd0eda654e39557fa5a366d
-Ransomware Gryphon.4	RLbPRgWrsX.js		963414d992fb832d1fc46c160e9dffb35316226843c3b9e5b5da629d0b5d05f4
-Ransomware Gryphon.5	7oSZHYt.js		ca228784df33a56566e9435455daeb799736f300392c183b47fcc024f6b50392
-Ransomware Gryphon.6			dbe99b18ad9ae46e26a96d323f1587dd01cf634db9da4f3ce8ab9be682cbab24
-Ransomware Gryphon.7			4022bfb198bbe1ca5386f7a9cd760492f662255eb400c855eeb88c92d89c8467
-Ransomware Gryphon.8			933af0c69e1e622e5679e52c24545761c2843b3f52ea38e63bbe4786bfd6276e
-Ransomware Cerber.1			e9e8510d4ae6d8b2498079ec3100452dc78dbec24b10bf0fcaac84538f5d412a
-Ransomware Cerber.2			748a3c119026f2579867963c33f6fd16375e8f62a38be580654c726709484b94
-Ransomware Cerber.3			8745da2b43f07167e6f2c2eb84a646c0feb236671f206047fc2cdc1081b3f982
-Ransomware Cerber.4			b36bb18faa7adea81436651e6062df0200dca5a578842dc5d6ea03379c4795e9
-Ransomware Cerber.5			aeab730e99827a820e318f43a57463f3dcdcb5182b4e41e71a4d5f436623e792
-Ransomware Cerber.6			4fb39a97921f066af6a551274550461874138683979bf5e52acd937ea19bfc0c
-Ransomware Cerber.7	19206_ZIP.zip	b8658a91138b7be842293612c1c1d9dad873ed4638f84262cb58fcee60eab8a4
-Ransomware Cerber.8	19206.doc		03aa2410d07ea49dd6f05f2e0b0815ad400a83725ac88281b5f85ee7a7314bc7
-Ransomware Cerber.9			ccd2a5c27c92ed489287d7c9d48c42c8c0c12902ad598ac51458e388e22c4385
-Ransomware Cerber.10	4tjgwc3p.exe		1c693f3448d0bd9f300f9f8d752f50db352aea7a8c1961f369291d8e6010fd0d
-Ransomware Cerber.11	oqwygprskqv65j72.1hbdbx.top		9cf8ed1111cb5b04b040ad57dcf87225659a6cb4ac10e7cf4381d397b5f67c89
-Ransomware Cerber.12	d84d21ud9dm9a74y.keyvote.webcam		cee87e61f13e50217169e338342370aa94e31f0bacdf3d1b901e1dd79c9f8d87
-Ransomware Cerber.13	b16eauf5z38u9l.ourspen.com
-Ransomware Cerber.14	_R_E_A_D___T_H_I_S
-Ransomware CryptXXX	a89f7c458d358615f2d3f0642141febb	fdbeed00cacca229607aa70ee3538c92d57bab7b29cbce0f1c05c1f84c68aa20
-Ransomware CrytXXX.1	41706d9153eef3a2f5795e58a334b00fa3f40e8d	d9888e38a2f813139331dbac1f07fede19c784a4c2212cff8c17c83a40a2f84d
-Ransomware CryptXXX.2		275ebe2a72951737a3502d00f967c87d4f2fba03c4828d27270ab0f88a4d8f65
-Ransomware CryptoWall.1		3769639c17f0cd5045964b0839c9f009	03467f231a3fce6795545ae99a6dad161effa3bf681031693815eabf1648ee66
-Ransomware CryptoWall.2		b6c7943c056ace5911b95d36ff06e0e4	d5a70ba5a194ab737fc52b9f4283ce9d32f090590aea34224f7ea9ec63557a4f
-Ransomware CryptoWall.3		b30a8168ff49145d7d3cdcfd47dbfaef	23eae15fbd3fff11ae9c0a74dec2f078a0213b6df54cf0011a0f5feae20437ec
-Ransomware CryptoWall.4		167f16c8ae349cfb7d450cdf335dd9ca	fa706ed93469c257ee1531ddcf57bbab8734f3d092712158faf4e27656ab832e
-Ransomware CryptoWall.5		a7e38522f8ff161968f72d8bcc956b4e	fc5e57f70bdce3af0e8c43d124eacd1ead0be79bf369284f85a5f81c629f345e
-Ransomware CryptoWall.6		f612500ee9764e18ca78d2e78df5b017	7351e53bd863795104d609f2192e3436d3a07fb597f0bab35d175df88a34c3e0
-Ransomware CryptoWall.7		e36bbd682b5dd435baec8ec268c9c825	d14f1d1e07bd116ed0faf5896438179f36a05adacf5af4f32910e313e9c1fd93
-Ransomware CryptoWall.8		44150a32a84d3e1e07a042c3042a854c	114df2c79884312fc58d48bb6c4eb2ae23bbea2c37aad29c6fc0f544d7a16e36
-Ransomware CryptoWall.9		189d1d0c7ec162533b4aff4b8d0e95b1	a7c2b304848f18c412796e5f461b42186b690eeed7b2955522f9fe716cfa3876
-Ransomware CryptoWall.10		e9929a6751f184cb71d3c4adfc6fb78	ab89a375ba9a0ec6ddc875ddde7647c4d2a140b07233580b143e0ca9aaf581f5
-Ransomware CryptoWall.11		2fde49072741d59fd941b494403b9b0f	63d4965ed89e6951bb68f5e76a28f7f9512bf3feb64fcedfc3b98bc72dbcd070
-Ransomware CryptoWall.12		934b014689791a7689c70cd179c8bd71	a66b62735473fe257d35d003eb71aeb832e055d6f727e42ef1880c4d054118bb
-Ransomware CryptoWall.13		fc8db5b43ddf09bf0f03171e262495f6	47faaf4ab59c18ad9c72df1bec65873c350b5d72f361a723ae5f8b279a5b6b22
-Ransomware CryptoWall.14		00b536d9838b3e19d0ded1a6612a8b53	a3ccdcf57d11314b8db4733eb67ab06f41a710c2e3404a26e5390465bcff7609
-Ransomware Locky		7a23368ee84781d7584e058a9922f324
-Ransomware Locky.1		74dde1905eff75cf3328832988a785de
-Ransomware Locky.2		d9df60c24ceca5c4d623ff48ccd4e9b9
-Ransomware Locky.3		c5ad81d8d986c92f90d0462bc06ac9c6
-Ransomware Locky.4		357c162a35c3623d1a1791c18e9f56e7
-Ransomware Locky.5			7b45833d87d8bd38c44cbaeece65dbbd04e12b8c1ef81a383cf7f0fce9832660
-Ransomware Locky.6			357c162a35c3623d1a1791c18e9f56e72bcd76f6ef9f4cbcf5952f62b9bc8a08
-Ransomware Locky.7		b0ca8c5881c1d27684c23db7a88d11e1
-Ransomware Locky.8		c325dcf4c6c1e2b62a7c5b1245985083
-Ransomware Locky.9	mrsweeter.ru/87h78rf33g
-Ransomware Locky.10	185.130.7.22
-Ransomware Locky.11	sBpFSa.exe
-Ransomware Locky.12	WRwe3X.exe
-Ransomware Locky.13	gvtg79996
-Ransomware Locky.14	buhjolk.at
-Ransomware Locky.15	dIseJh.exe
-Ransomware Locky.16	aY5TFn.exe
-Ransomware Locky.17	buhjolk.at
-Ransomware Locky.18	23.exe	f3d935f9884cb0dc8c9f22b44129a356
-Ransomware Locky.19	24.exe	0d01517ad68b4abacb2dce5b8a3bd1d0
-Ransomware Locky.20	details_AneLU.zip	bb84729c02b898b7aeef6b65c119f0c4
-Ransomware Locky.21	details_bkxeL.js	10c1be3b95fa013458081d19747bc0df
-Ransomware Locky.22	details_cOBYkk.zip	cc095bc05e61a0b373671e6f80f72686
-Ransomware Locky.23	details_CRFuvd.zip	c9cf8185d1168b0712e532a6a7d88fe9
-Ransomware Locky.24	details_dFTHp.zip	5ad3fec19d0723532dea49a2ccc3ea9c
-Ransomware Locky.25	details_FyReR.zip	f2284d51a3daffcb12ff91f57601c246
-Ransomware Locky.26	details_LKXcNI.js	a811a54525161017e5ac1f85b83d2758
-Ransomware Locky.27	details_MGStju.zip	ab5540f78e67fd196c1be1dfd3612947
-Ransomware Locky.28	details_mSplK.js	cdacbaf9b13333ac264b798797432391
-Ransomware Locky.29	details_pKvHWv.js	17d0d6d8176e01e92f74b9ce08ba188b
-Ransomware Locky.30	details_PpxpD.zip	320151d35fd61ef1b17f8fe921c4beef
-Ransomware Locky.31	details_rqpOqK.zip	f30d21a5c882dbdb011b361a5cba67a4
-Ransomware Locky.32	details_shHih.js	111af7979728443aa268479a87c29656
-Ransomware Locky.33	details_XCFvfh.js	b4179c5a075fed9b606e9b7f068dca4c
-Ransomware Locky.34	details_XHZms.zip	c3e012a26c9fee9ff72bddf413f74f52
-Ransomware Locky.35	details_YAVSi.zip	e0cabfc058cc4d6ff2419743a79f6b1a
-Ransomware Locky.36	details_ZHewkz.zip	f7a7d41def5a90ed504581edf719c079
-Ransomware Locky.37	details_zZcSMY.js	d2096cc86d4d89904316caca5b2242f9
-Ransomware Locky.38	doc-details_cLOFYn.js	doc-details_cLOFYn.js
-Ransomware Mole	Font_Chrome.exe		c2e1790241fcc4b5c889fec68df024a6838e63e603f093715e3b468f9f31f67a
-Ransomware Mole.2	?number=879-804-5390		efd50264cee4f36e18f78820923d8ad4c1133c35cdfa603117cc4f5d5ded7ff5
-Ransomware Mole.3	newantikas/?nbVykj		
-Ransomware Mole.4	clinicalpsychology.psiedu.ubbcluj.ro		
-Ransomware Mole.5	supportxxgbefd7c.onion
-Ransomware Mole.6	supportjy2xvvdmx.onion		
-Ransomware Ransom!Gen7			1e6353973206502c55d6f1a2370d8a0a50cc2946f88e033fa580f88df52f6cfd
-Ransomware Ransom!Gen7.1			1e6353973206502c55d6f1a2370d8a0a50cc2946f88e033fa580f88df52f6cfd 
-Ransomware Mordor	/admin.php?f=404		83b435bb1349e8676f671505c4850ef2be1dbc4da27adf246c8452553096a5ea
-Ransomware Mordor.2	1327.doc		7f2335466ecca7be6888f92b5ba260780ce0a38039ceb54ac99b0485b3b086de
-Ransomware Mordor.3	20780.doc		5be2c27d9ad2bf91b8263273e992744e074fcce7967643bd9bab8c05622583c0
-Ransomware Mordor.4	4033.doc		74616a15e79b58e1dc6fac225865fb0fdd6470e76bbf358260317cba44ee9636
-Ransomware Mordor.5			3c858a40d94d1c9ba1b3d9d637b295eaa48f491dc24eb2e43f964cac518270fb
-Ransomware Mordor.6			dd24b0eb3b2126683c961731244ccee63e0b25c26186811da33be0d7ff1f98c3
-Ransomware Mordor.7			f853d76ad14ffec2799706a9861d79ba37d5ebb7c494b88d735330d571caa54d
-Ransomware Mordor.8			15d5f8faf33a50a973ec36f70c69459c3bdcac27b929a6a76d5a9dac50e4cc27
-Ransomware Mordor.9			0b58b14a4f500314414bb793aacd00336a454f3543e0c126a86544f823aabbfa
-Ransomware WannaCry		07c44729e2c570b37db695323249474831f5861d45318bf49ccf5d2f5c8ea1cd
-Ransomware WannaCry.2		09a46b3e1be080745a6d8d88d6b5bd351b1c7586ae0dc94d0c238ee36421cafa
-Ransomware WannaCry.3		0db91ff8822f1623fe36d712b5f56d339dc21008f1ecc617a5de2f522039c5b3
-Ransomware WannaCry.4		11011a590796f6c52b046262f2f60694310fa71441363d9116ada7248e58509a
-Ransomware WannaCry.5		11d0f63c06263f50b972287b4bbd1abe0089bc993f73d75768b6b41e3d6f6d49
-Ransomware WannaCry.6		16493ecc4c4bc5746acbe96bd8af001f733114070d694db76ea7b5a0de7ad0ab
-Ransomware WannaCry.7		198a25e52018dce7b2f76c3b49948211761dd4f29fc43599079155e61b335234
-Ransomware WannaCry.8		22ccdf145e5792a22ad6349aba37d960db79af7e0b6cae826d228b8246705092
-Ransomware WannaCry.9		31c2024d0df684a968115e4c3fc5703ef0ea2de1b69ece581589e86ba084568a
-Ransomware WannaCry.10		32f24601153be0885f11d62e0a8a2f0280a2034fc981d8184180c5d3b1b9e8cf
-Ransomware WannaCry.11		3463ea99389ef4836cfe0565539ee80c4c3a8159930c408f86147a59632d593a
-Ransomware WannaCry.12		38c6efb48b32a3f22cc4c307e9043d59aedb0e008300663f83803819e5f260b3
-Ransomware WannaCry.13		3dc6191c1255cfbaf94461e9a44f5b698c5563bbf846c94c4edd343828943a1e
-Ransomware WannaCry.14		4186675cb6706f9d51167fb0f14cd3f8fcfb0065093f62b10a15f7d9a6c8d982
-Ransomware WannaCry.15		4384bf4530fb2e35449a8e01c7e0ad94e3a25811ba94f7847c1e6612bbb45359
-Ransomware WannaCry.16		55454390f7be33ab5c11b5e0683800dd9a892ce136f1962b0989526fff5592d5
-Ransomware WannaCry.17		57bf2fbb8e42993d96f0e00f1d0140713a6676156ad83ad81e983099123f796e
-Ransomware WannaCry.18		5ad4efd90dcde01d26cc6f32f7ce3ce0b4d4951d4b94a19aa097341aff2acaec
-Ransomware WannaCry.19		5dee2ac983640d656f9c0ef2878ee34cda5e82a52d3703f84278ac372879346d
-Ransomware WannaCry.20		6bf1839a7e72a92a2bb18fbedf1873e4892b00ea4b122e48ae80fac5048db1a7
-Ransomware WannaCry.21		7b7aa67a3d47cb39d46ed556b220a7a55e357d2a9759f0c1dcbacc72735aabb1
-Ransomware WannaCry.22		7bb9ea2c0f53fa96883c54fa4b107964a6319f6026e4574c9feec2cb7d9e7d21
-Ransomware WannaCry.23		9727be564431c50cad790d13306a5848a230a41761ec550d13a569e7992a193c
-Ransomware WannaCry.24		9b60c622546dc45cca64df935b71c26dcf4886d6fa811944dbc4e23db9335640
-Ransomware WannaCry.25		9bde3b313a2161f01ec0165d7871791b37fdc9311b4ccfbba02e14ae765d0761
-Ransomware WannaCry.26		9f35e3393e442b4a35422e4b927e530712bac8ee2034a884b6ef724f0d8ec0ef
-Ransomware WannaCry.27		9f35e3393e442b4a35422e4b927e530712bac8ee2034a884b6ef724f0d8ec0ef
-Ransomware WannaCry.28		a50d6db532a658ebbebe4c13624bc7bdada0dbf4b0f279e0c151992f7271c726
-Ransomware WannaCry.29		b47e281bfbeeb0758f8c625bed5c5a0d27ee8e0065ceeadd76b0010d226206f0
-Ransomware WannaCry.30		b4d607fae7d9745f9ced081a92a2dcf96f2d0c72389a66e20059e021f0b58618
-Ransomware WannaCry.31		b66db13d17ae8bcaf586180e3dcd1e2e0a084b6bc987ac829bbff18c3be7f8b4
-Ransomware WannaCry.32		b9318a66fa7f50f2f3ecaca02a96268ad2c63db7554ea3acbde43bf517328d06
-Ransomware WannaCry.33		b9c5d4339809e0ad9a00d4d3dd26fdf44a32819a54abf846bb9b560d81391c25
-Ransomware WannaCry.34		bd927d915f19a89468391133465b1f2fb78d7a58178867933c44411f4d5de8eb
-Ransomware WannaCry.35		d849067bf9365d99088cbb935a98479cd38519e3ab8ac1bfe662588f8179d22d
-Ransomware WannaCry.36		c354a9a0bbb975c15e884916dce251807aae788e68725b512a95f7b580828c64
-Ransomware WannaCry.37		e14f1a655d54254d06d51cd23a2fa57b6ffdf371cf6b828ee483b1b1d6d21079
-Ransomware WannaCry.38		ed01ebfbc9eb5bbea545af4d01bf5f1071661840480439c6e5babe8e080e41aa
-Ransomware WannaCry.39		e8450dd6f908b23c9cbd6011fe3d940b24c0420a208d6924e2d920f92c894a96
-Ransomware WannaCry.40		ff8fcdc4cae2c9ed5207e53bb5bf1d97eef8147979d2bddfe8f55be91410f32c
-Ransomware WannaCry.41		f8812f1deb8001f3b7672b6fc85640ecb123bc2304b563728e6235ccbe782d85
 Known Spyware Host:	dreampark.co.jp
 Known Spyware Host:	enigmasoftwaregroup.com
 Known Spyware Host:	healthycomputerclub.com
@@ -2329,107 +2436,3 @@ Known Ransomware Host: RigEK.3	parking-services.us
 Known Ransomware Host: RigEK.4	188.225.78.226
 Known Ransomware Host: RigEK.5	188.225.35.5
 Known Ransomware Host: RigEK.6	wdwefwefwwfewdefewfwefw.onion
-Malware Malspam.155	+gPp6bGvrqa9/fz2790A/amupqawrp8=	474b3cd073b0a40d656b1a2f5bb673cf	07a99580b94a4854a7e49ef38d03f070350baab088130b23d79dde29242eb346
-Malware Malspam.156	printto(\"%1\",\"%2\",\"%3\",\"%4\")	9bce099b5b01c305a5d98f1fd262bce1	468200d4d207a7cc1df245b9670fcf9e3c491dd344643cd7edcf8a82f2cde214
-Malware Malspam.157	SUSRAIZCqllahrCohrlojSarZSalpecasZ	00aaf0ddcc8d9b197c148e44d9e72d8d	2cccdc51aea02049dc7f96f510a13311f112096a7d870a97d70232356ddef42b
-Malware Malspam.158	SYST%-\\#urrENt#ONtrOLSEt\\SErvICEs\\	a548c18aa678626dab9b60628712cc18	d4d1708e2ea1f897d2db66e0c1be8486a0bb62e0834d65d98991fe0f79cb7c11
-Malware Malspam.159	\\\\.\\agmkis2	03B196D513E102D7035A19204A36EC4C	8ecf4f11e3ff132b88d72fa3dd458e1e2d1badfee892fed7d855228ecc9495a1
-Malware Malspam.160	dwm_dropped	74B6EB643F42253B9B60116723B95D22087A765A	a0bdb809a45a5558bcad4d66290f084f8eb7e9ceb6bdd13132fc3e5f3c9255c6
-Malware Malspam.161	Tdx_Dropped		ca30c42334fcc693320792b4ce1df26fe5f1d0110bc454ec6388d79dffea4ae8
-Malware Malspam.162	TdxWCfg.exe		38ac35fd95358b84cd91d9ba55ceda9039dde7d908fb1ac736aa332d6d7d9e28
-Malware Malspam.163	_Heather_Tamse.doc		b7ef644b7883bbbbf5f0869b193d22190260570606646e61099a7df383144b41
-Malware Malspam.164	_Gould,_Carolyn.doc		9bdd885fdc1fcdcc34054062c0e3fce007a2ea5c0a4f4366eefac836c697b465
-Malware Malspam.165	_Stinson,_Lisa.doc		507d1559ec7507a311f2be88cd7110511402300769f0fe89fe17d36d4224c6e8
-Malware Malspam.166	_Michael_Kaba.doc		2d6a7cc9a14b7d9764bd481abc84a06739e94a9bef7a84c6a30b0c5b65cdf463
-Malware Malspam.167	_Oleksiy_Shapovalov.doc		e54dd6213683d48db6b86af92636817106138bc49f8cb6bebe39926ccb4f0af7
-Malware Malspam.168	_Beatriz_Márquez.doc		01e7207e732e67fb3280597ea39bb8ca59fba7bdede1bb4d509e0947d69a5e0a
-Malware Malspam.169	_Sharon_Gough.doc		19554594d13500ff0c0f5d73d07fa4ec0bf44ca2b3b2581be470cdd02919a7d0
-Malware Malspam.170	_Brian_Roberts.doc		ea52d89e63297de4bfbe6bae72e3c928dfdacde64b5585c797d08dc6595c9557
-Malware Malspam.171	_Tran_Nguyen.doc		1790952c31d0f142519e8d5762bd441be97cb050b353ecdc91b19a8b44ea59d5
-Malware Malspam.172	_Troy_Yochelson.doc		58449c472d5841504af747b8558245b3416c01faae9843f8dd395000a9a6e704
-Malware Malspam.173	launderability.exe		51f670520fe4b7f5d827e2f1798c45439d35fed19e9aca6ed0a21acb93527f00
-Malware Malspam.174	WUDHost.exe		204d34b2c3271db299dec30ccf0ca845dcd33558b0ee86eb956db3e2a6b4d5c2
-Malware Malspam.175	Ogtqhhyuwind.lnk		a8fa0aa5f33508d872863684f2ddec8146b3287b0de25e24516b1d9f97e39acf
-Malware Malspam.176	jrv0q		be176c34ee14506001aa17e6570be57c79038b23789f3d407db370ad5bc2a6c6
-Malware Malspam.179	nircmdc.exe		d7bb1f853e55fa7f80f04bf1cd4b20129843a6821881dff0bf860dbcfbf33bac
-Malware Malspam.178	taiwantotallydeputy		6432d90a7ffbbdd41b0da8443d2d1c4f379dabb6ffde4f6e28a8bd88d41732fb
-Malware Malspam.179	blog/inv.exe
-Malware Malspam.180	ivanajonkovic.com
-Malware Malspam.181	9684ff.
-Malware Malspam.182	bJava.exe
-Malware Malspam.183	afroamericanec.bit
-Malware Malspam.184	snap.cr-acad.com
-Malware Malspam.185	nledarwoq()
-Malware Malspam.186	xyiihcxp.exe
-Malware Malspam.187	Chrome.Update.dce
-Malware Malspam.188	PrBhQkFh.xQE
-Malware Malspam.189	iellsorting.exe
-Malware Malspam.190	FYRINGSSEDDELEN
-Malware Malspam.191	TAPI32.dll
-Malware Malspam.192	WTSAPI32.dll
-Malware Malspam.193	BdeUISrv.exe
-Malware Malspam.194	chaibuckz.com
-Malware Malspam.195	cognitionclassroom.com
-Malware Malspam.196	fastandup.co.in
-Malware Malspam.197	intecwi.org
-Malware Malspam.198	mcnconstruction.net
-Malware Malspam.199	propertiesfirst.com
-Malware Malspam.200	sewardsfollybarandgrill.net
-Malware Malspam.201	unlaca
-Malware Malspam.202	etsofevenghen.com
-Malware Malspam.203	hincasupheck.ru
-Malware Malspam.204	seromratbo.ru
-Malware Malspam.205	milaromanoff.com
-Malware Malspam.206	docusign@milaromanoff.com
-Malware Malspam.207	ivanajankovic.com
-Malware Malspam.208	dokucenter.optitime.de
-Malware Malspam.209	jointings.org
-Malware Malspam.210	kitcross.ca
-Malware Malspam.211	shawneklassen.com
-Malware Malspam.212	laxmigroup1986.com
-Malware Malspam.213	BN13CB.tmp
-Malware Malspam.214	degrand_lemunst@yahoo.com
-Malware Malspam.215	neighbor.onegooglechecksim.xyz
-Malware Malspam.216	chichi.onegoogledeleterent.xyz
-Malware Malspam.217	lot.onegooglechecksim.xyz
-Malware Malspam.218	pppoe.bit
-Malware Malspam.219	weather0.bit
-Malware Malspam.220	mygranny.bit
-Malware Malspam.221	six6.bit
-Malware Malspam.222	PERSPIRATIONS.vbs
-Malware Malspam.223	PERSPIRATIONS.exe
-Malware Malspam.224	Hestekraftens.exe
-Malware Malspam.225	xenophora.exe
-Malware Malspam.226	learncpp.bit
-Malware Malspam.227	/eesti-amatoare-neighbor
-Malware Malspam.228	dkdkq.exe
-Malware Malspam.229	?s=d14d8cd32ec253835c076c04f7e67da2mf
-Malware Malspam.230	dffc4090b3576aae0fb5f800c91f9173fl
-Malware Malspam.231	198e4404289f5109a67192288b5294f5sw
-Malware Malspam.232	pantera-classic-chichi
-Malware Malspam.233	e31e6edb08bf0ae9fbb32210b24540b6fl
-Malware Malspam.234	336d3757542e4bd97b71091bffd0c275mf
-Malware Malspam.235	holiday-titanime-lot
-Malware Malspam.236	a6acd7f14a570b2aed5b7175b47133bbfl
-Malware Malspam.237	d4a09da02780baeca3114b1b9162871bsw
-Malware Malspam.238	606b700bb49450ae37ad3a041661df07mf
-Malware Malspam.239	rozhan-hse.com
-Malware Malspam.240	newageconversions.com
-Malware Malspam.241	CVE-2018-8174.py
-Malware Malspam.242	beaveries/aoer.phtml
-Malware Malspam.243	Psoriasic
-Malware Malspam.244	onlinedattingforlive.info
-Malware Malspam.245	russkistandart.info
-Malware Malspam.246	not-my-guilty.com
-Malware Malspam.247	capitalinvest.ac.ug
-Malware Malspam.248	https://raw.githubusercontent.com/w7374520/CVE-2018-8174_EXP/master/CVE-2018-8174.py
-Malware Malspam.249	http://51.15.252.131/CC/index.php
-Malware Malspam.250	http://51.15.252.131/files/go.exe
-Malware Malspam.251	ddosprotected=1
-Malware Malspam.252	1u2.exe
-Malware Malspam.253	yourseo.ac.ug
-Malware Malspam.254	wog92bqzqg1m9j4i3.website
-Malware Malspam.255	http://95.142.47.43/v2.bin
-Malware Malspam.256	http://95.142.47.43/c2.bin
-Malware Malspam.257	http://pastebin.com/raw/jkBxauyv
-Malware Malspam.258	\AppData\Roaming\Temp\rad
