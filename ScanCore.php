@@ -583,19 +583,20 @@ function file_scan($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $Memor
   global $SEP, $FileCount, $DirCount, $Infected;
   $ScanComplete = FALSE;
   $DirCount++;
-  if (is_dir($folder)) {
-    processOutput('Scanning folder:  '.$folder, FALSE, 0, TRUE, FALSE, FALSE);
-    $files = scandir($folder);
-    foreach ($files as $file) {
-      if ($file === '' or $file === '.' or $file === '..') continue;
-      $entry = str_replace($SEP.$SEP, $SEP, $folder.$SEP.$file);
-      if (!is_dir($entry)) list($checkComplete, $Infected, $FileCount) = virus_check($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize);
-      if (is_dir($entry) && $Recursion) {
-        list ($scanComplete, $DirCount, $FileCount, $Infected) = file_scan($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize, $Recursion); 
-        $entry = ''; } } }
-  if (!is_dir($folder) && $folder !== '.' && $folder !== '..') {
-    $FileCount++;
-    list($checkComplete, $Infected, $FileCount) = virus_check($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize); }
+  if ($folder !== '.') if ($folder !== '..') {
+    if (is_dir($folder)) {
+      processOutput('Scanning folder:  '.$folder, FALSE, 0, TRUE, FALSE, FALSE);
+      $files = scandir($folder);
+      foreach ($files as $file) {
+        if ($file === '' or $file === '.' or $file === '..') continue;
+        $entry = str_replace($SEP.$SEP, $SEP, $folder.$SEP.$file);
+        if (!is_dir($entry)) list($checkComplete, $Infected, $FileCount) = virus_check($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize);
+        else if ($Recursion) {
+          list ($scanComplete, $DirCount, $FileCount, $Infected) = file_scan($entry, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize, $Recursion); 
+          $entry = ''; } } }
+    else {
+      $FileCount++;
+      list($checkComplete, $Infected, $FileCount) = virus_check($folder, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $MemoryLimit, $ChunkSize); } }
   $ScanComplete = TRUE;
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $files = $file = $entry = $folder = NULL;
@@ -609,74 +610,76 @@ function virus_check($file, $Defs, $DefsFile, $DefData, $Debug, $Verbose, $Memor
   // / Set variables.
   global $Infected, $DefsFileName, $FileCount;
   $CheckComplete = FALSE;
-  if ($file !== $DefsFileName) {
-    if (file_exists($file)) {
-      $FileCount++;
+  // / Check that the file exists & is not the currently loaded definitions file.
+  if (file_exists($file)) if ($file !== $DefsFileName) {
       processOutput('Scanning file:  '.$file, FALSE, 0, TRUE, FALSE, FALSE);
-      $filesize = filesize($file);
-      $data1 = hash_file('md5', $file);
       $data2 = hash_file('sha256', $file);
-      $data3 = hash_file('sha1', $file);
-      // / Scan files larger than the memory limit by breaking them into chunks.
-      if ($filesize >= $MemoryLimit && file_exists($file)) { 
-        processOutput('Chunking file:  '.$file, FALSE, 0, TRUE, FALSE, FALSE);
-        $handle = @fopen($file, "r");
-        if ($handle) {
-          while (($buffer = fgets($handle, $ChunkSize)) !== FALSE) {
-            $data = $buffer;
-            processOutput('Scanning chunk.', FALSE, 0, TRUE, FALSE, FALSE);
-            foreach ($Defs as $virus) {
-              $virus = explode("\t", $virus[0]);
-              if (isset($virus[1]) && !is_null($virus[1]) && $virus[1] !== '' && $virus[1] !== ' ') {
-                if (strpos(strtolower($data), strtolower($virus[1])) !== FALSE or strpos(strtolower($file), strtolower($virus[1])) !== FALSE) { 
-                  // File matches virus defs.
-                  processOutput('Infected: '.$file.' ('.$virus[0].', Data Match: '.$virus[1].')', FALSE, 0, TRUE, TRUE, FALSE);
-                  $Infected++; } } } }
-          if (!feof($handle)) {
-            processOutput('Unable to open '.$file.'!', TRUE, 600, TRUE, TRUE, FALSE);
-            fclose($handle); } 
-          if (isset($virus[2]) && !is_null($virus[2]) && $virus[2] !== '' && $virus[2] !== ' ') {
+      // / Double check that the file we're scanning is not the currently loaded definitions file.
+      if ($DefData !== $data2) {
+        $FileCount++;
+        $filesize = filesize($file);
+        $data1 = hash_file('md5', $file);
+        $data3 = hash_file('sha1', $file);
+        // / Scan files larger than the memory limit by breaking them into chunks.
+        if ($filesize >= $MemoryLimit) {
+          processOutput('Chunking file:  '.$file, FALSE, 0, TRUE, FALSE, FALSE);
+          $handle = @fopen($file, "r");
+          if ($handle) {
+            // / Break the file into chunks & iterate through each chunk.
+            while (($buffer = fgets($handle, $ChunkSize)) !== FALSE) {
+              $data = $buffer;
+              processOutput('Scanning chunk.', FALSE, 0, TRUE, FALSE, FALSE);
+              // / Scan the current chunk for data matches.
+              foreach ($Defs as $virus) {
+                $virus = explode("\t", $virus[0]);
+                if (isset($virus[1])) if (!is_null($virus[1])) if ($virus[1] !== '') if ($virus[1] !== ' ') {
+                  if (strpos(strtolower($data), strtolower($virus[1])) !== FALSE or strpos(strtolower($file), strtolower($virus[1])) !== FALSE) { 
+                    // File matches virus defs.
+                    processOutput('Infected: '.$file.' ('.$virus[0].', Data Match: '.$virus[1].')', FALSE, 0, TRUE, TRUE, FALSE);
+                    $Infected++; } } } }
+                if (!feof($handle)) processOutput('Unable to open '.$file.'!', TRUE, 600, TRUE, TRUE, FALSE);
+                fclose($handle); }
+          if (isset($virus[2])) if (!is_null($virus[2])) if ($virus[2] !== '') if ($virus[2] !== ' ') {
             if (strpos(strtolower($data1), strtolower($virus[2])) !== FALSE) {
               // File matches virus defs.
               processOutput('Infected: '.$file.' ('.$virus[0].', MD5 Hash Match: '.$virus[2].')', FALSE, 0, TRUE, TRUE, FALSE);
               $Infected++; } }
-            if (isset($virus[3]) && !is_null($virus[3]) && $virus[3] !== '' && $virus[3] !== ' ') {
+          if (isset($virus[3])) if (!is_null($virus[3])) if ($virus[3] !== '') if ($virus[3] !== ' ') {
+            if (strpos(strtolower($data2), strtolower($virus[3])) !== FALSE) {
+              // File matches virus defs.
+              processOutput('Infected: '.$file.' ('.$virus[0].', SHA256 Hash Match: '.$virus[3].')', FALSE, 0, TRUE, TRUE, FALSE);
+              $Infected++; } }
+          if (isset($virus[4])) if (!is_null($virus[4])) if ($virus[4] !== '') if ($virus[4] !== ' ') {
+            if (strpos(strtolower($data3), strtolower($virus[4])) !== FALSE) {
+              // File matches virus defs.
+              processOutput('Infected: '.$file.' ('.$virus[0].', SHA1 Hash Match: '.$virus[4].')', FALSE, 0, TRUE, TRUE, FALSE);
+              $Infected++; } } }
+        // / Scan files smaller than the memory limit by fitting the entire file into memory.
+        else {
+          $data = file_get_contents($file);
+          foreach ($Defs as $virus) {
+            $virus = explode("\t", $virus[0]);
+            if (isset($virus[1])) if (!is_null($virus[1])) if ($virus[1] !== '') if ($virus[1] !== ' ') {
+              if (strpos(strtolower($data), strtolower($virus[1])) !== FALSE or strpos(strtolower($file), strtolower($virus[1])) !== FALSE) {
+                // File matches virus defs.
+                processOutput('Infected: '.$file.' ('.$virus[0].', Data Match: '.$virus[1].')', FALSE, 0, TRUE, TRUE, FALSE);
+                $Infected++; } }
+            if (isset($virus[2])) if (!is_null($virus[2])) if ($virus[2] !== '') if ($virus[2] !== ' ') {
+              if (strpos(strtolower($data1), strtolower($virus[2])) !== FALSE) {
+                // File matches virus defs.
+                processOutput('Infected: '.$file.' ('.$virus[0].', MD5 Hash Match: '.$virus[2].')', FALSE, 0, TRUE, TRUE, FALSE);
+                $Infected++; } }
+            if (isset($virus[3])) if (!is_null($virus[3])) if ($virus[3] !== '') if ($virus[3] !== ' ') {
               if (strpos(strtolower($data2), strtolower($virus[3])) !== FALSE) {
                 // File matches virus defs.
                 processOutput('Infected: '.$file.' ('.$virus[0].', SHA256 Hash Match: '.$virus[3].')', FALSE, 0, TRUE, TRUE, FALSE);
                 $Infected++; } } 
-            if (isset($virus[4]) && !is_null($virus[4]) && $virus[4] !== '' && $virus[4] !== ' ') {
+            if (isset($virus[4])) if (!is_null($virus[4])) if ($virus[4] !== '') if ($virus[4] !== ' ') {
               if (strpos(strtolower($data3), strtolower($virus[4])) !== FALSE) {
                 // File matches virus defs.
                 processOutput('Infected: '.$file.' ('.$virus[0].', SHA1 Hash Match: '.$virus[4].')', FALSE, 0, TRUE, TRUE, FALSE);
                 $Infected++; } } } }
-      // / Scan files smaller than the memory limit by fitting the entire file into memory.
-      if ($filesize < $MemoryLimit && file_exists($file)) {
-        $data = file_get_contents($file); }
-      if ($DefData !== $data2) {
-        foreach ($Defs as $virus) {
-          $virus = explode("\t", $virus[0]);
-          if (isset($virus[1]) && !is_null($virus[1]) && $virus[1] !== '' && $virus[1] !== ' ') {
-            if (strpos(strtolower($data), strtolower($virus[1])) !== FALSE or strpos(strtolower($file), strtolower($virus[1])) !== FALSE) {
-              // File matches virus defs.
-              processOutput('Infected: '.$file.' ('.$virus[0].', Data Match: '.$virus[1].')', FALSE, 0, TRUE, TRUE, FALSE);
-              $Infected++; } }
-          if (isset($virus[2]) && !is_null($virus[2]) && $virus[2] !== '' && $virus[2] !== ' ') {
-            if (strpos(strtolower($data1), strtolower($virus[2])) !== FALSE) {
-              // File matches virus defs.
-              processOutput('Infected: '.$file.' ('.$virus[0].', MD5 Hash Match: '.$virus[2].')', FALSE, 0, TRUE, TRUE, FALSE);
-              $Infected++; } }
-            if (isset($virus[3]) && !is_null($virus[3]) && $virus[3] !== '' && $virus[3] !== ' ') {
-              if (strpos(strtolower($data2), strtolower($virus[3])) !== FALSE) {
-                // File matches virus defs.
-                processOutput('Infected: '.$file.' ('.$virus[0].', SHA256 Hash Match: '.$virus[3].')', FALSE, 0, TRUE, TRUE, FALSE);
-                $Infected++; } } 
-            if (isset($virus[4]) && !is_null($virus[4]) && $virus[4] !== '' && $virus[4] !== ' ') {
-              if (strpos(strtolower($data3), strtolower($virus[4])) !== FALSE) {
-                // File matches virus defs.
-                processOutput('Infected: '.$file.' ('.$virus[0].', SHA1 Hash Match: '.$virus[4].')', FALSE, 0, TRUE, TRUE, FALSE);
-                $Infected++; } } } } } }
-  $CheckComplete = TRUE;
+        $CheckComplete = TRUE; } }
   // / Manually clean up sensitive memory. Helps to keep track of variable assignments.
   $file = $filesize = $data = $buffer = $handle = $virus = $data1 = $data2 = $data3 = NULL;
   unset($file, $filesize, $data, $buffer, $handle, $virus, $data1, $data2, $data3);

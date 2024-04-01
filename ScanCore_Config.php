@@ -160,7 +160,7 @@ $DefinitionsUpdateSubscriptions = array('Virus', 'Malware', 'PUP');
 // /   If 'git' is not installed & cannot be installed, the 'raw' option can be used instead.
 // /   Valid options are 'git', 'raw'.
 // /   Default is 'raw'.
-$UpdateMethod = 'raw';
+$UpdateMethod = 'git';
 // /  --Default Maximum Log Size--
 // /   Number of bytes to store in each logfile before splitting to a new one.
 // /   Must be formatted as an integer, or an equation that evaluates to an integer.
